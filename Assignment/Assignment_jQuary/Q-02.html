@@ -12,12 +12,13 @@
     ></script>
 
       <style>
-            div{
+            .lorem{
                   height: 200px;
                   width: 300px;
                   border: 1px solid black;
             }
 
+ /* ******************************************************************** */
             .parent{
                   height: 300px;
                   width: 300px;
@@ -41,6 +42,15 @@
                   text-align: justify;
                   font-size: 1.5em;
             }
+
+/* ******************************************************************** */
+
+            .slide{
+                  height: 100px;
+                  width: 100px;
+                  background-color: tomato;
+                  margin: 50px;
+            }
       </style>
 </head>
 <body>
@@ -49,7 +59,7 @@
 
       <p><b>Ans : </b></p>
 
-      <div>
+      <div class="lorem">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ipsum.</p>
       </div>
 
@@ -68,11 +78,11 @@
       <script>
         
             $('.btn1').click(()=>{
-            $('div').css({'background-color': 'yellow', 'font-size':'1.5em'});
+            $('.lorem').css({'background-color': 'yellow', 'font-size':'1.5em'});
             })
 
             $('.btn2').click(()=>{
-            $('div').css({'background-color': 'white', 'font-size':'1em'});
+            $('.lorem').css({'background-color': 'white', 'font-size':'1em'});
             })
             
       </script>
@@ -114,7 +124,7 @@
       <p>-> The jQuery animate() method is used to create custom animations.</p>
 
       <pre>
-            $("button").click(function(){
+            $("button").toggle(function(){
                   $("div").animate({
                         opacity: '0.5',
                         height: '300px',
@@ -122,14 +132,22 @@
                   });
             }); 
       </pre>
+
+      <div class="animation parent">
+            <div class="slide"></div>
+            <button class="get">Get Animation</button>
+      </div>
+
+      <button class="get">Get Animation</button>
+
       <script>
-            // $(".btn1").click(function(){
-            //       $("div").animate({
-            //             opacity: '0.5',
-            //             height: '300px',
-            //             width: '500px'
-            //       });
-            // }); 
+            $(".get").click(function(){
+                  $(".slide").animate({
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                  });
+            }); 
       </script>
 
 

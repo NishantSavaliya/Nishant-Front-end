@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-33</title>
+</head>
+<body>
+      <h3>Q-33 :  Write to print Fibonacci series up to given numbers?</h3>
+      <p><b>Ans : </b></p>
+      <script>
+      
+            function fibonacci(num) {
+                  let num1 = 0;
+                  let num2 = 1;
+                  let sum;
+                  
+                        for (i = 0; i < num; i++) {
+                              sum = num1 + num2;
+                              num1 = num2;
+                              num2 = sum;
+                        }
+                        return num2;
+            }
+                  
+            console.log("Fibonacci(3): " + fibonacci(3));
+            
+      </script>
+</body>
+</html>

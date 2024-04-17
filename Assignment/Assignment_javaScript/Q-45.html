@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-45</title>
+</head>
+<body>
+      <h3>Q-45 : Write a JavaScript program to determine if a variable is array?</h3>
+      <p><b>Ans : </b></p>
+      <p>-> The Array.isArray() static method determines whether the passed value is an Array.</p>
+      <p>-> for Example - </p>
+      <pre>
+            // all following calls return true
+            Array.isArray([]);
+            Array.isArray([1]);
+            Array.isArray(new Array());
+            Array.isArray(new Array("a", "b", "c", "d"));
+            Array.isArray(new Array(3));
+
+            // all following calls return false
+            Array.isArray();
+            Array.isArray({});
+            Array.isArray(null);
+            Array.isArray(undefined);
+            Array.isArray(17);
+            Array.isArray("Array");
+            Array.isArray(true);
+            Array.isArray(false);
+      </pre>
+
+</body>
+</html>

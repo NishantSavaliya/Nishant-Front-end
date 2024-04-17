@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>jQ traversal</title>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+      <!-- <div class="parent">parent
+            <div class="child">child
+                  <div class="sub-child"> sub-child
+                        <div class="sub-sub-child">sub-sub-child</div>
+                        <div class="sub-sub-child2">sub-sub-child2
+                              <div class="sub1">sub1</div>
+                              <div class="sub2">sub2</div>
+                        </div>
+                  </div>
+                  <div class="other-child">other-child</div>
+            </div>
+      </div> -->
+<!-- 
+********************************************************************       -->
+      <!-- <div class="some1">some1</div>
+      <div class="some2">some2</div>
+      <div class="some">some</div>
+      <div class="else">else</div>
+      <div class="else1">else1</div>
+      <div class="else2">else2</div> -->
+
+<!-- 
+********************************************************************       -->
+
+      <div class="parent">
+            <div class="child">child1</div>
+            <div class="child some">child2</div>
+            <div class="child">child3</div>
+            <div class="child">child4 some</div>
+      </div>
+
+      <script>
+            //console.log($('.sub-sub-child').parent());
+            //console.log($('.sub-sub-child').parents());
+            //console.log($('.sub-sub-child').parentsUntil('.parent'));
+
+
+            //console.log($('.sub-child').children());
+            //console.log($('.sub-child').children('.sub-sub-child2'));
+            //console.log($('.sub-child').find('.sub-sub-child'));
+            //console.log($('.sub-child').find('*'));
+
+//**************************************************************************       
+
+            //console.log($('.some').siblings());
+            //console.log($('.some').next());
+            //console.log($('.some').prev());
+            //console.log($('.some').nextAll());
+            //console.log($('.some').prevAll());
+            //console.log($('.some').nextUntil('.else1'));
+            //console.log($('.some').prevUntil('.some2'));
+
+//**************************************************************************  
+
+            //console.log($('.child').first());
+            //console.log($('.child').eq(0));
+            //console.log($('.child').last());
+            //console.log($('.child').filter('.some'));
+            console.log($('.child').not('.some'));
+            
+            
+      </script>
+</body>
+</html>

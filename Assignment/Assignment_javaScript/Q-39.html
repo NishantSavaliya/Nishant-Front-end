@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-39</title>
+</head>
+<body>
+      <h3>Q-39 : Accept 3 numbers from user using while loop and check each numbers palindrome?</h3>
+      <p><b>Ans : </b></p>
+      <script>
+      
+      function palindromeCheck(num) { 
+            let numStr = num.toString(); 
+            let result = numStr.split('').reverse().join(''); 
+            return numStr === result; 
+      } 
+          
+        console.log(palindromeCheck(45654)); // true 
+        console.log(palindromeCheck(123)); // false
+        </script>
+</body>
+</html>

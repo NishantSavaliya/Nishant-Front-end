@@ -16,6 +16,7 @@
 .main .item{
     /* height: 30vh;
     width: 100%; */
+    margin: 15px;
     
 }
 
@@ -26,7 +27,7 @@
 
 .main .item p{
     text-align: justify;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 

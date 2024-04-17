@@ -22,7 +22,7 @@
         }
 
         .main .info h4{
-            font-size: 1em;
+            font-size: 2em;
             color: white;
             margin: 20px;
         }
@@ -33,11 +33,12 @@
 
         .main .info .item h5{
             color: orangered;
+            font-size: 1.5em;
         }
 
         .main .info .item p{
             color: white;
-            font-size: 8px;
+            font-size: 1em;
         }
 
         .main .bg{
@@ -58,16 +59,16 @@
         }
 
         .web{
-            top: 28%;
-            left: 50%;
+            top: 20%;
+            left: 51%;
         }
 
         .print{
-            top: 48%;
-            left: 50%;
+            top: 40%;
+            left: 51%;
         }
 
         .photo{
-            top: 68%;
-            left: 50%;
+            top: 59%;
+            left: 51%;
         }

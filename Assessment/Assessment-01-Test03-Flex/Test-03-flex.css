@@ -25,42 +25,43 @@
       position: absolute;
       top: 10%;
       right: 5%;
-      backdrop-filter: blur(3px);
+      backdrop-filter: blur(15px);
       /* border: 2px solid black; */
 }
 
 .info1 h3{
-      font-size: 0.8em;
-      color: red;
+      font-size: 1.5em;
+      color: rgb(160, 14, 87);
 }
 
 .info1 p{
-      font-size: 0.6em;
-      color: black;
+      font-size: 1em;
+      color: rgb(6, 6, 153);
 }
 
 .header{
       height: 90vh;
-      width: 25%;
+      width: 22%;
       /* border: 2px solid black; */
       position: absolute;
       top: 0;
       left: 0;
-      backdrop-filter: blur(3px);
+      backdrop-filter: blur(15px);
 }
 
 .header .head{
       height: auto;
       width: 40%;
-      border: 2px solid rgb(190, 35, 35);
+      border: 8px double rgb(155, 17, 86);
       margin: auto;
+      text-align: center;
       margin-top: 10%;
       padding: 5%;
 }
 
 .header .head p{
-      font-size: 0.8em;
-      color: rgb(211, 207, 207);
+      font-size: 1.3em;
+      color: rgb(6, 6, 153);
       text-align: center;
 }
 
@@ -75,9 +76,9 @@
 }
 
 .header .menu li p{
-      font-size: 0.6em;
+      font-size: 1em;
       text-align: right;
-      color: rgb(211, 207, 207);
+      color: rgb(6, 6, 153);
 }
 
 .social{
@@ -85,13 +86,9 @@
       margin-top: 15%;
 }
 
-.social button{
-      height: 15%;
-      width: 10%;
-      border-style: none;
-      background-color: aliceblue;
-      border-radius: 20%;
-      text-align: center;
+.social i{
+      padding: 5% 5%;
+      color: rgb(6, 6, 153);
 }
 
 .copy{
@@ -99,10 +96,10 @@
 }
 
 .copy p{
-      font-size: 0.2em;
+      font-size: 0.8em;
       text-align: center;
       padding-top: 3%;
-      color: rgb(211, 207, 207);
+      color: rgb(6, 6, 153);
 }
 
 .main1{
@@ -112,20 +109,25 @@
 }
 
 .main1 .color{
-      width: 27%;
+      width: 80%;
       height: auto;
-      background-color: rgb(146, 241, 51);
+      background-color: rgb(204, 105, 155);
+}
+
+.main1 .sec{
+      width: 20%;
+      height: auto;
 }
 
 .main1 .pro{
-      width: 80%;
+      width: 99%;
       height: auto;
       display: flex;
       /* padding-left: 5%; */
 }
 
 .main1 .pro .about{
-      width: 50%;
+      width: 45%;
       height: auto;
       padding: 5%;
 }
@@ -138,15 +140,16 @@
 .main1 .pro .about h3{
       color: rgb(6, 6, 153);
       text-align: left;
+      font-size: 1.5em;
 }
 
 .main1 .pro .about p{
       color: rgb(58, 60, 187);
       text-align: left;
-      font-size: 0.8em;
+      font-size: 1em;
 }
 
-.main2{
+/* .main2{
       width: 100%;
       height: auto;
       display: flex;
@@ -156,30 +159,33 @@
       width: 26%;
       height: auto;
       background-color: rgb(146, 241, 51);
-}
+} */
 
-.main2 .our{
-      width: 77%;
+.main1 .our{
+      width: 99%;
       height: auto;
       padding-left: 5%;
 }
 
-.main2 .our p{
-      color: blue;
+.main1 .our p{
+      color: rgb(58, 60, 187);
       text-align: left;
+      font-size: 1.5em;
+      font-weight: 700;
 }
 
-.main2 .our .photo .img{
+.main1 .our .photo .img{
       width: 22%;
-      height: 20%;
+      height: 200px;
+      margin: 2% 1%;
 }
 
-.main2 .our .photo .img img{
+.main1 .our .photo .img img{
       width: 100%;
       height: 100%;
 }
 
-.main3{
+/* .main3{
       width: 100%;
       height: auto;
       display: flex;
@@ -189,25 +195,28 @@
       width: 25%;
       height: auto;
       background-color: rgb(146, 241, 51);
-}
+} */
 
-.main3 .client{
-      width: 75%;
+.main1  .client{
+      width: 99%;
       height: auto;
       padding-left: 5%;
 }
 
-.main3 .client h3{
+.main1  .client h3{
+      font-size: 1.5em;
+      text-align: left;
+      color: rgb(58, 60, 187);
+      font-weight: 700;
+}
+
+.main1 .client p{
       font-size: 1em;
       text-align: left;
+      color: rgb(58, 60, 187);
 }
 
-.main3 .client p{
-      font-size: 0.8em;
-      text-align: left;
-}
-
-.main4{
+/* .main4{
       width: 100%;
       height: auto;
       display: flex;
@@ -217,28 +226,28 @@
       width: 26%;
       height: auto;
       background-color: rgb(146, 241, 51);
-}
+} */
 
-.main4 .myob{
-      width: 74%;
+.main1 .myob{
+      width: 94%;
       height: auto;
       display: flex;
       margin-left: 5%;
       margin-top: 5%;
 }
 
-.main4 .myob .im{
+.main1 .myob .im{
       width: 25%;
-      height: 40%;
-      padding-right: 5%;
+      height: 35%;
+      padding-right: 8%;
 }
 
-.main4 .myob .im img{
+.main1 .myob .im img{
       width: 100%;
       height: 100%;
 }
 
-.main5{
+/* .main5{
       width: 100%;
       height: auto;
       display: flex;
@@ -248,29 +257,29 @@
       width: 26%;
       height: auto;
       background-color: rgb(146, 241, 51);
-}
+} */
 
-.main5 .line2{
-      width: 74%;
+.main1 .line2{
+      width: 94%;
       height: auto;
       display: flex;
       margin-left: 5%;
       /* margin-top: 5%; */
 }
 
-.main5 .line2 .im{
+.main1 .line2 .im{
       width: 25%;
-      height: 45%;
-      padding-right: 5%;
+      height: 40%;
+      padding-right: 8%;
 }
 
-.main5 .line2 .im img{
+.main1 .line2 .im img{
       text-align: center;
       width: 100%;
       height: 100%;
 }
 
-.main6{
+/* .main6{
       width: 100%;
       height: auto;
       display: flex;
@@ -280,40 +289,59 @@
       width: 26%;
       height: auto;
       background-color: rgb(146, 241, 51);
-}
+} */
 
-.main6 .talk{
-      width: 74%;
+.main1 .talk{
+      width: 94%;
       height: auto;
-      margin-left: 5%;
+      margin: 8% 5%;
       display: flex;
 }
 
-.main6 .talk .us{
+.main1 .talk .us{
       width: 45%;
       height: auto;
 }
 
-.main6 .talk .us h3{
+.main1 .talk .us h3{
+      text-align: left;
+      font-size: 1.5em;
+      color: rgb(58, 60, 187);
+}
+
+.main1 .talk .us p{
       text-align: left;
       font-size: 1em;
+      color: rgb(58, 60, 187);
 }
 
-.main6 .talk .us p{
-      text-align: left;
-      font-size: 0.8em;
-}
-
-.main6 .talk .inp{
-      width: 45%;
+.main1 .talk .inp{
+      width: 50%;
       height: auto;  
-      padding: 5%;   
+      padding-left: 5%;   
 }
 
-.main6 .talk .inp input{
+.main1 .talk .inp input{
       margin-bottom: 5%;
+      border: 3px solid blue;
+      border-radius: 3px;
+      height: 25px;
+      width: 80%;
 }
 
-.main6 .talk .inp button{
+.main1 .talk .inp textarea{
+      margin-bottom: 5%;
+      border: 3px solid blue;
+      border-radius: 5px;
+      width: 80%;
+}
+
+
+.main1 .talk .inp button{
       margin-right: 0%;
+      border: 3px solid blue;
+      border-radius: 5px;
+      height: 35px;
+      width: 20%;
+      padding: 5px;
 }

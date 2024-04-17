@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-02</title>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+      <style>
+            div{
+                  height: 200px;
+                  width: 300px;
+                  border: 1px solid black;
+            }
+
+            .parent{
+                  height: 300px;
+                  width: 300px;
+                  background-color: blanchedalmond;
+                  border: 2px solid;
+                  margin: 10px auto;
+            }
+            .parent .child{
+                  height: 75px;
+                  width: 75px;
+                  background-color: aqua;
+                  margin: 15px auto;
+            }
+
+            button{
+                  margin:auto;
+            }
+
+            .bg-color{
+                  background-color: chartreuse;
+                  text-align: justify;
+                  font-size: 1.5em;
+            }
+      </style>
+</head>
+<body>
+      <h3>Q-02 : How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+            Jquery, JQuery Animation?</h3>
+
+      <p><b>Ans : </b></p>
+
+      <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ipsum.</p>
+      </div>
+
+      <button class="btn1">Apply CSS</button>
+      <button class="btn2">Remove CSS</button>
+
+
+      <p><b>To apply css</b></p>
+      <pre>
+            $('button').click(()=>{
+                  $('div').css({'background-color': 'yellow', 'font-size':'1.5em'});
+            })
+      </pre>
+
+
+      <script>
+        
+            $('.btn1').click(()=>{
+            $('div').css({'background-color': 'yellow', 'font-size':'1.5em'});
+            })
+
+            $('.btn2').click(()=>{
+            $('div').css({'background-color': 'white', 'font-size':'1em'});
+            })
+            
+      </script>
+
+      <p><b>To add class and remove class</b></p>
+
+      <div class="parent">
+            <div class="child c-1">child-1</div>
+            <div class="child c-2">child-2</div>
+            <button class="add">Add Class</button>
+            <button class="remove">Remove Class</button>
+      </div>
+
+      <pre>
+            *********** Add class ****************
+
+            $(".add").click(function(){
+                  $(".parent").addClass("bg-color");
+            });
+            
+            *********** Remove class ****************
+
+            $(".remove").click(function(){
+                  $(".parent").removeClass("bg-color");
+            });
+      </pre>
+
+      <script>
+            $(".add").click(function(){
+                  $(".parent").addClass("bg-color");
+            });
+
+            $(".remove").click(function(){
+                  $(".parent").removeClass("bg-color");
+            });
+      </script>
+
+      <p><b>JQuery Animation </b></p>
+      <p>-> The jQuery animate() method is used to create custom animations.</p>
+
+      <pre>
+            $("button").click(function(){
+                  $("div").animate({
+                        opacity: '0.5',
+                        height: '300px',
+                        width: '500px'
+                  });
+            }); 
+      </pre>
+      <script>
+            // $(".btn1").click(function(){
+            //       $("div").animate({
+            //             opacity: '0.5',
+            //             height: '300px',
+            //             width: '500px'
+            //       });
+            // }); 
+      </script>
+
+
+
+
+</body>
+</html>

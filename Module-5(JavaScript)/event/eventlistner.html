@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Event Listner</title>
+</head>
+<body>
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+
+      <div class="box"></div>
+
+      <script>
+            let clickbtn = document.getElementsByTagName('button')[0];
+            let clickbtn2 = document.getElementsByTagName('button')[1];
+            let clickbtn3 = document.getElementsByTagName('button')[2];
+            let box = document.getElementsByClassName('box')[0];
+
+            console.log(clickbtn);
+
+            clickbtn.addEventListener('click', function(){
+                  console.log('Button 1 clicked');
+                  clickbtn.innerText='nishant';
+                  clickbtn.style.width='50px';
+            });
+
+            clickbtn2.addEventListener('focus', function(){
+                  console.log('that is focus');
+            });
+
+            clickbtn.addEventListener('dblclick', function(){
+                  console.log('that is double click');
+            });
+
+            clickbtn3.addEventListener('mouseover', function(){
+                  console.log('that is button3');
+            });
+
+            clickbtn.addEventListener('focusout', function(){
+                  console.log('that is focus out');
+            });
+
+            document.addEventListener('keypress', function(){
+                  console.log('keypress on key board');
+                  console.log(event.key);
+            });
+
+            document.addEventListener('scroll', function(){
+                  console.log('scroll on screen');
+                  console.log(event.key);
+            });
+
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header */
+
+        .header{
+            width: 100%;
+            height: auto;
+            background-color: cadetblue;
+            text-align: center;
+        }
+
+        .header ul{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            clear: both;
+        }
+
+        .header ul li{
+            list-style: none;
+            width: 23%;
+            float: left;
+            font-size: 25px;
+            margin: 5px;
+        }
+
+        .header ul li a{
+            color: cornsilk;
+            text-decoration: none;
+        }
+        
+        /* slider */
+
+        .slider {
+            width: 100%;
+            height: 70vh;
+        }
+
+        .slider img{
+            width: 100%;
+            height: 100%;
+        }
+        /* container */
+
+        .container{
+            height: auto;
+            width: auto;
+            clear: both;
+        }
+
+        .item-01{
+            height: 100%;
+            width: 25%;
+            text-align: center;
+            font-size: 3em;
+            float: left;
+        }
+
+        .item-01 p{
+            color: blueviolet;
+            font-size: 14px;
+            text-align: inherit;
+            margin: 3px;
+        }
+
+        .item-01 button{
+            height: 50px;
+            width: 150px;
+            padding: 5px;
+            border: 2px solid;
+            cursor: pointer;
+            margin: 2px;
+            background-color: aquamarine;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Header  -->
+    <div class="header">
+        <h1 style="text-align: center;">Welcome to the dashboard</h1>
+        <ul>
+            <li><a href="#i-1">Item-01</a></li>
+            <li><a href="#i-2">Item-02</a></li>
+            <li><a href="#i-3">Item-03</a></li>
+            <li><a href="#i-4">Item-04</a></li>
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+
+    <!-- slider -->
+
+    <div class="slider">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7v58UT71UV3v8HsUMuIiC5fbm0xohi0WrYw&usqp=CAU" alt="">
+    </div>
+
+    <!-- item container -->
+
+    <div class="container">
+        
+         <div class="item-01" id="i-01">
+            <h3><i class="fa-solid fa-face-smile"></i></h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p>
+            <button type="button">lorem</button>
+         </div>
+
+    </div>
+</body>
+</html>

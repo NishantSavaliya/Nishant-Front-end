@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Object</title>
+</head>
+<body>
+      <script>
+            let name=['milan', 'rakesh', 'nishant'];
+            let userInfoArray = ['firstName', 'lastName', 'course', 'age'];
+            let email = 'nishant@gmail.com';
+
+            let carObject = {
+                  brand: 'tata',
+                  model: 'punch',
+                  color: 'black',
+            };
+
+            let userInfoObject = {
+                  fname: 'nishant',
+                  lname:'savaliya',
+                  course:'front-end',
+                  age:'27',
+                  userEmail: email,
+                  car: carObject,
+            };
+
+            console.log(userInfoObject);
+
+            console.log(userInfoObject.userEmail);
+
+      //for print key word      
+
+            console.log(Object.keys(userInfoObject));
+
+      //for print key word value      
+
+            console.log(Object.values(userInfoObject));
+
+      //for print array
+
+            console.log(Object.entries(userInfoObject));
+      </script>
+</body>
+</html>

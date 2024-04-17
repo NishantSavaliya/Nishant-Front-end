@@ -1,0 +1,14 @@
+@media (max-width:500px) {
+    .header ul{
+        display: none;
+    }
+
+    .header button{
+        display: block;
+    }
+
+    .container{
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

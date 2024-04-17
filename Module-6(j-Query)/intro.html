@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>j-Query intro</title>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+      </script>
+      <style>
+
+            .hide{
+                  display: none;
+            }
+            .show{
+                  display: block;
+            }
+            .box{
+                  height: 150px;
+                  width: 100%;
+                  background-color: tomato;
+                  display: none;
+            }
+      </style>
+</head>
+<body>
+      <div class="box"></div>
+
+     <!-- <button class="btn1">Hide</button> 
+     <button class="btn2">Show</button> 
+     <button class="btn3">Toggle</button> -->
+      
+<!-- //*************************** -->
+
+      <!-- <button class="slideup">slide up</button>
+      <button class="slidedown">slide down</button>
+      <button class="slidetoggle">slide toggle</button>
+      -->
+
+<!-- //*************************** -->
+
+      <button class="fadeIn">fade In</button>
+      <button class="fadeOut">fade Out</button>
+      <button class="fadeTo">fade To</button>
+      <button class="fadeToggle">fade Toggle</button>
+
+     <script>
+            // $('.btn1').click(function(){
+            //       $('.box').hide();
+            // });
+            // $('btn2').click(function(){
+            //       $('.box').show();
+            // });
+            // $('btn3').click(function(){
+            //       $('.box').toggle();
+            // });
+
+      //**************************
+
+            // $('.slideup').click(()=>{
+            //       $('.box').slideUp('slow');
+            // });
+
+            // $('.slidedown').click(()=>{
+            //       $('.box').slideDown('fast');
+            // });
+
+            // $('slidetoggle').click(()=>{
+            //       $('.box').slideToggle(3000);
+            // });
+
+      //************************
+            $('.fadeIn').click(() => {
+            $('.box').fadeIn();
+            });
+            $('.fadeOut').click(() => {
+            $('.box').fadeOut();
+            });
+            $('.fadeTo').click(() => {
+            $('.box').fadeTo(1000, 0.5);
+            });
+            $('.fadeToggle').click(() => {
+            // $('.box').fadeToggle('slow');
+            // $('.box').fadeToggle('fast');
+            $('.box').fadeToggle(3000);
+            });
+     </script>
+</body>
+</html>

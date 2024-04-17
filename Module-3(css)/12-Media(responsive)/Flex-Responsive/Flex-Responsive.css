@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: auto;
+    width: auto;
+    display: flex;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    align-items: center;
+}
+
+.main .item{
+    height: 70vh;
+    width: 32%;
+}
+
+.main .item img{
+    height: 100%;
+    width: 100%;
+}

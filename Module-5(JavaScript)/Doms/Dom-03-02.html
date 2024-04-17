@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dom 03-02-2024</title>
+</head>
+<body>
+      <div class="parent"></div>
+
+      <script>
+            let parent=document.getElementsByClassName('parent')[0];
+            let child1=document.createElement('div');
+            let child2=document.createElement('div');
+
+            child1.innerText = 'child no-01';
+            child2.innerText = 'child no-02';
+
+            console.log(child2);
+
+            parent.append(child1);
+            parent.append(child2);
+      </script>
+</body>
+</html>

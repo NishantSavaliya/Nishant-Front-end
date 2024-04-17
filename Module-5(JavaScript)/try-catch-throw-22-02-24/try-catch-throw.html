@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Try-Catch-Throw</title>
+</head>
+<body>
+     <input type="text" id="userName" placeholder="enter your name"> 
+     <button>Submit</button>
+
+     <script>
+         
+         let userName = document.getElementById('userName');
+         let submitBtn = document.getElementsByTagName('button')[0];
+
+         submitBtn.onclick = function(){
+            // console.log(userName.value);
+            // console.log(!isNaN(Number(userName.value)));
+         
+//   Nan -> Not a Number-------
+
+         try {
+            if (!isNaN(Number(userName.value))){
+                  console.log('is number');
+            } else{
+                  console.log('is not number');
+                  throw 'Is Not Number';
+            } 
+            //catch (err){
+            // // //       console.error(err);
+            // // }
+         }
+      }
+     </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task 1</title>
+    <style>
+        h7{
+            
+            color: blueviolet;
+        }
+        div{
+
+            height: auto;
+            
+        }
+        
+        .label{
+            
+            float: left;
+            margin-left: 10px;
+            width: 12%;
+        }
+
+        .input{
+            
+            float: right ;
+            margin-left: 0px ;
+            width: 85%;
+        }
+
+        .h7{
+            clear: both;
+            float: right;
+            margin-right: 77%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="label">
+
+            <label for="name">First Name*</label><br><br>
+           
+            <label for="name">Last Name*</label><br><br>
+            
+            <label for="email">Email Adress*</label><br><br>
+           
+            <label for="phone">Telephone Number</label><br><br>
+            
+            <label for="com">Comments*</label><br><br>
+           
+        </div>
+
+        <div class="input">
+
+           <input type="text" id="name" name="name" required><br><br>
+
+           <input type="text" id="name" name="name" required><br><br>
+
+           <input type="email" name="email" id="email" required><br><br>
+
+           <input type="tel" name="phone" minlength="10" maxlength="10" pattern="[0-9]{10}"><br><br>
+
+           <textarea name="com" id="com" cols="22" rows="8"></textarea><br><br>
+        
+           <input type="submit" value="Submit Form" ><br><br>
+
+        </div>
+
+        
+       
+    </form>
+
+    <h7 class="h7">
+        &#40 <u>HTML Form</u> &#41
+    </h7>
+   
+</body>
+</html>

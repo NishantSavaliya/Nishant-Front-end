@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Doms-01</title>
+</head>
+<body>
+      <div class="parent">
+            <div class="child1">child-1</div>
+            <div class="child2">child-2</div>
+            <div class="child3" id="child">child-3
+                  <div class="subchild">sub-child1</div>
+                  <div class="subchild">sub-child2</div>
+                  <div class="subchild">sub-child3</div>
+            </div>
+      </div>
+      <p>This is p tag</p>
+      <p>This is second p tag</p>
+      <p>THis is Third</p>
+
+      <script>
+
+            let thisvar = document.getElementsByClassName('subchild')[1];
+            // thisvar.innerText= 'nishant'
+            console.log(thisvar);
+
+            let child3 = document.getElementById('child');
+            console.log(child3);
+
+            let divTag=document.getElementsByTagName('p')[0]
+            console.log(divTag)
+
+            let thisElement=document.querySelector('.parent .child3 .subchild');
+            console.log(thisElement)
+
+            // thisElement.innerHTML='<i>my friend milan says "This is my room" </i>'
+            // console.log(thisElement)
+
+      // give css to tag --01
+
+            // console.log(child3);
+            // child3.style.color='red';
+            // child3.style.backgroundColor='blue'
+
+      // give css to tag  --02
+
+            let nishant='white';
+
+            let child3Style='color: ${nishant}; background-color:green; font-size:20px'
+            child3.style.cssText = child3Style
+
+            let textInThatElement=thisElement.innerText;
+            console.log(textInThatElement);
+      </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-19</title>
+</head>
+<body>
+      <h3>Q-19 : What is the use of is Nan function?</h3>
+      <p><b>Ans : </b></p>
+      <p>-> The isNaN() function determines whether a value is NaN, first converting the value to a number if necessary. Because coercion inside the isNaN() function can be surprising, you may prefer to use Number.isNaN().</p>
+      <p>-> true if the given value is NaN after being converted to a number; otherwise, false.</p>
+      <p><b>For ex-</b></p>
+      <pre>
+            isNaN(NaN); // true
+            isNaN(undefined); // true
+            isNaN({}); // true
+            
+            isNaN(true); // false
+            isNaN(null); // false
+            isNaN(37); // false
+      </pre>
+</body>
+</html>

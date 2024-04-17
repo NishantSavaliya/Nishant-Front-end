@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>card</title>
+</head>
+<body>
+     <div id="main">
+      <!-- <div class="card">
+            <img src="" alt="">
+            <div class="card-info">
+                  <div class="name"></div>
+                  <div class="post"></div>
+                  <div class="email"></div>
+            </div> -->
+      </div>
+     </div>
+     
+     <script>
+            let newCard = document.createElement('div');
+            newCard.setAttribute('class','card');
+
+            let imageElement = document.createElement('img');
+            imageElement.setAttribute('src', 'imgsrc');
+
+            let cardInfoElement = document.createElement('div');
+            cardInfoElement.setAttribute('class', 'card-info');
+
+            let nameElement = document.createElement('div');
+            nameElement.setAttribute('class', 'name');
+            nameElement.innerText = reviewerNmae;
+
+            let postElement = document.createElement('div');
+            postElement.setAttribute('class', 'post');
+            postElement.innerText = reviewerpost;
+
+            let emailElement = document.createElement('div');
+            emailElement.setAttribute('class', 'email');
+            emailElement.innerText = revieweremail;
+
+            cardInfoElement.append(nameElement);
+            cardInfoElement.append(postElement);
+            cardInfoElement.append(emailElement);
+
+            newCard.append(imageElement);
+            newCard.append(cardInfoElement);
+
+            console.log(newCard);
+
+            function makecard(name, post, email, url){
+                  let reviewerName = name;
+                  let reviewerPost = post;
+                  let reviewerEmail = email;
+                  let reviewerPhoto = url;     
+            }
+
+            // makecard(
+            //       'milan',
+            //       'Qc Engineer',
+            //       'milan@qc.eng'
+            //       'https://images.pexels.com/photos/3930111/pexels-photo-3930111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            // );
+           
+      
+     </script>
+</body>
+</html>

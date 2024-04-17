@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 80vh;
+    width: 100%;
+    background-image: url(https://wallpapers.com/images/hd/abstract-background-6m6cjbifu3zpfv84.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding-top: 7%;
+}
+
+.main h2{
+    text-align: center;
+    color: white;
+}
+
+.main p{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    padding-top: 1%;
+}
+
+.main svg{
+    position: absolute;
+    bottom: 0;
+}
+
+button{
+    height: 10vh;
+    width: 7vw;
+    border: 2px solid orangered;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+
+button img{
+    height: 100%;
+    width: 100%;
+}
+
+.i1{
+    left: 20%;
+    top: 36%;
+}
+
+.i2{
+    left: 40%;
+    top: 37%;
+}
+
+.i3{
+    left: 60%;
+    top: 48%;
+}
+
+.i4{
+    left: 80%;
+    top: 43%;
+}

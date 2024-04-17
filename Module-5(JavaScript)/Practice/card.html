@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>card</title>
+      <style>
+            *{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  font-family: 'poppins', sans-serif;
+            }
+
+            #main{
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .card{
+                  width: 200px;
+                  border-radius: 12px;
+                  background-color: whitesmoke;
+                  word-wrap: break-word;
+                  transition: all 300ms;
+            }
+            .card:hover {
+        transform: scale(1.1) translateY(-10px);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      img {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .card-info {
+        padding: 10px;
+      }
+      .name {
+        font-weight: 600;
+      }
+      .name,
+      .email,
+      .post {
+        margin-top: 5px;
+      }
+      .email {
+        font-size: 0.6rem;
+      }
+      </style>
+</head>
+<body>
+      <form action="">
+            <label for="username"></label>
+            <input type="text" placeholder="Enter your Name" id="username" required>
+
+            <label for="profession"></label>
+            <input type="text" placeholder="Enter your profession" id="profession" required>
+
+            <label for="email"></label>
+            <input type="email" placeholder="Enter your email" id="email" required>
+
+            <label for="url"></label>
+            <input type="url" placeholder="Enter your photo url" id="url" required>
+
+            <button>submit</button>
+
+            <div id="main"></div>
+
+      </form>
+
+      <script>
+            function makecard(name, post, email, url){
+
+                  let reviwerName = name;
+                  let reviwerProfession = post;
+                  let reviwerEmail = email;
+                  let imgSrc = url;
+
+                  let mainElement = document.getElementById('main');
+
+                  let cardTemplate = `
+                  <img src="${url}" alt="" />
+                  <div class="card-info">
+                        <div class="name">${reviwerName}</div>
+                        <div class="post">${reviwerProfession}</div>
+                        <div class="email">${reviwerEmail}</div>
+                  </div>
+                  `;
+
+                  let newCard = document.createElement('div');
+                  newCard.setAttribute('class', 'card');
+                  newCard.innerHTML = cardTemplate;
+
+                  mainElement.append(newCard);
+            }
+
+            let nameInput = document.getElementById('username');
+            let professionInput = document.getElementById('profession');
+            let emailInput = document.getElementById('email');
+            let urlInput = document.getElementById('url');
+
+            let submitBtn = document.getElementsByTagName('button')[0];
+
+            submitBtn.addEventListener('click', function(event){
+ 
+                  event.preventDefault();
+
+                  let username = nameInput.value;
+                  let profession = professionInput.value;
+                  let email = emailInput.value;
+                  let photoUrl = urlInput.value;
+
+                  makecard(uername, profession, email, photoUrl)
+            });
+            
+
+      </script>
+</body>
+</html>

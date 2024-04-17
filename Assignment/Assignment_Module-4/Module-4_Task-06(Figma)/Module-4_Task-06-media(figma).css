@@ -1,0 +1,269 @@
+@media (max-width: 500px) {
+      .header .option{
+            display: none;
+      }
+      .header .free{
+            display: none;
+      }
+      .header .menu{
+            padding-left: 60%;
+      }
+      .header .menu button{
+            border-style: none;
+      }
+      .header .menu img{
+            height: 16px;
+            width: 24px;
+      }
+      .header .menu p{
+            color: #4E5A65;
+text-align: center;
+font-family: Inter;
+font-size: 8px;
+font-style: normal;
+font-weight: 400;
+line-height: 8px; /* 100% */
+      }
+
+      .info1 .save{
+            display: none;
+      }
+      .infol{
+            font-size: 32px;
+            line-height: 40px;
+      }
+      .infomail input{
+            width: 80%;
+            height: 15%px;
+            text-align: center;
+            margin: 3%;
+      }
+
+      .infomail button{
+            width: 80%;
+            margin: 3%;
+      }
+
+      .graph{
+            width: 90%;
+            height: 250px;
+            margin: auto;
+      }
+
+      .info2 .trust{
+            font-size: 11px;
+            line-height: 11px;
+      }
+      .info2 .google{
+            gap: 5%;
+      }
+
+      .info2 .google img{
+            width: 15%;
+            height: 4%;
+      }
+
+      .info2 .google .im-5{
+            display: none;
+      }
+
+      .main{
+            flex-wrap: nowrap;
+      }
+
+      .main .review{
+            width: 90%;
+            margin: auto;
+      }
+      
+      .main .adv{
+            width: 80%;
+            margin: auto;
+            text-align: center
+      }
+
+      .main .adv .color{
+            margin: auto;
+            height: 10px;
+            width: 100%;
+            background: #794CFF;
+      }
+      .make p{
+            font-size: 18px;
+            line-height: 18px;
+      }
+
+      .work{
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+      }
+      .work .team{
+            text-align: center;
+      }
+      .work .t-1{
+            grid-area: 1/ 1/ 2/ 2;
+      }
+      .work .t-2{
+            grid-area: 2/ 1/ 3/ 2;
+      }
+      .work .t-3{
+            grid-area: 3/ 1/ 4/ 2;
+      }
+      .work .t-4{
+            display: none;
+      }
+      .work .t-5{
+            display: none;
+      }
+      .work .t-6{
+            display: none;
+      }
+      .work button{
+            width: 70%;
+            height: 52px;
+            text-align: center;
+            margin: auto;
+            border-radius: 4px;
+            border: 1px solid #ECE5FF;
+            background: #ECE5FF;
+      }
+
+      .work button p{
+            color: #7259FA;
+            text-align: center;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px; /* 100% */
+      }
+
+      .info3 .we{
+            width: 90%;
+            text-align: center;
+      }
+
+      .info3 .we h3{
+            font-size: 18px;
+            line-height: 24px;
+      }
+
+      .info3 .gra{
+            width: 90%;
+            margin: auto;
+      }
+      
+      .why h3{
+            width: 50%;
+            font-size: 18px;
+            line-height: 24px;
+      }
+
+      .why p{
+            width: 70%;
+            padding-top: 10%;
+      }
+
+      .cust{
+            text-align: center;
+      }
+      .cust .cost h5 p{
+            font-size: 13px;
+            line-height: 13px;
+      }
+      .cust .c-2{
+            display: none;
+      }
+      .cust .c-3{
+            display: none;
+      }
+      
+      .blue{
+            width: 100%;
+            padding-bottom: 5%;
+            border-radius: 0%;
+      }
+      .blue .emp{
+           width: 100%;
+      }
+      .blue .emp p{
+            text-align: center;
+            font-size: 24px;
+            line-height: 32px;
+      }
+      .blue .but{
+            width: 100%;
+      }
+      .blue .but button{
+            width: 60%;
+            height: 8%;
+            margin-top: 5%;
+            border-radius: 10px;
+            border-style: none;
+            overflow: hidden;
+      }
+      .blue .but button img{
+            width: 100%;
+            height: 100%;
+      }
+
+      .ft .flex p{
+            display: none;
+      }
+
+      .ft .flex h5{
+            padding: 3%;
+      }
+
+      .ft .flex .inst button{
+            margin-left: 5%;
+      }
+
+      .ft .all{
+            padding: 5%;
+      }
+
+      .ft .all .fa{
+            display: none;
+      }
+
+}
+
+@media (min-width: 500px) {
+      .header .menu{
+            display: none;
+      }
+
+      .work button{
+            display: none;
+      }
+
+      .main{
+            display: flex;
+      }
+
+      .info3{
+            display: flex;
+      }
+
+      .cust{
+            display: flex;
+      }
+
+      .cust .cost{
+            display: flex;
+      }
+
+      .blue{
+            display: flex;
+      }
+
+      .ft .flex{
+            display: flex;
+      }
+
+      .ft .all{
+            display: flex;
+      }
+}
+

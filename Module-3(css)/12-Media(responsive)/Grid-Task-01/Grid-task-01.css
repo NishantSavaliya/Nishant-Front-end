@@ -1,0 +1,56 @@
+.web{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.web .header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    grid-area: 1/ 1/ 2/ 2;
+}
+
+.web .menu{
+    background-color: red;
+    color: white;
+    text-align: center;
+    grid-area: 1/ 2/ 2/ 5;
+} 
+
+.web .hero{
+    background-color: rgb(9, 123, 168);
+    color: white;
+    text-align: center;
+    grid-area: 2/ 1/ 10/ 5;
+}
+
+.web .main{
+    background-color: rgb(14, 14, 155);
+    color: white;
+    text-align: center;
+    grid-area: 10/ 1/ 14/ 3;
+}
+
+.web .image{
+    background-color: skyblue;
+    color: black;
+    text-align: center;
+    grid-area: 10/ 4/ 12/ 5;
+}
+
+.web .extra{
+    background-color: rgb(9, 117, 5);
+    color: black;
+    text-align: center;
+    grid-area: 12/ 4/ 14/ 5;
+}
+
+.web .banner{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    grid-area: 14/ 1/ 16/ 5;
+}

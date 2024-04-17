@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clip{
+    height: 65vh;
+    background-image: url(https://images.pexels.com/photos/693776/pexels-photo-693776.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(0 0, 100% 1%, 100% 75%, 50% 100%, 0 75%);
+    position: relative;
+}
+.header{
+    text-align: center;    
+}
+
+.header ul li{
+    list-style: none;        
+    display: inline;
+}
+
+.header ul li a{
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.header ul li a:hover{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.info{
+    text-align: center;
+    margin: 3%;
+}
+.info p{
+    font-size: 1.5em;
+}
+.info h1{
+    font-size: 2.5em;
+}
+
+.info2{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.button{
+    margin: 3%;
+    text-align: center;
+}
+
+.button button{
+    padding: 1%;
+    font-size: 1em;
+    background: transparent;
+    border: 2px solid black;
+}
+
+.button button:hover{
+    background-color: red;
+}
+
+.arrow{
+    position: absolute;
+}
+
+#left{
+    top: 20%;
+    left: 2%;
+    background-color: tomato;
+    color: black;
+    height: 25px;
+    width: 25px;
+}
+
+#right{
+    top: 20%;
+    right: 2%;
+    background-color: tomato;
+    color: black;
+    height: 25px;
+    width: 25px;
+}
+
+#down{
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 33%;
+    left: calc((50%) - (12px));
+    
+}
+
+.arrow:hover{
+    background-color: orangered;
+    color: black;
+}
+
+.work{
+    margin: 3% 10%;
+    display: flex;
+    gap: 10%;
+}
+
+.work .item{
+    height: auto;
+    width: 20%;
+    text-align: center;
+}
+
+.work .item i{
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.work .item h3{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.work .item p{
+    font-size: 0.8em;
+}

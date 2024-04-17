@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>If Else ElseIf</title>
+</head>
+<body>
+      <script>
+            milan = 15;
+
+            day = 'monday';
+
+            // if (condition){
+            //       code
+            // } else{
+            //       code
+            // }
+
+//ex-01
+
+            if(milan >= 18){
+                  console.log('you can get license');
+            } else{
+                  console.log('you can not get license')
+            };
+
+//ex-02           
+
+            if(day == 'sunday'){
+                  console.log('Today is holiday')
+            } else{
+                  if(day == 'tuesday' || day == 'thusday' ||  day == 'satureday'){
+                        console.log('today is lacture day')
+                  } else{
+                        console.log('today is lab day')
+                  }
+
+                  console.log('today is not holiday')
+            };
+
+//ex-03
+
+            passengerAge = 22;
+            passengerExtra = 'divyang';
+
+            if(passengerAge <= 8){
+                  if(passengerAge <= 3){
+                        console.log('grt free ticket')
+                  } else {
+                        console.log('get half ticket')
+                  }
+            } else {
+                  if (passengerExtra = 'divyang') {
+                        console.log('pay Rs 10 less')
+                  } 
+
+                  else if(passengerExtra = 'MLA'){
+                        console.log('pay Rs 50 less')
+                  } 
+
+                  else if(passengerExtra = 'MP'){
+                        console.log('pay Rs 70 less')
+                  } 
+
+                  else{
+                        console.log('pay full ticket')
+                  }     
+            };
+      </script>
+</body>
+</html>

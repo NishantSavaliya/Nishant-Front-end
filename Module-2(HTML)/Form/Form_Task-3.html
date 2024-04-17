@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task 3</title>
+
+    <style>
+
+        .cl-1{
+
+            float: left;
+            margin-left: 100px;
+            width: 15%;
+            
+        }
+
+        .cl-2{
+
+            float: right;
+            margin-left: 0px;
+            width: 75%;
+        }
+
+        .cl-0{
+            float: right;
+        }
+
+       
+    </style>
+
+</head>
+<body>
+
+    <span class="cl-0">*denotes required</span><br><br><br>
+
+    <form action="" method="post">
+
+        <div class="cl-1">
+
+            <label for="name">First Name</label><br><br>
+            
+            <label for="last name">Last Name</label><br><br>
+            
+            <label for="father name">Father Name</label><br><br><br>
+            
+            <label for="dob">Date of Birth</label><br><br>
+            
+            <label for="tel">Tel</label><br><br>
+           
+            <label for="hsname">High School Name</label><br><br>
+           
+            <label for="adress">Permenent Adress</label><br><br>
+           
+            <label for="level">Your Level</label><br><br>
+            
+            <label for="mail">Email</label><br><br>
+            
+            <label for="program">Degree Program</label><br><br>
+
+        </div>
+
+        <div class="cl-2">
+
+            <input type="text" name="name" id="name" pattern="[A-Z, a-z]">*<br><br>
+
+            <input type="text" name="name" id="name" pattern="[A-Z, a-z]" required>*<br><br>
+
+            <input type="text" name="name" id="name" pattern="[A-Z, a-z]"><br><br>
+
+            <input type="date" name="date" id="date" value="mm/dd/yyyy" required>*<br><br>
+
+            <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}">*<br><br>
+
+            <input type="text" name="name" id="name" required pattern="[A-Z, a-z]">*<br><br>
+
+            <input type="text" name="name" id="name" required pattern="[A-Z, a-z,0-9]">*<br><br>
+
+            <select name="level" id="">
+                <option value="1st Level">1st Level</option>
+                <option value="2nd Level">2nd Level</option>
+                <option value="3rd Level">3rd Level</option>
+            </select>*<br><br>
+
+            <input type="email" name="email" id="email" required pattern="[A-Z, a-z,0-9,@]">*<br><br>
+
+            <select name="program" id="">
+                <option value="BS in Pre-Med Physics">BS in Pre-Med Physics</option>
+                <option value="BS in Pre-Med Chemetry">BS in Pre-Med Chemetry</option>
+                <option value="BS in Pre-Med maths">BS in Pre-Med Maths</option>
+            </select><br><br>
+
+            <input type="submit" value="Register">
+
+        </div>
+    </form>
+    
+</body>
+</html>

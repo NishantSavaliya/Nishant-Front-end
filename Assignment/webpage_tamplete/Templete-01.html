@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templete-01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+/*header*/
+
+        .header{
+            background-color: #414c51;
+            text-align: center;
+            height: auto;
+            width: 100%;
+            float: left;
+            clear: both;
+            padding: 10px 0px;
+        }
+
+        .header ul{
+            width: 10%;
+            height: auto;
+            float: left;
+        }
+
+        .header ul a{
+            color: #b4babe;
+            text-decoration: none;
+            text-align: center;
+            font-size: 10px;
+            font-family: 'Lucida Sans';
+        }
+
+        .header ul a:active{
+            color: #e26225;
+        }
+
+/*slider*/ 
+
+        .slider {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .image{
+            /*position: absolute;*/
+        }
+
+        .image img{
+            width: 100%;
+            height: 80vh;
+        }
+
+        .info{
+            background-color: #e26225;
+            height: 30px;
+            width: 200px;
+            position: absolute;
+            bottom: 0;
+            left: 35%;
+        }
+
+/*item container*/
+        
+        .container{
+            width: 100%;
+            height: auto;
+            background-color: rgb(183, 203, 221);
+            clear: both;
+        }
+
+        .container h2{
+            color: #414c51;
+            text-align: center;
+        }
+
+        .item {
+            height: 100%;
+            width: 20%;
+            float: left;
+            margin: 20px 10px;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .item h2 i{
+            font-size: 50px;
+        }
+
+        .item p{
+            color: #414c51;
+            font-size: 10px;
+            text-align: justify;
+            margin: 5px;
+        }
+
+        .item h2 p{
+            width: 50%;
+            height: auto;
+            padding: 0px 30px;
+            padding-bottom: 5px;
+            
+        }
+
+        .item button{
+            height: 30px;
+            width: 70px;
+            cursor: pointer;
+            background-color: #e6ebee;
+            font-size: 10px;
+            text-align: center;    
+        }
+
+    /*item container 02 */
+        .con{
+            height: auto;
+            width: 100%;
+            background-color: #b4babe;
+            clear: both;
+        } 
+
+        .con h3{
+            color: #414c51;
+            text-align: center;
+        }
+        
+        .con p{
+            color: #414c51;
+            text-align: center;
+        }
+        .it{
+            height: auto;
+            width: 30%;
+            background-color: #e6ebee;
+            text-align: center;
+            float: left;
+            margin-left: 18px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .it img{
+            width: 150px;
+            height: 120px;
+            padding-top: 5px;
+        }
+
+        .it h4{
+            color: #e26225;
+        }
+
+        .it p{
+            text-align: justify;
+            font-size: x-small;
+            color: #414c51;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    /*point*/
+          
+        .point{
+            width: 100%;
+            height: auto;  
+          
+         } 
+
+        .solution{
+            width: 47%;
+            height: auto;
+            float: left;
+            color: #e6ebee;
+            padding-left: 20px;    
+        }
+        .solution ul li{
+            font-size: smaller;
+        }
+
+        .solution button{
+            margin-bottom: 10px;
+        }
+
+        #s-1{
+            background-color: #e26225;
+        }
+
+        #s-2{
+            background-color: #414c51;
+        }
+
+    /*back-ground image*/
+    
+        .back-img{
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('https://www.imagelighteditor.com/img/bg-after.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;   
+            clear: both;    
+        }
+
+        .back-img h2{
+            color: #e26225;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .box{
+            float: left;
+        }
+
+        .box input{
+            background: transparent;
+            border: 2px solid black;
+            color: white;
+        }
+
+        .box textarea{
+            background: transparent;
+            border: 2px solid black;
+            color: white;
+        }
+
+        #b-1{
+            padding-left: 40px;
+        }
+
+        #b-2{
+            padding-left: 20px;
+            padding-right: 40px;
+        }
+
+        #b-2 button{
+            width: 40px;
+            background-color: #e26225;
+            color: #e6ebee;
+            border-style: none;
+            font-size: smaller;
+            margin-bottom: 10px;
+        }
+
+/*contact*/
+        
+        .contact{
+            width: 100%;
+            height: auto;
+            background-color: #414c51;
+            clear: both;
+        }
+
+        .contact label{
+            color: #e6ebee;
+            font-size: x-small;
+        }
+
+        .contact i{
+            color: #e26225;            
+        }
+
+        .cont{
+            float: left;
+            margin: 20px 60px;
+        }
+
+/*footer*/
+
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #647075;
+            clear: both;
+        }
+
+        .foot h2{
+            color: #e6ebee;
+            padding: 3px;
+        }
+
+        .foot p i{
+            color: #e26225;
+            padding: 3px;
+        }
+
+        .foot{
+            float: left;
+            margin: 20px 80px;
+        }
+    </style>
+</head>
+<body>
+<!--Header-->
+    <div class="header">
+      
+        <ul><a href="">Home</a></ul>
+        <ul><a href="">About</a></ul>
+        <ul><a href="">Services</a></ul>
+        <ul><a href="">Projects</a></ul>
+        <ul><a href="">Our Blog</a></ul>
+        <ul><a href="">Contacts</a></ul>
+        <h3>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-google-plus"></i>
+        </h3>
+        <div style="clear: both;"></div>
+         
+    </div>
+
+<!--slider-->
+    
+    <div class="slider">
+        <div class="image">
+            <img src="https://cdn.wallpapersafari.com/58/92/03WPvK.jpg" alt="">
+        </div>
+        <div class="info">
+            <h2>Lorem ipsum dolor</h2>
+        </div>
+    </div>
+
+<!--item container-->
+
+    <div class="container">
+        
+        <div>
+           <h2>Lorem ipsum dolor, sit amet consectetur</h2>
+        </div>  
+
+        <div class="item">
+            <h2>
+                <i class="fa-brands fa-twitter" style="color: #e26225;"></i>
+                <p>Lorem ipsum</p>
+            </h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p>
+            <button type="button">lorem</button>
+         </div>
+
+         <div class="item">
+            <h2><i class="fa-brands fa-youtube" style="color: #e26225;"></i><p>Lorem ipsum</p></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p>
+            <button type="button">lorem</button>
+         </div>
+
+         <div class="item">
+            <h2><i class="fa-brands fa-facebook" style="color: #e26225;"></i><p>Lorem ipsum</p></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p>
+            <button type="button">lorem</button>
+         </div>
+
+         <div class="item">
+            <h2><i class="fa-brands fa-square-google-plus" style="color: #e26225;"></i><p>Lorem ipsum</p></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p>
+            <button type="button">lorem</button>
+         </div>
+
+         <div style="clear: both;"></div>
+         
+    </div>
+
+    <!--item container 02-->
+
+    <div class="con">
+
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias id maiores tenetur nihil accusamus blanditiis unde, ratione esse vero sapiente ea nam omnis! Eum temporibus molestias soluta</p><br>
+        
+        <div class="it">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=1024x1024&w=is&k=20&c=iGtRKCTRSvPVl3eOIpzzse5SvQFfImkV0TZuFh-74ps=" alt=""><br><br>
+            <h4>Lorem ipsum </h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p><br>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+
+        <div class="it">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=1024x1024&w=is&k=20&c=iGtRKCTRSvPVl3eOIpzzse5SvQFfImkV0TZuFh-74ps=" alt=""><br><br>
+            <h4>Lorem ipsum </h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p><br>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+
+        <div class="it">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=1024x1024&w=is&k=20&c=iGtRKCTRSvPVl3eOIpzzse5SvQFfImkV0TZuFh-74ps=" alt=""><br><br>
+            <h4>Lorem ipsum </h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit doloribus ut ex corporis eum laudantium, velit magni commodi ratione aperiam error quod sequi debitis natus molestiae voluptatum impedit? Eveniet?</p><br>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+<!--points-->
+
+    <div class="point">
+        <div class="solution" id="s-1">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <ul type="Disc"> &nbsp;
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+            </ul> <br>
+            <button>Lorem</button>
+        </div>
+
+        <div class="solution" id="s-2">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <ul type="Disc"> &nbsp;
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+            </ul> <br>
+            <button>Lorem</button>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+<!--back-ground image-->
+
+    <div class="back-img">
+
+        <h2>Lorem ipsum dolor sit.</h2> <br>
+
+        <div class="box" id="b-1">
+            <input type="text" placeholder="Name:"> <br> <br>
+            <input type="email" placeholder="E-mail:"> <br> <br>
+            <input type="tel" placeholder="Phone:"> <br>            
+        </div>
+
+        <div class="box" id="b-2">
+            <textarea name="msg" id="msg" cols="50" rows="6" placeholder="Message:"></textarea><br>
+            <button>send</button>
+        </div>
+
+        <div style="clear: both;"></div>
+
+    </div>
+
+<!--contact-->
+
+    <div class="contact">
+
+        <div class="cont">
+            <label for=""><i class="fa-brands fa-twitter"></i>Lorem ipsum dolor sit.</label>
+        </div>
+        <div class="cont">
+            <label for=""><i class="fa-brands fa-youtube"></i>Lorem ipsum dolor sit.</label>
+        </div>
+        <div class="cont">
+            <label for=""><i class="fa-brands fa-facebook"></i>Lorem ipsum dolor sit.</label>
+        </div>
+        
+        <div style="clear: both;"></div>
+
+    </div>
+
+<!--footer--> 
+
+    <div class="footer">
+
+        <div class="foot" id="fame">
+            <h2>lorem</h2>
+            <p>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-google-plus"></i> 
+            </p>
+        </div>
+
+        <div class="foot" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21561.379544828644!2d70.68796584719267!3d21.855914286435656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39583d06e64fb439%3A0x178159998d374a67!2sJalaram%20Bapa%20Temple!5e0!3m2!1sen!2sin!4v1697005861615!5m2!1sen!2sin" width="200px" height="80px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div style="clear: both;"></div>
+
+    </div>
+
+</body>
+</html>

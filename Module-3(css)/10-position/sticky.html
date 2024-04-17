@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky position</title>
+    <style>
+    .container{
+        width: 100%;
+        height: 700px;
+        border: 5px solid blue;
+        background-color: aquamarine;
+    }
+
+    .container .item{
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        background-color: bisque;
+        position: sticky;
+        top: 200px;
+        left: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Position sticky is first show as per it's by default position it change it's position on scroll -->
+        <div class="item"></div>
+    </div>
+
+</body>
+</html>

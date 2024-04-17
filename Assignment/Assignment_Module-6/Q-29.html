@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-29</title>
+</head>
+<body>
+      <h3>Q-29 : Write to show
+            i. Monday to Sunday using switch case in JS?
+            ii. Vowel or Consonant using switch case in JS?</h3>
+      
+      <p><b>Ans : i. Monday to Sunday using switch case in JS</b></p>
+      <script>
+            day = new Date().getDay();
+
+            switch(day) {
+
+                  case 0:
+                        document.write('today is sunday');
+                        break;
+
+                  case 1:
+                        document.write('today is monday');
+                        break;
+                  
+                  case 2:
+                        document.write('today is tuesday');
+                        break;
+
+                  case 3:
+                        document.write('today is wendesday');
+                        break;
+
+                  case 4:
+                        document.write('today is thusday');
+                        break;
+
+                  case 5:
+                        document.write('today is friday');
+                        break;
+
+                  case 6:
+                        document.write('today is satureday');
+                        break;
+
+                  default:
+                        document.write('today is someday')
+              
+            }
+      </script>
+
+      <p><b>ii. Vowel or Consonant using switch case in JS</b></p>
+
+      <script> 
+            var ch='A';
+
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+            document.write("charecter is a Vowel");
+
+            else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+            document.write("charecter is a Vowel");
+
+            else
+            document.write("charecter is a Consonant");
+      </script>
+</body>
+</html>

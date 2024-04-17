@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Array</title>
+</head>
+<body>
+      <script>
+            a='milan';
+            b='nishant';
+            c='rakesh';
+      //for multiple veriable
+            let name =['milan', 'nishant', 'rakesh'];
+
+      //for last name print
+            console.log(name[name.length-1]);
+
+      //for verible change 
+
+            name[2]='cool rakesh';
+            console.log(name);
+
+      //for add veriable at last
+
+            name.push('100');
+            console.log(name); 
+            
+      //for remove last veriable
+           
+            name.pop();
+            console.log(name);
+      
+      //for remove first veriable
+
+            name.shift();
+            console.log(name);
+
+      //for add veriable at first
+
+            name.unshift('milan');
+            console.log(name);
+
+      //for add symbol between veriable
+
+            // console.log(name.join('/'));
+      
+      //format .slice(start from, to end)
+           
+            // console.log(name.slice(1, name.length));
+            // console.log(name.slice(1, 3));
+
+      //for splice
+
+            console.log(name.splice(1, 1, 'smart'));
+            console.log(name);
+
+            console.log(name.splice());
+
+      
+      </script>
+</body>
+</html>

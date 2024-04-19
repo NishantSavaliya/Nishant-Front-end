@@ -38,6 +38,15 @@
 <body>
       <h3>Q-03 : Event bubbling tickling example </h3>
       <p><b>Ans : </b></p>
+      <p>Event bubbling :</p>
+      <p>-> In the bubbling phase, the event is first handled by the target element’s event handler and then propagated upward through the DOM hierarchy.</p>
+      <p>-> During this phase, the event travels from the target element up to the topmost ancestor.</p>
+      <p>-> This is the default behavior for most DOM events.</p>
+      <br>
+      <p>Event tickling (Event capture): </p>
+      <p>-> In the capture phase, the event is first captured by the outermost element and then propagated inward to the target element.</p>
+      <p>-> During this phase, the event travels from the top of the DOM hierarchy down to the target element.</p>
+      <p>-> The capturing phase is not commonly used in practice and is optional in event handling.</p>
 
       <div class="parent">parent
             <div class="child">child

@@ -47,7 +47,8 @@
 </head>
 <body>
 
-  <h3>Q-03 : </h3>
+  <h3>Q-03 : How to create slider with animation?</h3>
+  <p><b>Ans : </b></p>
 
   <div class="parent">
     <div class="child c-1">1</div>
@@ -78,7 +79,7 @@
         for (i = 0; i < children.length; i++) {
           $('.child')
             .eq(i)
-            .css({ transform: `translateX(-${leftCounter * 10}px)`});
+            .css({ transform: `translateX(-${leftCounter * 50}px)`});
         }
         leftCounter++;
         }
@@ -89,7 +90,7 @@
         for (i = 0; i < children.length; i++) {
           $('.child')
             .eq(i)
-            .css({ transform: `translateX(${leftCounter * 10}px)`});
+            .css({ transform: `translateX(${rightCounter * 50}px)`});
         }
         rightCounter++;
         }

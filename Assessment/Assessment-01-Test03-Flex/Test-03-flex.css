@@ -339,9 +339,12 @@
 
 .main1 .talk .inp button{
       margin-right: 0%;
-      border: 3px solid blue;
       border-radius: 5px;
+      border-style: none;
       height: 35px;
       width: 20%;
       padding: 5px;
+      background-color: blue;
+      color: black;
+      font-weight: 800;
 }

@@ -63,8 +63,12 @@
                   console.log('child click');
             })
 
-            $('.sub-child').click(()=>{
+            $('.sub-child').click((e)=>{
                   console.log('sub-child click');
+                  e.stopPropagation() 
+            })
+            $('body').click(()=>{
+                  console.log('Body click');
             })
 
       </script>

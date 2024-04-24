@@ -15,21 +15,20 @@
           box-sizing: border-box;
         }
         .parent{
-              height: 90vh;
-              width: 90vw;
+              height: 80vh;
+              width: 95vw;
               margin: 10px;
               background-color: rgb(20, 20, 20);
-              padding: auto;
+              display: flex;
               overflow: hidden;
+              align-items: center;
         }
 
         .child{
-          height: 150px;
-          width: 150px;
+          height: 200px;
+          width: 200px;
           background-color: yellow;
-          display: inline-block;
-          margin-top: 150px;
-          margin-left: 35px;
+          margin: auto;
         }
 
         button{
@@ -57,11 +56,10 @@
     <div class="child c-4">4</div>
     <div class="child c-5">5</div>
 
-    <br>
-    <button class="left">left</button>
-    <button class="right">right</button>
   </div>
 
+    <button class="left">left</button>
+    <button class="right">right</button>
   <script>
         $(".left").click(function () {
             slideLeft()
@@ -79,7 +77,7 @@
         for (i = 0; i < children.length; i++) {
           $('.child')
             .eq(i)
-            .css({ transform: `translateX(-${leftCounter * 50}px)`});
+            .css({ transform: `translateX(-${leftCounter * 150}px)`});
         }
         leftCounter++;
         }
@@ -90,7 +88,7 @@
         for (i = 0; i < children.length; i++) {
           $('.child')
             .eq(i)
-            .css({ transform: `translateX(${rightCounter * 50}px)`});
+            .css({ transform: `translateX(${rightCounter * 150}px)`});
         }
         rightCounter++;
         }

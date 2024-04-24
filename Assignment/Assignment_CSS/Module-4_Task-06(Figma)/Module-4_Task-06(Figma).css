@@ -17,13 +17,14 @@ background: #FBFAFE;
 }
 
 .header ul{
-      display: inline;
-      padding: 10px;
+      display: flex;
+      justify-content: space-between;
 }
 
 .header ul li{
       list-style: none;
-      display: inline;
+      display: flex;
+      justify-content: space-between;
 }
 
 .header .team{
@@ -46,8 +47,8 @@ line-height: 16px; /* 100% */
 }
 
 .header .option li{
-      margin-left: 20px;
-}
+       margin-left: 20px;
+} 
 
 .header .free{
       width: 169px;

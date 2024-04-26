@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-67-09</title>
+      <style>
+            .col{
+                  height: 300px;
+                  width: 300px;
+                  border: 2px solid black;
+                  color: black;
+                  text-align: center;
+            }
+            .cl{
+                  height: 200px;
+                  width: 200px;
+                  border: 2px solid black;
+            }
+            .cl01{
+                  background-color: blueviolet;
+                  border: 5px double black;
+            }
+      
+      </style>
+</head>
+<body>
+      <h3>Q-67-09:  How can the style/class of an element be changed?</h3>
+      <p><b>Ans:</b></p>
+      <div class="col">
+            <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <button class="change">change</button>
+
+      <script>
+            element = document.getElementsByClassName('col')[0]
+            // element.style.backgroundColor='red'
+            element.style.fontSize='30px'
+
+            element.classList.add('cl01')
+            element.classList.remove('cl02')
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-67-07</title>
+</head>
+<body>
+      <h3>Q-67-07 : What is the difference between ViewState and SessionState?</h3>
+      <p>Ans : </p>
+      <p>-> View state can only be visible from a single page and not multiple pages. Session state value availability is across all pages available in a user session</p>
+
+      <pre>
+            
+            * SessionState
+
+            -> Can be persisted in memory, which makes it a fast solution. Which means state cannot be shared in the Web Farm/Web Garden.
+            -> Can be persisted in a Database, useful for Web Farms / Web Gardens.
+            -> Is Cleared when the session dies - usually after 20min of inactivity.
+
+            * ViewState
+            
+            -> Is sent back and forth between the server and client, taking up bandwidth.
+            -> Has no expiration date.
+            -> Is useful in a Web Farm / Web Garden
+      </pre>
+</body>
+
+</html>

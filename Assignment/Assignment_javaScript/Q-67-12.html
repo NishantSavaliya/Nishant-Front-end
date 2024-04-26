@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-67-12</title>
+</head>
+<body>
+      <h3>Q-67-12 : How can you convert the string of any base to an integer in JavaScript?</h3>
+      <p>Ans :</p>
+      <p>-> The parseInt() function returns NaN ( not a number) when the string doesn’t contain number.</p>
+      <p>-> If a string with a number is sent, then only that number will be returned as the output.</p>
+      <p>-> This function won't accept spaces. If any particular number with spaces is sent, then the part of the number that presents before space will be returned as the output.</p>
+      <p>for Example :-</p>
+      <script>
+            let a = parseInt("100");
+            console.log(a);//100
+
+            let b = parseInt("100.234");
+            console.log(b);//100
+
+            let c = parseInt([1.2]);
+            console.log(c);//1
+
+            let d = parseInt(true);
+            console.log(d);//NaN
+
+            let e = parseInt("hello")
+            console.log(e);//NaN
+      </script>
+</body>
+</html>

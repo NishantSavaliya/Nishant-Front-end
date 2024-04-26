@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-67-02</title>
+      <style>
+            pre{
+                  height: auto;
+                  width: 100%;
+                  background-color: blanchedalmond;
+            }
+      </style>
+</head>
+<body>
+      <h3>Q-67-02: What is the use of isNaN function?</h3>
+      <p>Ans: </p>
+      <p>-> In JavaScript, NaN is short for "Not-a-Number".</p>
+      <p>-> In JavaScript, NaN is a number that is not a legal number.</p>
+      <p>-> The Number.isNaN() method returns true if the value is NaN, and the type is a Number.</p>
+      <p>-> isNaN() method returns true if a value is Not-a-Number.</p>
+      <p>-> Number.isNaN() returns true if a number is Not-a-Number.</p>
+      <p>-> isNaN() converts the value to a number before testing it.</p>
+      <br>
+      <p><b>For Ex-</b></p>
+      <br>
+      <pre>
+isNaN(NaN); // true
+isNaN(undefined); // true
+isNaN({}); // true
+
+isNaN(true); // false
+isNaN(null); // false
+isNaN(37); // false
+
+// Strings
+isNaN("37"); // false: "37" is converted to the number 37 which is not NaN
+isNaN("37.37"); // false: "37.37" is converted to the number 37.37 which is not NaN
+isNaN("37,5"); // true
+isNaN("123ABC"); // true: Number("123ABC") is NaN
+isNaN(""); // false: the empty string is converted to 0 which is not NaN
+isNaN(" "); // false: a string with spaces is converted to 0 which is not NaN
+
+// Dates
+isNaN(new Date()); // false; Date objects can be converted to a number (timestamp)
+isNaN(new Date().toString()); // true; the string representation of a Date object cannot be parsed as a number
+
+// Arrays
+isNaN([]); // false; the primitive representation is "", which coverts to the number 0
+isNaN([1]); // false; the primitive representation is "1"
+isNaN([1, 2]); // true; the primitive representation is "1,2", which cannot be parsed as number
+
+      </pre>
+</body>
+</html>

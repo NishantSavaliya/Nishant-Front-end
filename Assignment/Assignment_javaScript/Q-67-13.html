@@ -7,6 +7,25 @@
 </head>
 <body>
       <h3>Q-67-13 :  What is the function of the delete operator?</h3>
-      <p>-> </p>
+      <p>-> The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+      </p>
+      <p>-> for Example :-</p>
+      <script>
+            const Detail = {
+                  firstname: 'Nishant',
+                  Age : '25 yr',
+
+            };
+
+            console.log(Detail.firstname);
+            console.log(Detail.Age);
+            //  output: "Nishant"
+            //  output: "25 yr"
+
+            delete Detail.Age;
+
+            console.log(Detail.Age);
+            //  output: undefined
+      </script>
 </body>
 </html>

@@ -8,16 +8,67 @@
 <body>
       <h3>Q-10 : What is Condition Statement? </h3>
       <p><b>Ans : </b></p>
-      <p>-> Conditional statements allow us to represent such decision making in JavaScript, from the choice that must be made (for example, "one cookie or two"), to the resulting outcome of those choices (perhaps the outcome of "ate one cookie" might be "still felt hungry", and the outcome of "ate two cookies" might be "felt full, but mom scolded me for eating all the cookies".)</p>
-      <p>-> Let's look at by far the most common type of conditional statement you'll use in JavaScript — the humble if...else statement.</p>
-      <p>-> Basic if...else syntax looks like this:</p>
+      <p>-> Conditional statements in programming are used to control the flow of a program based on certain conditions.</p>
+      <p>-> These statements allow the execution of different code blocks depending on whether a specified condition evaluates to true or false, providing a fundamental mechanism for decision-making in algorithms.   </p>
+      <p><b>1. if condition </b></p>
+      <p>-> The if statement is the most basic form of conditional statement. It checks if a condition is true. If it is, the program executes a block of code.</p>
+      <p>-> syntax : </p>
       <pre>
             if (condition) {
-             /* code to run if condition is true */
-            } else {
-             /* run some other code instead */
+            // code to execute if condition is true
             }
       </pre>
-      <p>-> This code is pretty human-readable — it is saying "if the condition returns true, run code A, else run code B"</p>
+      <p>-> Example : </p>
+      <script>
+            let num=2;
+            if (num>0) {
+                  console.log('num is Positive');
+            }
+      </script>
+
+      <p><b>2. if-else condition </b></p>
+      <p>-> The if-else statement extends the if statement by adding an else clause. If the condition is false, the program executes the code in the else block.</p>
+      <p>-> Syntax : </p>
+      <pre>
+            if (condition) {
+                  // code to execute if condition is true
+            } else {
+                  // code to execute if condition is false
+            }
+      </pre>
+      <p>-> Example : </p>
+      <script>
+            num=3;
+            if (num>0) {
+                  console.log('num is Positive');
+            } else{
+                  console.log('num is Not Positive');
+            }
+      </script>
+
+      <p><b>3. if-else if condition</b></p>
+      <p>-> The if-else if statement allows for multiple conditions to be checked in sequence. If the if condition is false, the program checks the next else if condition, and so on.</p>
+      <p>-> Syntax : </p>
+      <pre>
+            if (condition1) {
+                  // code to execute if condition1 is true
+            } else if (condition2) {
+                  // code to execute if condition2 is true
+            } else {
+                  // code to execute if all conditions are false
+            }
+      </pre>
+      <p>-> Example : </p>
+      <script>
+            num=3;
+            if (num>0) {
+                  console.log('num is Positive');
+            } else if(num<0){
+                  console.log('num is Not Positive');
+            }else{
+                  console.log('num is Zero');
+            }
+
+      </script>
 </body>
 </html>

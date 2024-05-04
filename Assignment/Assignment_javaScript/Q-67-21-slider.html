@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q-67-21</title>
+      <style>
+      
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+      }
+      .main {
+        width: 600px;
+        height: 300px;
+        background-color: black;
+        align-self: center;
+        text-align: center;
+        color: white;
+      }
+      .main h2 {
+        color: rgb(97, 97, 97);
+      }
+      .parent {
+        width: 600px;
+        height: 300px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .child {
+        scale: 1.2;
+        height: 100px;
+        width: 100px;
+        background-color: cornflowerblue;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+      }
+
+      .left-btn {
+        display: flex;
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        color: black;
+        background-color: white;
+      }
+      .right-btn {
+        top: 50%;
+        position: absolute;
+        background-color: white;
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+      }
+    
+      </style>
+</head>
+<body>
+      <h3>Q-67-21 :  Create a slider using JavaScript</h3>
+      <p>Ans : </p>
+      <div class="main">
+            <h1>Simple javascript slider</h1>
+            <h2>Created by Dropinks</h2>
+            <div class="parent">
+                  <div class="child" style="background-color: yellow"></div>
+                  <div class="child" style="background-color: red"></div>
+                  <div class="child" style="background-color: purple"></div>
+                  <div class="child"  style="background-color: rgb(19, 128, 19)"></div>
+                  <div class="child" style="background-color: skyblue"></div>
+            </div>
+                  <button class="left-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                  <button class="right-btn"><i class="fa-solid fa-arrow-right"></i></button>s
+       </div>
+      
+
+      <script>
+            parent = document.getElementsByClassName('parent')[0];
+            let leftBtn = document.getElementsByClassName('left-btn')[0];
+            let rightBtn = document.getElementsByClassName('right-btn')[0];
+      
+            children = parent.children;
+            let leftCounter = 1;
+            let rightCounter = 1;
+            leftBtn.addEventListener('click', () => {
+              if (leftCounter == 2) {
+                leftBtn.setAttribute('disabled', '');
+              }
+              rightBtn.removeAttribute('disabled');
+              if (leftCounter < 3) {
+                for (i = 0; i < children.length; i++) {
+                  children[i].style.transform = `translateX(-${leftCounter * 50}px)`;
+                }
+                leftCounter++;
+              }
+            });
+            rightBtn.addEventListener('click', () => {
+              if (rightCounter == 2) {
+                rightBtn.setAttribute('disabled', '');
+              }
+              leftBtn.removeAttribute('disabled');
+              if (rightCounter < 3) {
+                for (i = 0; i < children.length; i++) {
+                  children[i].style.transform = `translateX(${rightCounter * 50}px)`;
+                }
+                rightCounter++;
+              }
+            });
+          </script>
+</body>
+</html>

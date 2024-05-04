@@ -33,11 +33,11 @@
             <div class="operation">
                   <button class="btnAdd" onclick="addition()">+</button>
                   <button class="btnSub" onclick="substitude()">-</button>
+                  <br>
+                  <br>
                   <button class="btnMulti" onclick="multiplication()">*</button>
-                  <br>
-                  <br>
                   <button class="btnDiv" onclick="division()">/</button>
-                  <button class="btnPer" onclick="persentage()">%</button>
+                  
             </div>
             <br>
             <div class="ans">
@@ -74,13 +74,6 @@
                   let num2 = parseFloat(document.getElementById("num2").value);
                                
                   parseFloat(document.getElementById("answer").value  = num1 / num2);            
-            }
-            
-            function persentage() {  
-                  let num1 = parseFloat(document.getElementById("num1").value); 
-                  let num2 = parseFloat(document.getElementById("num2").value);
-                               
-                  parseFloat(document.getElementById("answer").value  = num1 % num2);            
             }
             
       </script>

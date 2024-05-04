@@ -4,9 +4,134 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Q-56</title>
+      <style>
+            .container {
+                  width: 400px;
+                  margin: 40px auto;
+                  padding: 10px;
+                  border-radius: 5px;
+                  background: white;
+                  box-shadow: 0px 10px 40px 0px rgba(47,47,47,.1);
+            }
+
+            input[type="text"]{
+                  padding: 10px;
+                  margin: 10px auto;
+                  display: block;
+                  border-radius: 5px;
+                  border: 1px solid darkblue;
+                  background: none;
+                  width: 274px;
+                  color: black;
+            }
+
+            input[type="text"]:focus {
+                  outline: none;
+                  background-color: white;
+
+
+            }
+
+            input[type="Submit"]{
+                  margin: 10px auto;
+                  display: block;
+                  width: 40%;
+                  height: 40px;
+                  border: 1px solid;
+                  border-radius: 25px;
+                  font-size: 18px;
+                  cursor: pointer;
+            }
+
+            input[type="Submit"]:hover{
+                  background: #2691d9;
+                  color: #e9f4fb;
+                  transition: .5s;
+            }
+
+            .controls {
+                  width: 294px;
+                  margin: 15px auto;
+            }
+
+            .add {
+                  padding: 5px;
+                  border: 1px solid;
+                  border-radius: 25px;
+                  cursor: pointer;
+            }
+
+            .remove {
+                  float: right;
+                  padding: 5px;
+                  border: 1px solid;
+                  border-radius: 25px;
+                  cursor: pointer;
+            }
+            
+            .controls button i{
+                  margin-right: 5px;
+            }
+
+            .remove:hover, .add:hover{
+                  background: #2691d9;
+                  color: #e9f4fb;
+                  transition: .5s;
+            }
+      </style>
 </head>
 <body>
       <h3>Q-56 : Dynamic Form Validation in JS?</h3>
       <p><b>Ans : </b></p>
+      <p>-> Forms are an integral part of many websites. They are used to gather user
+            information, feedback, and more. With JavaScript, it is possible to create
+            form fields dynamically, allowing developers to add, remove, and
+            manipulate form elements in real-time. This can be particularly useful for
+            users who need to input multiple pieces of information, as well as for
+            developers who want to create more dynamic and interactive forms. </p>
+      <p>-> In this article, we will explore the process of creating form fields
+            dynamically with JavaScript. We will cover the basics of creating form
+            elements and manipulating them with JavaScript, as well as some more
+            advanced techniques for making your forms even more dynamic and engaging.</p>
+      <p>-> To create Fields dynamically using JavaScript, we can use the
+            document.createElement method to create the element. Then we can use the
+            setAttribute method to set the element attributes and finally we can use
+            the appendChild method to append the elements into the parent element.</p>
+      
+      <div class="container">
+            <form action="" method="POST">
+                  <div id="formfield">
+                        <input type="text" name="text" class="text" size="50" placeholder="Name"  required>
+                        <input type="text" name="text" class="text" size="50" placeholder="Email" required>
+                        <input type="text" name="text" class="text" size="50" placeholder="Optional Field">
+                  </div>
+                  <input name="submit" type="Submit" value="Submit">
+            </form>
+            <div class="controls">
+                        <button class="add" onclick="add()"><i class="fa fa-plus"></i>Add</button>
+                        <button class="remove" onclick="remove()"><i class="fa fa-minus"></i>Remove</button>
+            </div>
+      </div>
+
+      <script>
+            var formfield = document.getElementById('formfield');
+          
+            function add(){
+                  var newField = document.createElement('input');
+                  newField.setAttribute('type','text');
+                  newField.setAttribute('name','text');
+                  newField.setAttribute('class','text');
+                  newField.setAttribute('siz',50);
+                  newField.setAttribute('placeholder','Optional Field');
+                  formfield.appendChild(newField);
+           }
+          
+            function remove(){
+                  var input_tags = formfield.getElementsByTagName('input');
+                  if(input_tags.length > 2) {
+                        formfield.removeChild(input_tags[(input_tags.length) - 1]);
+                  }
+          }
+      </script>
 </body>
 </html>

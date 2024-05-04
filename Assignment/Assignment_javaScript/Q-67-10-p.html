@@ -8,5 +8,80 @@
 <body>
       <h3>Q-67-10 : How to read and write a file using JavaScript?</h3>
       <p>Ans : </p>
+      <h1>readFile</h1>
+    <br />
+    <b>Syntax:</b> <br />
+    <b>fs.readFile( file_name, encoding, callback_function )</b>
+    <p>
+      On the client side, you can’t read or write files in JavaScript browsers.
+      The fs module in Node.js may be used to accomplish this on the
+      server-side. It has methods for reading and writing files on the file
+      system that are both synchronous and asynchronous. Let’s demonstrate some
+      examples of reading and writing files with the node.js fs module.
+    </p>
+    <p>
+      The fs.readFile() and rs.writeFile() methods are used to read and write of
+      a file using javascript. The file is read using the fs.readFile()
+      function, which is an inbuilt method. This technique reads the full file
+      into memory and stores it in a buffer.
+    </p>
+    <h2>Parameters:</h2>
+    <ul>
+      <li>
+        filename: It contains the filename to be read, or the whole path if the
+        file is saved elsewhere.
+      </li>
+      <li>
+        encoding: It stores the file’s encoding. ‘utf8’ is the default setting.
+      </li>
+      <li>
+        callback function: This is a function that is invoked after the file has
+        been read. It requires two inputs:
+      </li>
+      <li>err: If there was an error.</li>
+      <li>data: The file’s content.</li>
+      <li>
+        Return Value: It returns the contents contained in the file, as well as
+        any errors that may have occurred.
+      </li>
+    </ul>
+
+    <h1>writeFile</h1>
+    <p>
+      The fs.writeFile() function is used to write data to a file in an
+      asynchronous manner. If the file already exists, it will be replaced.
+    </p>
+    <b>Syntax:</b> <br />
+    <b>fs.writeFile( file_name, data, options, callback )</b>
+    <h2>Parameters:</h2>
+    <ul>
+      <li>
+        file_name: It’s a string, a buffer, a URL, or a file description integer
+        that specifies the location of the file to be written. When you use a
+        file descriptor, it will function similarly to the fs. write() method.
+      </li>
+      <li>
+        data: The data that will be sent to the file is a string, Buffer,
+        TypedArray, or DataView.
+      </li>
+      <li>
+        options: It’s a string or object that may be used to indicate optional
+        output options. It includes three more parameters that may be selected.
+      </li>
+      <li>
+        encoding: It’s a string value that indicates the file’s encoding. ‘utf8’
+        is the default setting.
+      </li>
+      <li>
+        mode: The file mode is specified by an integer number called mode. 0o666
+        is the default value.
+      </li>
+      <li>
+        flag: This is a string that indicates the file-writing flag. ‘w’ is the
+        default value.
+      </li>
+      <li>callback: This function gets invoked when the method is run.</li>
+      <li>err: If the process fails, this is the error that will be thrown.</li>
+    </ul>
 </body>
 </html>

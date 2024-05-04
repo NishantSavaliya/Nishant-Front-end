@@ -4,8 +4,93 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Q-67-20</title>
+      <style>
+            form{
+                  height: auto;
+                  width: max-content;
+                  padding: 20px;
+                  border: 3px solid red;
+                  background-color: antiquewhite;
+            }
+            p{
+                  text-align: center;
+                  margin: 20px;
+            }
+            .container{
+                  display: flex;
+                  gap: 50px;
+            }
+            button{
+                  margin: 20px;
+                  padding: 5px;
+            }
+      </style>
 </head>
 <body>
       <h3>Q-67-20 :  Create result</h3>
+
+      <form action="Result">
+            <h2>Marksheet for Information Technology</h2>
+            <p>Enter Marks</p>
+            <div class="container">
+                  <div class="lab">
+                        <label for="ms">1. C Language</label>
+                        <br>
+                        <br>
+                        <label for="ms">2. C++ Language</label>
+                        <br>
+                        <br>
+                        <label for="ms">3. Database</label>
+                        <br>
+                        <br>
+                        <label for="ms">4. HTML</label>
+                        <br><br>
+                        <label for="ms">5. CSS</label>
+                        <br>
+                        <br>
+                        <label for="ms">6. php</label>
+                        <br>
+                        <br>
+                        <label for="ms">7. Core java</label>
+                  </div>
+                  <div class="inp">
+                        <input type="number" id="num1">
+                        <br><br>
+                        <input type="number" id="num2">
+                        <br><br>
+                        <input type="number" id="num3">
+                        <br><br>
+                        <input type="number" id="num4">
+                        <br><br>
+                        <input type="number" id="num5">
+                        <br><br>
+                        <input type="number" id="num6">
+                        <br><br>
+                        <input type="number" id="num7">
+                  </div>
+            </div>
+            <button id="result" onclick="myResult()">Result</button>
+
+            <p>Total is : <input type="number" id="total"> / 350</p>
+
+            <p>persentage is : <input type="number" id="per"> %</p>
+      </form>
+
+      <script>
+            function myResult() {
+                  let mark1 = parseFloat(document.getElementById("num1").value);
+                  let mark2 = parseFloat(document.getElementById("num2").value);
+                  let mark3 = parseFloat(document.getElementById("num3").value);
+                  let mark4 = parseFloat(document.getElementById("num4").value);
+                  let mark5 = parseFloat(document.getElementById("num5").value);
+                  let mark6 = parseFloat(document.getElementById("num6").value);
+                  let mark7 = parseFloat(document.getElementById("num7").value);
+
+                 let total = parseFloat(document.getElementById("total").value= mark1 + mark2 + mark3 + mark4 + mark5 + mark6 + mark7) 
+
+                  parseFloat(document.getElementById("per").value= Math.floor((total * 100) / 350))
+                      
+            }
+      </script>
 </body>
 </html>

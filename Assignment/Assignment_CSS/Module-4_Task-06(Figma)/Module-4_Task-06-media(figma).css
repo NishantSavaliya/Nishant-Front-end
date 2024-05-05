@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 562px) {
       .header .option{
             display: none;
       }
@@ -6,14 +6,15 @@
             display: none;
       }
       .header .menu{
-            padding-left: 60%;
+           display: inline;
+           padding-left: 40%;
       }
       .header .menu button{
             border-style: none;
       }
       .header .menu img{
-            height: 16px;
-            width: 24px;
+            height: 25px;
+            width: 30px;
       }
       .header .menu p{
             color: #4E5A65;
@@ -29,8 +30,12 @@ line-height: 8px; /* 100% */
             display: none;
       }
       .infol{
+            width: 70%;
             font-size: 32px;
             line-height: 40px;
+      }
+      .infos{
+            width: 70%;
       }
       .infomail input{
             width: 80%;
@@ -46,7 +51,7 @@ line-height: 8px; /* 100% */
 
       .graph{
             width: 90%;
-            height: 250px;
+            height: 300px;
             margin: auto;
       }
 
@@ -152,16 +157,20 @@ line-height: 8px; /* 100% */
             width: 90%;
             margin: auto;
       }
+
+      .why{
+            width: 75%;
+            margin: auto;
+      }
       
       .why h3{
-            width: 50%;
-            font-size: 18px;
+            text-align: center;
+            font-size: 22px;
             line-height: 24px;
       }
 
       .why p{
-            width: 70%;
-            padding-top: 10%;
+            padding-top: 5%;
       }
 
       .cust{
@@ -180,23 +189,28 @@ line-height: 8px; /* 100% */
       
       .blue{
             width: 100%;
+            height: auto;
             padding-bottom: 5%;
             border-radius: 0%;
+            margin-left: 0%;
       }
+
       .blue .emp{
-           width: 100%;
+            width: 80%;
+            margin: 5% 10%;
       }
+      
       .blue .emp p{
-            text-align: center;
             font-size: 24px;
             line-height: 32px;
       }
       .blue .but{
             width: 100%;
+            height: auto;
       }
       .blue .but button{
             width: 60%;
-            height: 8%;
+            height: 7%;
             margin-top: 5%;
             border-radius: 10px;
             border-style: none;
@@ -207,29 +221,30 @@ line-height: 8px; /* 100% */
             height: 100%;
       }
 
+
       .ft .flex p{
             display: none;
       }
 
       .ft .flex h5{
-            padding: 3%;
+            margin-left: 30px;
+            margin-top: 10px;
       }
 
       .ft .flex .inst button{
-            margin-left: 5%;
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 150px;
+            height: 50px;
       }
 
-      .ft .all{
-            padding: 5%;
-      }
-
-      .ft .all .fa{
+      .ft2 .img{
             display: none;
       }
 
 }
 
-@media (min-width: 500px) {
+@media (min-width: 563px) {
       .header .menu{
             display: none;
       }
@@ -262,8 +277,5 @@ line-height: 8px; /* 100% */
             display: flex;
       }
 
-      .ft .all{
-            display: flex;
-      }
 }
 

@@ -17,41 +17,47 @@ background: #FBFAFE;
 }
 
 .header ul{
-      display: flex;
-      justify-content: space-between;
+      display: inline;
 }
 
 .header ul li{
       list-style: none;
-      display: flex;
-      justify-content: space-between;
+      display: inline;
 }
 
 .header .team{
       color: #1D2830;
       font-family: Josefin Sans;
-      font-size: 24px;
+      font-size: 28px;
       font-style: normal;
       font-weight: 400;
       line-height: 24px; /* 100% */
       letter-spacing: -1.44px;
+      height: 50px;
+      line-height: 50px;
+      margin: 50px;
+      width: 30%;
 }
 
 .header .option{
       color: #35414B;
 font-family: Inter;
-font-size: 16px;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 16px; /* 100% */
+width: 50%;
+height: 50px;
+line-height: 50px;
+margin: 50px;
 }
 
 .header .option li{
-       margin-left: 20px;
+       margin-left: 60px;
 } 
 
 .header .free{
-      width: 169px;
+      width: 20%;
 height: 48px;
 flex-shrink: 0;
 border-radius: 4px;
@@ -59,10 +65,11 @@ background: #ECE5FF;
 color: #794CFF;
 text-align: center;
 font-family: Inter;
-font-size: 16px;
+font-size: 18px;
 font-style: normal;
 font-weight: 500;
-line-height: 16px; /* 100% */
+line-height: 16px; 
+margin: 60px;
 }
 
 /* header end */
@@ -71,7 +78,8 @@ line-height: 16px; /* 100% */
 
 .info1{
       text-align: center;
-      margin-top: 50px;
+      margin-top: 80px;
+      margin-bottom: 40px;
 }
 
 .info1 .save{
@@ -103,7 +111,10 @@ line-height: 16px; /* 100% */
 }
 
 .infol{
-      color: #35414B;
+      width: 55%;
+      margin: auto;
+      height: auto;
+color: #35414B;
 text-align: center;
 font-family: Inter;
 font-size: 64px;
@@ -113,9 +124,8 @@ line-height: 72px; /* 112.5% */
 }
 
 .infos{
-      width: 80%;
-      margin: auto;
-      margin-top: 10px;
+      width: 50%;
+      margin: 30px auto;
       color: #4E5A65;
 text-align: center;
 font-family: Inter;
@@ -127,6 +137,7 @@ line-height: 24px; /* 150% */
 
 .infomail{
     text-align: center;
+    margin: 40px;
 }
 
 .infomail input{
@@ -161,8 +172,9 @@ line-height: 16px; /* 100% */
 }
 
 .graph{
-      width: 100%;
-height: 350px;
+      width: 70%;
+height: 500px;
+margin: auto;
 flex-shrink: 0;
 background: lightgray 50% / cover no-repeat;
 box-shadow: 0px 0px 48px -8px rgba(29, 40, 48, 0.18);
@@ -177,6 +189,7 @@ box-shadow: 0px 0px 48px -8px rgba(29, 40, 48, 0.18);
       background: #FFF;
       width: 100%;
       height: 30vh;
+      margin-top: 80px;
 }
 
 .info2 p{
@@ -192,21 +205,22 @@ line-height: 16px; /* 100% */
 .info2 .google{
       justify-content: center;
       display: flex;
-      gap: 3%;
+      gap: 5%;
       margin: auto;
 }
 
 .info2 .google img{
-      width: 15%;
-      height: 4%;
+      width: 12%;
+      height: 3%;
 }
 
 .main{
-      width: 100%;
+      width: 90%;
       height: auto;
       /* display: flex; */
       border: 1px solid #F0EBFA;
-background: #FBFAFE;
+      background: #FBFAFE;
+      margin: 5%;
 }
 
 .main .review{
@@ -281,7 +295,7 @@ text-align: justify;
 
 .main .review .table2{
       width: 70%;
-      height: auto;
+      height: 250px;
       border-radius: 4px;
 border: 1px solid #E1E5EA;
 background: #FFF;
@@ -340,9 +354,10 @@ text-align: justify;
 
 .main .review .table2 button{
       border-radius: 4px;
+      margin-top: 40px;
 background: #3B7FF6;
-height: auto;
-width: 30px;
+height: 20px;
+width: 70px;
 border-style: none;
 }
 
@@ -359,11 +374,10 @@ line-height: 13px; /* 100% */
       width: 49%;
       height: auto;
       padding-left: 8%;
-      margin-top: 5%;
 }
 
 .main .adv .ad{
-      margin-top: 10px;
+      margin-top: 40px;
 }
 
 .main .adv .ad h3{
@@ -395,18 +409,14 @@ line-height: 40px; /* 100% */
 }
 
 .work{
-      width: 90%;
+      width: 80%;
       height: auto;
-      margin: 5%;
+      margin: 5% 10%;
       display: grid;
-      gap: 15px;
+      align-items: center;
+      gap: 50px;
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(3, 1fr);
-}
-
-.work .team{
-      /* width: 28%;
-      height: auto; */
 }
 
 .work .team h4{
@@ -453,7 +463,8 @@ line-height: 24px; /* 150% */
 
 .info3{
       height: auto;
-      width: 100%;
+      width: 80%;
+      margin: 5% 10%;
       border: 1px solid #F0EBFA;
 background: #FBFAFE;
 /* display: flex; */
@@ -461,7 +472,7 @@ background: #FBFAFE;
 
 .info3 .we{
       height: auto;
-      width: 50%;
+      width: 45%;
       margin: 5%;
       
 }
@@ -482,6 +493,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
+margin-top: 20px;
 }
 
 .info3 .we button{
@@ -497,10 +509,11 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 16px; /* 100% */
+margin-top: 20px;
 }
 
 .info3 .gra{
-      width: 50%;
+      width: 55%;
       height: auto;
 }
 
@@ -511,14 +524,11 @@ line-height: 16px; /* 100% */
 
 .why{
       height: auto;
-      width: 100%;
-      text-align: center;
+      width: 40%;
+      margin: auto;
 }
 
 .why h3{
-      width: 60%;
-      height: auto;
-      margin: auto;
       color: #35414B;
 text-align: center;
 font-family: Inter;
@@ -529,9 +539,6 @@ line-height: 48px; /* 120% */
 }
 
 .why p{
-      width: 60%;
-      height: auto;
-      margin: auto;
       color: #4E5A65;
 text-align: center;
 font-family: Inter;
@@ -539,17 +546,19 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 32px; /* 177.778% */
+margin-top: 20px;
 }
 
 .cust{
       /* display: flex; */
       margin: 7%;
-      gap: 5%;
+      width: 80%;
 }
 
 .cust .cost{
       /* display: flex; */
-      gap: 10px;
+      margin: auto;
+      padding: auto;
 }
 
 .cust .cost ul li{
@@ -581,9 +590,9 @@ line-height: 16px; /* 100% */
 }
 
 .blue{
-      width: 90%;
-      height: auto;
-      margin: auto;
+      width: 80%;
+      height: 150px;
+      margin: 5% 10%;
       border-radius: 16px;
 background: #796EFF;
 /* display: flex; */
@@ -593,6 +602,7 @@ background: #796EFF;
       width: 50%;
       height: auto;
       text-align: center;
+      padding-top: 20px;
 }
 
 .blue .emp p{
@@ -628,12 +638,6 @@ line-height: 48px; /* 150% */
       margin-top: 3%;
 }
 
-.ft .flex{
-      /* display: flex; */
-      padding-top: 3%;
-      padding-bottom: 3%;
-}
-
 .ft .flex h5{
       color: #FFF;
 font-feature-settings: 'salt' on, 'liga' off;
@@ -645,11 +649,13 @@ line-height: 16px; /* 100% */
 }
 
 .ft .flex .comp{
-      padding-left: 8%;
+      /* padding-left: 8%; */
+      margin: 30px 5%;
+      width: 25%;
 }
 
 .ft .flex p{
-      padding-top: 3%;
+      padding-top: 15px;
       color: #FFF;
 font-feature-settings: 'salt' on, 'liga' off;
 font-family: Inter;
@@ -660,7 +666,8 @@ line-height: 16px; /* 100% */
 }
 
 .ft .flex .inst{
-      padding-left: 8%;
+      margin: 30px 5%;
+      width: 25%;
 }
 
 .ft .flex .inst ul li{
@@ -668,9 +675,10 @@ line-height: 16px; /* 100% */
 }
 
 .ft .flex .inst button{
-      margin-top: 3%;  
-      height: 10%;
-      width: 30%;
+      margin-top: 10px;  
+      height: 28%;
+      width: 70%;
+      border-style: none;
 }
 
 .ft .flex .inst button img{
@@ -678,33 +686,41 @@ line-height: 16px; /* 100% */
      width: 100%;
 }
 
-.ft .line{
-      width:100%;
-      height: 2%;
-      background-color:#d12f2f;
+.ft2{
+      width: 100%;
+      height: auto;
+      background: #1D2830;
+      /* margin-top: 2px; */
+      display: flex;
 }
 
-.ft .all{
-      /* display: flex; */
-      gap: 35%;
-
+.ft2 ul{
+      list-style: none;
 }
 
-.ft .all ul{
-      margin-left: 8%;
-      margin-bottom: 3%;
+.ft2 .copy{
+      margin: 10px;
+      margin-left: 40px;
 }
 
-.ft .all ul p{
+.ft2 p{
       color: var(--Text-Gray-300, #D9DBE1);
       font-feature-settings: 'salt' on, 'liga' off;
       font-family: Inter;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 14px; /* 100% */
+      line-height: 14px;
+ /* 100% */
 }
 
-.ft .all ul img{
-      margin-left: 5px;
+.ft2 .img{
+      margin-left: 65%;
+      margin-top: 10px;
+}
+
+.ft2 img{
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
 }

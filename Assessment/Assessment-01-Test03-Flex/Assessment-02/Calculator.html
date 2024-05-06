@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculator</title>
+
+      <style>
+            .border{
+                  margin: 20px auto;
+                  border: 10px solid gray;
+                  width: fit-content;
+                  padding: 10px;
+                  background-color: dodgerblue;
+            }
+
+            #display{
+                  width: 250px;
+                  height: 50px;
+            }
+
+            button{
+                  width: 40px;
+                  height: 40px;
+                  background-color: rgb(19, 17, 17);
+                  color: white;
+                  margin: 4px;
+            }
+      </style>
+</head>
+<body>
+      
+      <div class="border">
+            <table>  
+                <tr class="display"><input id = "display"></tr>  
+                <tr><td> <button onclick = fun(0)>0</button></td>  
+                    <td></td>  
+                    <td> </td>  
+                    <td></td>  
+                    <td> <button onclick = C()>C</button></td>  
+                    <td> <button onclick = B()>B</button></td>  
+                </tr>  
+                <tr><td> <button onclick = fun(7)>7</button></td>  
+                    <td> <button onclick = fun(8)>8</button></td>  
+                    <td> <button onclick = fun(9)>9</button></td>  
+                    <td></td>  
+                    <td> <button onclick = 'fun("+")'>+</button></td>  
+                    <td> <button onclick = 'fun("-")'>-</button></td>  
+                </tr>  
+                <tr><td> <button onclick = fun(6)>6</button></td>  
+                    <td> <button onclick = fun(5)>5</button></td>  
+                    <td> <button onclick = fun(4)>4</button></td>  
+                    <td></td>  
+                    <td><button onclick = 'fun("*")'>*</button></td>  
+                     <td><button onclick = 'fun("/")'>/</button></td>  
+                </tr>  
+                <tr><td> <button onclick = fun(1)>1</button></td>  
+                    <td> <button onclick = fun(2)>2</button></td>  
+                    <td> <button onclick = fun(3)>3</button></td>  
+                    <td></td>  
+                    <td> <button onclick = 'fun(".")'>.</button></td>  
+                    <td> <button onclick = res()>=</button></td>  
+                </tr>  
+             </table>  
+      </div>
+
+     
+      <script type = text/javascript>  
+            function fun(a)  
+            {  
+                  document.getElementById("display").value+=a;  
+            }  
+            function C()  
+            {  
+                  document.getElementById("display").value = "";  
+            }  
+            function B()  
+            {  
+                  var y = document.getElementById("display").value;  
+                  document.getElementById("display").value = y.slice(0, y.length-1);  
+            }  
+            function res()  
+            {   
+                  var a = document.getElementById("display").value;  
+                  document.getElementById("display").value=a+"="+eval(a);  
+            }  
+    </script>  
+
+</body>
+</html>

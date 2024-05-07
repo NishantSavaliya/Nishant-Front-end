@@ -74,23 +74,32 @@
         function slideLeft() {
           children = $('.parent').find('*')
 
-        for (i = 0; i < children.length; i++) {
+        for (i = 0; i < 6; i++) {
           $('.child')
             .eq(i)
-            .css({ transform: `translateX(-${leftCounter * 150}px)`});
+            .css({ transform: `translateX(-${leftCounter * 235}px)`});
         }
-        leftCounter++;
+        
+        if (leftCounter==5) {
+          leftCounter=0;
+        }else{
+          leftCounter++;
+        }
         }
 
         function slideRight() {
         children = $('.parent').find('*')
 
-        for (i = 0; i < children.length; i++) {
+        for (i = 0; i < 6; i++) {
           $('.child')
             .eq(i)
-            .css({ transform: `translateX(${rightCounter * 150}px)`});
+            .css({ transform: `translateX(${rightCounter * 235}px)`});
         }
-        rightCounter++;
+        if (rightCounter==5) {
+          rightCounter=0;
+        }else{
+          rightCounter++;
+        }
         }
 </script>
 </body>

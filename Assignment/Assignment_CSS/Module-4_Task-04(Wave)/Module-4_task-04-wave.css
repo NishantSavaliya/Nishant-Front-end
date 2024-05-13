@@ -71,16 +71,15 @@
 
 .item .info{
     font-size: 1em;
-    color: darkorange;
+    color: black;
     text-align: center;
     position: absolute;
     top: 0;
     opacity: 0;
-    transition: 500;
+    transition: 1s;
 }
 
 .item:hover .info{
-    color: black;
     top: 100px;
     opacity: 1;
 }

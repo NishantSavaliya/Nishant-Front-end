@@ -4,7 +4,7 @@
 }
 
 .clip{
-    height: 65vh;
+    height: 95vh;
     background-image: url(https://images.pexels.com/photos/693776/pexels-photo-693776.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -12,6 +12,7 @@
     position: relative;
 }
 .header{
+    padding-top: 20px;
     text-align: center;    
 }
 
@@ -71,7 +72,7 @@
 }
 
 #left{
-    top: 20%;
+    top: 40%;
     left: 2%;
     background-color: tomato;
     color: black;
@@ -80,7 +81,7 @@
 }
 
 #right{
-    top: 20%;
+    top: 40%;
     right: 2%;
     background-color: tomato;
     color: black;
@@ -91,10 +92,10 @@
 #down{
     height: 25px;
     width: 25px;
-    border: none;
+    border: 1px black;
     border-radius: 50%;
     background-color: white;
-    bottom: 33%;
+    bottom: 3%;
     left: calc((50%) - (12px));
     
 }

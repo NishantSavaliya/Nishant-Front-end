@@ -28,8 +28,6 @@
             .card img{
               height: 100px;
               width: 100px;
-              border-radius: 50%;
-              background-color: gray;
               margin: auto;
             }
 
@@ -37,6 +35,15 @@
               text-align: center;
             }
 
+            .info .t-n{
+              height: 250px;
+              width: 250px;
+              justify-content: center;
+            }
+
+            .footer a{
+              text-decoration: none;
+            }
       </style>
 </head>
 <body>
@@ -52,13 +59,13 @@
               <div class="collapse navbar-collapse show" id="navbarBasic">
                 <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                   <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-light text-opacity-75" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Link</a>
+                    <a class="nav-link text-light text-opacity-50" href="#">Link</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled text-light" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link disabled text-light text-opacity-25" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -72,8 +79,8 @@
           <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <h3 class="text-light">One more for good measure</h3>
-      <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia cum impedit, dolor iure repellendus error quo consectetur doloribus blanditiis cupiditate et odit, non fugit nostrum, labore amet? Placeat, accusantium voluptate.</p>
+      <h3 class="text-light text-end">One more for good measure</h3>
+      <p class="text-light text-end">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia cum impedit, dolor iure repellendus error quo consectetur doloribus blanditiis cupiditate et odit, non fugit nostrum, labore amet? Placeat, accusantium voluptate.</p>
       <button type="button" class="btn btn-primary">Browse Gallery</button>
       <!-- <img src="assets/images/bs-images/carousel-slide-1.png" class="d-block w-100" alt="Slide 1"> -->
     </div>
@@ -94,38 +101,103 @@
   </a>
 </div>
 
-<!-- *********************************************************************************************************** -->
+<!-- **************************************************** card *************************************************** -->
 
-  <div class="card-group">
-  <div class="card">
-    <img src="" class="" alt="">
+  <div class="card-group m-4">
+  <div class="card m-3 border p-4">
+    <img src="" class="rounded-circle bg-secondary" alt="">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+    <div class="btn">
+      <button type="button" class="btn btn-secondary">View Details</button>
     </div>
   </div>
-  <div class="card">
-    <img src="assets/images/bs-images/img-2x1.png" class="card-img-top" alt="card-group-image">
+  <div class="card m-3 border p-4">
+    <img src="" class="rounded-circle bg-secondary" alt="">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+    <div class="btn">
+      <button type="button" class="btn btn-secondary">View Details</button>
     </div>
   </div>
-  <div class="card">
-    <img src="assets/images/bs-images/img-2x1.png" class="card-img-top" alt="card-group-image">
+  <div class="card m-3 border p-4">
+    <img src="" class="rounded-circle bg-secondary" alt="">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+    <div class="btn">
+      <button type="button" class="btn btn-secondary">View Details</button>
     </div>
+  </div>
+</div>
+
+<!-- ********************************************* info-1 ***************************************************** -->
+
+<div class="info i-1 row g-3 m-3 border-bottom">
+  <div class="col-7">
+    <div class="p-5">
+      <h2>first featurette heading. It'll blow your mind.</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci doloribus at temporibus nulla quo, iure eius, dolor modi laboriosam doloremque voluptates mollitia necessitatibus neque? Asperiores quidem fugit quod expedita tempore.</p>
+    </div>
+  </div>
+  <div class="col-5">
+    <div class="p-3">
+      <div class="t-n bg-secondary d-flex align-items-center">
+        <span class="text-light"><h2>500 x 500</h2></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ******************************************* info-2 ******************************************************* -->
+
+<div class="info i-2 row g-3 m-3 border-bottom">
+  <div class="col-5">
+    <div class="p-3">
+      <div class="t-n bg-secondary d-flex align-items-center">
+        <span class="text-light"><h2>500 x 500</h2></span>
+      </div>
+    </div>
+  </div>
+  <div class="col-7">
+    <div class="p-5">
+      <h2>Oh yeah, it's that good. See for yourself.</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci doloribus at temporibus nulla quo, iure eius, dolor modi laboriosam doloremque voluptates mollitia necessitatibus neque? Asperiores quidem fugit quod expedita tempore.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ***************************************** info-3 ********************************************************* -->
+
+<div class="info i-3 row g-3 m-3 border-bottom">
+  <div class="col-7">
+    <div class="p-5">
+      <h2>And lastly, this one. Checkmate</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci doloribus at temporibus nulla quo, iure eius, dolor modi laboriosam doloremque voluptates mollitia necessitatibus neque? Asperiores quidem fugit quod expedita tempore.</p>
+    </div>
+  </div>
+  <div class="col-5">
+    <div class="p-3">
+      <div class="t-n bg-secondary d-flex align-items-center">
+        <span class="text-light"><h2>500 x 500</h2></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ********************************** footer ******************************** -->
+
+<div class="footer row gx-5 m-3">
+  <div class="col">
+    <div class="p-3 bg-light">&copy; 2017-2018 Company. Inc. <a href="">Privacy-Terms</a></div>
+  </div>
+  <div class="col">
+    <div class="p-3 bg-light text-end"><a href="">Back to top</a></div>
   </div>
 </div>
 </body>

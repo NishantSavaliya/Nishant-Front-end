@@ -37,17 +37,6 @@ hr {
   flex-wrap: wrap;
 }
 
-    
-/* .blur {
-    transform: scale(0.9);
-    opacity: 0.6;
-  	-webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px);
-} */
-
         </style>
 </head>
 <body>
@@ -103,7 +92,7 @@ hr {
                   </div>
             </div>
       </div>
-      <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+      <div id="modal" class="modal fade">
             <div class="modal-dialog">
                   <div class="modal-content">
                         <div class="modal-header">
@@ -115,19 +104,14 @@ hr {
             </div>
       </div>
       
-      <!-- <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script> -->
       <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <!-- <script type="text/javascript" src="js/gallery.js"></script> -->
 
       <script>
             $('.thumbnail').click(function(){
-	$('.modal-body').empty();
-	$($(this).parents('div').html()).appendTo('.modal-body');
-	$('#modal').modal({show:true});
-});
+	      $('.modal-body').empty();
+	      $($(this).parents('div').html()).appendTo('.modal-body');
+	      $('#modal').modal({show:true});
+      });
 
       </script>
 </body>

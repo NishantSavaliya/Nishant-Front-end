@@ -1,104 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Gallary</title>
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>  
+      
       <style>
-            body{
-	      margin:0;
-	      padding:0;
-      }
-      .portfolio-item .item{
-	/*width:303px;*/
-	float:left;
-	margin-bottom:25px;
-}
-.portfolio-item{
-      height: 40%;
-      width: 68%;
-      margin: auto;
-}
-.popup-btn{
-      height: 100px;
-      width: 100px;
-}
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         .cont{
+            width: 90%;
+            position: relative;
+         }
+         .cont h1 {
+	      font-family: 'Raleway';
+	      font-weight: 900;
+	      text-transform: uppercase;
+	      letter-spacing: -1px;
+	      font-size: 32px;
+         }
+         hr {
+	      border: 0;
+            height: 3px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+         }
+
+         .portfolio .thumbnail img{
+            height: 100%;
+            width: 100%;
+         }
+
+         .mdl{
+            position: absolute;
+            left: 20%;
+            top: 15%;
+            height: 70vh;
+            width: 60%;
+            background-color: whitesmoke;
+         }
+         .mdl .mdl-cont{
+            height: 100%;
+            width: 100%;
+         }
+         .mdl .modalHeader{
+            height: 10vh;
+            width: 100%;
+         }
+         .mdl .imgbody #output{
+            height: 60vh;
+            width: 100%;
+         }
       </style>
 </head>
 <body>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-
- <div class="container">
-         <div class="row">
-            <div class="col-lg-12 text-center my-2">
-                <h4>Photo/Gallery</h4>
+      <div class="cont m-auto ">
+      <h1>Photo/Gallery</h1>
+      <hr>
+            <div class="portfolio row">
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1494719019271-7bfff81660d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=74496a215491b1529d6702f146901970&auto=format&fit=crop&w=500&q=60"> </a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523357585206-175e971f2ad9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d4e050da1c691f01f0643abe9cd5f94&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523359366921-4c14294ff5bd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6010b5b8bc1f6916d652fb48b9e039a6&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523282310917-57c94215f54f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9562049492c4c1c28014be6b4d372fa8&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523279719030-9806e8392152?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=83ec2854d04d0f08312dec44bf645e2d&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523264629844-40dd6bf17c2b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7ff0286ae72f4dfed2bfee5fc8a53fe&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523133892278-d324fa6b326b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1ba6e3178a138e7dcbdd241499378449&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523326350151-473dc3e5215b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aa765415933dbcd55bc27e0726bfd1f5&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 border p-2">
+                        <div class="thumbnail img-responsive">
+                              <a href="#" title="Image 1"><img src="https://images.unsplash.com/photo-1523086686757-5cda47c78492?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0da31c54dc3e5fd28da519b2cde2c98d&auto=format&fit=crop&w=500&q=60"></a>
+                        </div>
+                  </div>
             </div>
-         </div>
-         <div class="portfolio-item row">
-            <div class="item selfie col-lg-4">
-               <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" alt="">
-               </a>
-            </div>
-            <div class="item gts col-lg-4">
-               <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="">
-               </a>
-            </div>
-            <div class="item selfie col-lg-4">
-               <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" alt="">
-               </a>
-            </div>
-            <div class="item gts col-lg-4">
-               <a href="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" alt="">
-               </a>
-            </div>
-            <div class="item gts col-lg-4">
-               <a href="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" alt="">
-               </a>
-            </div>
-            <div class="item gts col-lg-4">
-               <a href="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" alt="">
-               </a>
-            </div>
-            <div class="item lap col-lg-4">
-               <a href="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" alt="">
-               </a>
-            </div>
-            <div class="item lap col-lg-4">
-               <a href="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" alt="">
-               </a>
-            </div>
-            <div class="item gts col-lg-4">
-               <a href="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" alt="">
-               </a>
-            </div>
-         </div>
       </div>
-      
+
+      <div class="mdl border m-auto">
+            <div class="mdl-cont border">
+                  <div class="modalHeader border">
+                        <button type="button" class="btn-close" aria-label="Close" id="cls"></button>
+                  </div>
+                  <div class="imgbody border p-2">
+                        <img id="output" src="" alt="">
+                  </div>
+            </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script>
-             $(document).ready(function() {
-         var popup_btn = $('.popup-btn');
-         popup_btn.magnificPopup({
-         type : 'image',
+             $('.thumbnail').click(function(){
+                   $('.mdl').show();
+                   $('.cont').css({'opacity': 0.4});
+                   let imgsrc= $(this).find('img').attr('src');
+                   $('#output').attr('src',imgsrc)
+                   
+            });
 
-         });
-      });
+            $('#cls').click(function(){
+                   $('.mdl').hide();
+                   $('.cont').css({'opacity': 1});
+                  //  $('.imgbody').empty();
+            });
+
       </script>
-      
-
-</body>
+      <!-- <script>
+                $(document).ready(function () {
+                        $('ul img').on({
+                                mouseover: function () {
+                                        $(this).css({
+                                                'opacity': 1,
+                                        });
+                                },
+                                mouseout: function () {
+                                        $(this).css({
+                                                'opacity': 0.4
+                                        });
+                                },
+                                click: function () {
+                                        var imageURL = $(this).attr('src');
+                                        $('#mainImg').fadeOut(500, function () {
+                                                $(this).attr('src', imageURL);
+                                        }).fadeIn(500);
+                                }
+                        });
+                });
+        </script>
+</body> -->
 </html>

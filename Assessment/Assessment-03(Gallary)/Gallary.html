@@ -46,6 +46,7 @@
             height: 70vh;
             width: 60%;
             background-color: whitesmoke;
+            opacity: 0;
          }
          .mdl .mdl-cont{
             height: 100%;
@@ -119,7 +120,7 @@
                   <div class="modalHeader border">
                         <button type="button" class="btn-close" aria-label="Close" id="cls"></button>
                   </div>
-                  <div class="imgbody border p-2">
+                  <div class="imgbody border">
                         <img id="output" src="" alt="">
                   </div>
             </div>
@@ -128,6 +129,7 @@
       <script>
              $('.thumbnail').click(function(){
                    $('.mdl').show();
+                   $('.mdl').css({'opacity': 1})
                    $('.cont').css({'opacity': 0.4});
                    let imgsrc= $(this).find('img').attr('src');
                    $('#output').attr('src',imgsrc)
@@ -137,31 +139,8 @@
             $('#cls').click(function(){
                    $('.mdl').hide();
                    $('.cont').css({'opacity': 1});
-                  //  $('.imgbody').empty();
             });
 
-      </script>
-      <!-- <script>
-                $(document).ready(function () {
-                        $('ul img').on({
-                                mouseover: function () {
-                                        $(this).css({
-                                                'opacity': 1,
-                                        });
-                                },
-                                mouseout: function () {
-                                        $(this).css({
-                                                'opacity': 0.4
-                                        });
-                                },
-                                click: function () {
-                                        var imageURL = $(this).attr('src');
-                                        $('#mainImg').fadeOut(500, function () {
-                                                $(this).attr('src', imageURL);
-                                        }).fadeIn(500);
-                                }
-                        });
-                });
-        </script>
-</body> -->
+      </script>     
+</body>
 </html>

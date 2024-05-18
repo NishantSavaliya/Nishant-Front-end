@@ -20,6 +20,7 @@
               margin: 10px auto;
               background-color: rgb(20, 20, 20);
               display: flex;
+              gap: 30px;
               overflow: hidden;
               align-items: center;
               position: relative;
@@ -28,19 +29,22 @@
         .child{
           height: 200px;
           width: 200px;
-          background-color: yellow;
           margin: auto;
+          background-color: yellow;
+          transition: 500ms;
+        }
+        .parent :nth-child(even){
+          background-color: green;
         }
 
         button{
           bottom: 10px;
           height: 25px;
           width: 50px;
-          background-color: green;
+          background-color: red;
           color: black;
           font-weight: 800;
-          padding: auto;
-         
+          padding: auto;  
           /* margin: 50px 200px; */
         }
 
@@ -70,7 +74,9 @@
     <div class="child c-3">3</div>
     <div class="child c-4">4</div>
     <div class="child c-5">5</div>
-
+    <!-- <div class="child c-6">6</div>
+    <div class="child c-7">7</div>
+    <div class="child c-8">8</div> -->
   </div>
 
     <button class="left">left</button>

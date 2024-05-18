@@ -4,9 +4,8 @@
             padding: 0;
         }
         .main{
-            height: auto;
+            height: 100vh;
             width: 100%;
-            /* border: 2px solid red; */
             display: flex ;
             position: relative;
         }
@@ -29,6 +28,7 @@
 
         .main .info .item{
             margin: 20px;
+            margin-top: 50px;
         }
 
         .main .info .item h5{
@@ -52,6 +52,8 @@
         }
 
         button{
+            height: 50px;
+            width: 50px;
             border-radius: 50%;
             padding: 5px;
             border-color: red;
@@ -59,16 +61,16 @@
         }
 
         .web{
-            top: 20%;
-            left: 51%;
+            top: 27%;
+            left: 50%;
         }
 
         .print{
-            top: 40%;
-            left: 51%;
+            top: 53%;
+            left: 50%;
         }
 
         .photo{
-            top: 59%;
-            left: 51%;
+            top: 77%;
+            left: 50%;
         }

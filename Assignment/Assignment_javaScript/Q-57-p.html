@@ -37,36 +37,41 @@
             (keydown, keypress, or keyup) identifies what kind of keyboard activity
             occurred.
             </p>
+
+            <p><b>For example-</b></p>
+           
+            <button>click</button>
+            <button>Focus</button>
+            <button>Double click</button>
             
-            <h1><li>Form events (e.g., submit, change, focus)</li></h1>
-      <p>
-      The submit event fires when a <form> is submitted.
-      Note that the submit event fires on the &lt; form&gt; element itself, and not on any &lt;button&gt; or &lt;input type="submit"&gt; inside it. However, the SubmitEvent which is sent to indicate the form's submit action has been triggered includes a submitter property, which is the button that was invoked to trigger the submit request.
-      </p>
-      <ol>
-      <b>The submit event fires when:</b>
-      <li>the user clicks a submit button,</li>
-      <li>the user presses Enter while editing a field (e.g. &lt;input type="text"&gt;) in a form,</li>
-      <li>a script calls the form.requestSubmit() method</li>
-      </ol>
-            <h1><li>Document events (e.g., load, unload)</li></h1>
-            <p>The DOMContentLoaded event fires when the HTML document has been completely parsed, and all deferred scripts (&lt;script defer src="…"&gt; and &lt;script type="module"&gt;) have downloaded and executed. It doesn't wait for other things like images, subframes, and async scripts to finish loading.</p>
-      <p>DOMContentLoaded does not wait for stylesheets to load, however deferred scripts do wait for stylesheets, and the DOMContentLoaded event is queued after deferred scripts. Also, scripts which aren't deferred or async (e.g. &lt;script&gt;) will wait for already-parsed stylesheets to load.</p>
-      <p>A different event, load, should be used only to detect a fully-loaded page. It is a common mistake to use load where DOMContentLoaded would be more appropriate.
 
-      This event is not cancelable.</p>
-            <h1><li>Window events (e.g., resize, scroll)</li></h1>
+            <script>
+                  let clickBtn = document.getElementsByTagName('button')[0];
+                  console.log(clickBtn);
+                  clickBtn.addEventListener('click', function (event) {
+                        // event.preventDefault();
+                        console.log('click btn clicked');
+                  });
 
-            <p>The read-only Window property event returns the Event which is currently being handled by the site's code. Outside the context of an event handler, the value is always undefined.
+                  let focusBtn = document.getElementsByTagName('button')[1];
+                  console.log(focusBtn);
+                  focusBtn.addEventListener('focus', function (event) {
+                        // event.preventDefault();
+                        console.log('focus btn  focused');
+                  });
 
-            You should avoid using this property in new code, and should instead use the Event passed into the event handler function. This property is not universally supported and even when supported introduces potential fragility to your code.</p>
+                  let dblClickBtn = document.getElementsByTagName('button')[2];
+                  dblClickBtn.addEventListener('dblclick', function (event) {
+                        // event.preventDefault();
+                        console.log(' double click btn clicked');
+                  });
 
+                  document.addEventListener('keypress', function (event) {
+                        // event.preventDefault();
+                        console.log('keypressed on document');
+                        console.log(event.key);
+                  });
+            </script>
 
-
-            <h1><li>Touch events (e.g., touchstart, touchmove, touchend)</li></h1>
-            <p>To provide quality support for touch-based user interfaces, touch events offer the ability to interpret finger (or stylus) activity on touch screens or trackpads.</p>
-      <p>The touch events interfaces are relatively low-level APIs that can be used to support application-specific multi-touch interactions such as a two-finger gesture. A multi-touch interaction starts when a finger (or stylus) first touches the contact surface. Other fingers may subsequently touch the surface and optionally move across the touch surface. The interaction ends when the fingers are removed from the surface. During this interaction, an application receives touch events during the start, move, and end phases.</p>
-      <p>Touch events are similar to mouse events except they support simultaneous touches and at different locations on the touch surface. The TouchEvent interface encapsulates all of the touchpoints that are currently active. The Touch interface, which represents a single touchpoint, includes information such as the position of the touch point relative to the browser viewport.   </p>
-      </ul>
 </body>
 </html>

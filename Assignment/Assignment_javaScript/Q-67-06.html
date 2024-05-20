@@ -7,9 +7,15 @@
       <style>
             pre{
                   height: auto;
-                  width: 100%;
+                  width: fit-content;
                   background-color: blanchedalmond;
             }
+            div{
+                  height: 200px;
+                  width: 200px;
+                  background-color: tomato;
+            }
+            
       </style>
 </head>
 <body>
@@ -17,12 +23,25 @@
       <p><b>Ans: </b></p>
       <p>-> In an HTML document, the document.createElement() method creates the HTML element specified by tagName.</p>
       <p> <b>Syntax</b></p>
-      <p>createElement(tagName)</p>
+      <pre>createElement(tagName)</pre>
       <br>
+      
       <p><b>For Ex-</b></p>
-      <br>
-      <p>-> This creates a new &lt;div&gt;.</p>
-      <br>
-      <pre>const newDiv = document.createElement("div");</pre>
+      
+      <div class="box"></div>
+      <script>
+            const newDiv = document.createElement("div");
+            console.log(newDiv);
+
+            let divBox = document.getElementsByClassName('box')[0];
+            let child1 = document.createElement('p');
+            let child2 = document.createElement('p');
+
+            child1.innerText = 'Bye Bye....';
+            child2.innerText = 'Hiii...';
+
+            divBox.append(child1);
+            divBox.prepend(child2)
+      </script>
 </body>
 </html>

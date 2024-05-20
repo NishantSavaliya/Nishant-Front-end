@@ -4,104 +4,90 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Q-55</title>
+      <style>
+            * {
+              font-size: x-large;
+            }
+            div {
+              width: 40%;
+              padding: 10px;
+              margin: 10px;
+              background-color: lightblue;
+              border: 2px solid darkgreen;
+              align-items: center;
+              align-content: center;
+              text-align: center;
+            }
+            input[type="Submit"] {
+              margin: 10px auto;
+              display: block;
+              width: 15%;
+              height: 40px;
+              border: 1px solid;
+              border-radius: 25px;
+              font-size: 15px;
+              cursor: pointer;
+            }
+      
+            input[type="Submit"]:hover {
+              background: #26eb26bb;
+              color: #e9f4fb;
+              transition: 0.5s;
+            }
+            h1 {
+              color: brown;
+              font-size: xxx-large;
+              font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                "Lucida Sans", Arial, sans-serif;
+              text-decoration: underline 5px darkorange;
+            }
+          </style>
 </head>
 <body>
       <h3>Q-55 : Form in Email, number, Password, Validation?</h3>
       <p><b>Ans : </b></p>
-
-
-            <input type="email" placeholder="Enter your email"/>
-            <input type="tel" placeholder="Enter your number">
-            <input id="password" type="password" placeholder="Enter your password" />
-            <button>Submit</button>
-
-      
+      <div>
+            <form action="">
+              <h1>Form Validation</h1>
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter your email" /> <br />
+              <br />
+              <label for="number">number</label>
+              <input type="number" placeholder="enter your number" /> <br />
+              <br />
+              <label for="password">password</label>
+              <input type="password" placeholder="enter your password" /> <br />
+              <br />
+              <input name="submit" type="Submit" value="Submit" />
+            </form>
+      </div>
       <script>
+            const submitBtn = document.getElementsByTagName("button")[0];
+      const password = document.getElementsByTagName("input")[0];
 
-            const submitBtn=document.getElementsByTagName('button')[0];
-            const email=document.getElementsByTagName('input')[0];
-            const password=document.getElementById('password');
-            const number = document.getElementsByTagName('input')[1]
+      submitBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        let emailValue = password.value;
 
-             submitBtn.addEventListener('click', function(e){
-                   e.preventDefault();
+        let emailResult = checkEmail(emailValue);
+        let passwordResult = checkpassword(emailValue);
+      });
 
-                   let passwordValue = password.value;
-                   let emailValue = email.value;
-                   let numberValue = number.value
+      function checkPassword(passwordVal){
+        let specialCharacters= "~!#$%^&*()_-";
+        let isCapitalCharPresent = false;
+        let isLowerCharPresent = false;
+        let isSpecialCharPresent = false;
+        let passwordArray = Array.from(passwordVal);
 
-//----------------for email validation ----------------------------
+      for (i = 0; i < passwordArray.length; i++) {
+            if(emailValue[i].toUpperCase() == emailValue[i])
+            isCapitalCharPresent = true;
+            if (emailValue[i].toLowerCase() == emailValue[i])
+            isLowerCharPresent = true;
 
-                  // let isATAvailable = false;
-                  // let isDOTAvailable = false;
-                  // let isAtAndDOTAreTogather =false;
-                  // let emailArray = Array.from(emailValue);                  
-
-                  //  for(i=0; i<=emailArray.length; i++){
-                  //       if(emailArray[i]=='@'){
-                  //              isATAvailable=true;
-                  //        }
-                  //        if(emailArray[i]=='.'){
-                  //              isDOTAvailable=true;
-                  //        }
-                  //       if(emailArray[i] + emailArray[i + 1]=='@.'){
-                  //             isAtAndDOTAreTogather=true;
-                  //       }
-                  //  }
-
-                  // console.log(isATAvailable && isDOTAvailable && !isAtAndDOTAreTogather);
-
-//----------------for password validation ----------------------------   
-
-                  // function checkPassword (passwordValue){
-
-                  //       var specialChar = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
-                  //       let isCapitalCharPresent = false;
-                  //       let isLowerCharPresent = false;
-                  //       let isSpecialCharPresent = false;
-                  //       let passwordArray = Array.from(passwordValue);
-                  //       let NaN
-                  //       let isNaNPresent = false;
-
-                  //  if(passwordArray.length >= 6 && passwordArray.length <= 20){
-                  //       for (i=0; i < passwordArray.length; i++){
-      
-                  //             if(passwordValue[i].toUpperCase()==passwordValue[i]){
-                  //                   isCapitalCharPresent = true;
-                  //             }
-                  //             if(passwordValue[i].toLowerCase()==passwordValue[i]){
-                  //                   isLowerCharPresent = true;
-                  //             }
-                  //             if(passwordValue[i].match(specialChar)){
-                  //                   isSpecialCharPresent = true; 
-                  //             }
-                  //             if(passwordValue[i] == NaN){
-                  //                   isNaNPresent= true;
-                  //             }
-
-                  //       }
-                  // }
-                  // console.log(isCapitalCharPresent); 
-                  // console.log(isLowerCharPresent);  
-                  // console.log(isSpecialCharPresent);
-                  // console.log(!isNaNPresent);
-
-                  // }
-
-//----------------for Number validation ----------------------------                     
-
-                  let numberArray = Array.from(numberValue)
-                  let NaN
-                  let isNaNPresent = false;
-
-                  if(numberArray.length = 10){
-                        if(numberValue == NaN){
-                              isNaNPresent = true
-                        }
-                        console.log(!isNaNPresent);
-                  }
-
-            });
+            console.log(isCapitalCharPresent && isLowerCharPresent);
+      }};
       </script>
 </body>
 </html>

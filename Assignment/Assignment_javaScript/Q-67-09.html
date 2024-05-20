@@ -21,7 +21,7 @@
                   background-color: blueviolet;
                   border: 5px double black;
             }
-      
+            
       </style>
 </head>
 <body>
@@ -33,12 +33,19 @@
       <button class="change">change</button>
 
       <script>
-            element = document.getElementsByClassName('col')[0]
+           let btn = document.getElementsByTagName('button')[0];
+          
+
+            element = document.getElementsByClassName('col')[0];
             // element.style.backgroundColor='red'
             element.style.fontSize='30px'
+         
+            
 
-            element.classList.add('cl01')
-            element.classList.remove('cl02')
+            btn.addEventListener('click', () => {
+                  element.classList.add('cl01');
+            });
+
       </script>
       
 </body>

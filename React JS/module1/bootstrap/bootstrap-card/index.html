@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>card</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="card.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- header -->
+      <section id="header" class="container-fluid p-3 shadow">
+            <div class="row">
+                  <div class=" col-9 logo">
+                        <img src="card-images/logo-header.png" alt="" class="img-fluid ms-5">
+                  </div>
+                  <div class=" col-3 brijesh-img ">
+                       <strong> <img src="card-images/brijesh.png" alt="" class="img-fluid rounded-circle"> &nbsp; Mr. Brijesh Pandey</strong>
+                  </div>
+            </div>
+      </section>
+      <!-- navbar -->
+      <section id="navbar">
+            <nav class="nav navbar navbar-expand-md bg-primary">
+                  <ul class="navbar-link">
+                        <li><a href=""><span class="bi bi-house"></span>Dash Board</a></li>
+                        <li><a href="">My Request</a></li>
+                        <li><a href="">Report</a></li>
+                        <li><a href="">Help</a></li>
+                  </ul>
+
+            </nav>
+      </section>
+      <!-- content -->
+
+      <section id="content" class="container-fluid">
+            <div class="row">
+                  <div class="col-md-5 ms-5 mt-3"> 
+                        <div class="card border border-danger "></div>
+                        <div class="header bg-danger text-white p-3"><h3><span>My Pending Request</span></h3></div>
+                        <div class="body border border-danger p-3"><h4>Pending Request</h4></div>
+                  </div>
+
+                  <div class="col-md-5 ms-5 mt-3">
+                        <div class="card border border-warning "></div>
+                        <div class="header bg-warning text-white p-3"><h3><span class="bi bi-celendar"></span><span>My Monthaly Attendance</span></h3></div>
+                        <div class="body border border-warning p-3"><h4>My Attendance</h4>
+                              <table class="table table-responsive">
+                                    <tr>
+                                          <th><span>Leave</span> <button type="button" class="btn btn-sm border border-0 float-end">0</button></th>
+                                    </tr>
+                                    <tr>
+                                          <th><span>Shift Change Request</span> <button type="button" class="btn btn-sm border border-0 float-end">0</button></th>
+                                    </tr>
+                                    <tr>
+                                          <th><span>Late Early</span> <button type="button" class="btn btn-sm border border-0 float-end">0</button></th>
+                                    </tr>
+                                    <tr>
+                                          <th><span>Overtime</span> <button type="button" class="btn btn-sm border border-0 float-end">0</button></th>
+                                    </tr>
+                              </table>
+                        </div>
+                  </div>
+
+                  <div class="col-md-5 ms-5 mt-3">
+                        <div class="card border border-primary "></div>
+                        <div class="header bg-primary text-white p-3"><h3><span class="bi bi-cake"></span><span>Birthday Celebration </span></h3></div>
+                        <div class="body border border-primary p-3"><h4>Happy Birthday</h4>
+                        <marquee name="birthday" direction="up" scrolldelay="150" onmouseover="stop(this.value)" onmouseout="start(this.value)">
+                        <p><b>Nishant      9th december 1996</b></p>
+                        <p><b>Nishant      9th december 1996</b></p>
+                        <p><b>Nishant      9th december 1996</b></p>
+                        <p><b>Nishant      9th december 1996</b></p>
+                        <p><b>Nishant      9th december 1996</b></p>
+      
+                        </marquee>
+                        </div> 
+                  </div>
+                  <div class="col-md-4 ms-5 mt-3">
+                        <div class="card border border-success "></div>
+                        <div class="header bg-success text-white p-3"><h3><span class="bi bi-celendar"></span><span>My Monthaly Attendance</span></h3></div>
+                        <div class="body border border-success p-3"><h4>My Attendance</h4></div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- footer -->
+
+      <section id="footer"  class="container-fluid bg-dark mt-3 p-3">
+            <p class="text-white text-center">copyright @ 2024 all rights reserve 
+      </section>
+</body>
+</html>

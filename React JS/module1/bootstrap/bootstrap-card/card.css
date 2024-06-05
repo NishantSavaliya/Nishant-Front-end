@@ -2,12 +2,12 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      overflow-x: hidden;
 }
 .brijesh-img img{
       height: 65px !important;
       width: 65px !important;
 }
-
 .navbar ul{
       margin-left: 3%;
 }
@@ -21,4 +21,22 @@
       list-style-type: none;
       color: white;
       font-size: 18px;
+}
+
+@media only screen and (max-width:553px){
+      .logo img{
+            width: 70% !important;
+      }
+
+      .brijesh-img img{
+            height: 45px !important;
+            width: 45px !important;
+      }
+      .navbar-link li{
+            display: block !important;
+      }
+      .row{
+            margin: 0 !important;
+            padding: 0 !important;
+      }
 }

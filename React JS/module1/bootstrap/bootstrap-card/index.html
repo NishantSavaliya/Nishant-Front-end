@@ -19,21 +19,26 @@
                         <img src="card-images/logo-header.png" alt="" class="img-fluid ms-5">
                   </div>
                   <div class=" col-3 brijesh-img ">
-                       <strong> <img src="card-images/brijesh.png" alt="" class="img-fluid rounded-circle"> &nbsp; Mr. Brijesh Pandey</strong>
+                       <strong> <img src="card-images/brijesh.png" alt="" class="img-fluid rounded-circle"> &nbsp;<span> Brijesh Pandey</span> </strong>
                   </div>
             </div>
       </section>
       <!-- navbar -->
-      <section id="navbar">
-            <nav class="nav navbar navbar-expand-md bg-primary">
+      <section id="navigation">
+            <nav class="nav navbar navbar-expand-md bg-dark">
+                  <a href="#" class="navbar-brand text-white ms-5">Tops Hrms</a>
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#coll">
+                      <span class="bi bi-grid text-white p-4 fs-3"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="coll">
                   <ul class="navbar-link">
-                        <li><a href=""><span class="bi bi-house"></span>Dash Board</a></li>
-                        <li><a href="">My Request</a></li>
-                        <li><a href="">Report</a></li>
-                        <li><a href="">Help</a></li>
+                      <li><a href=""><span class="bi bi-house"></span> Dashboard</a></li>
+                      <li><a href="">My Request</a></li>
+                      <li><a href="">Report</a></li>
+                      <li><a href="" data-bs-toggle="modal" data-bs-target="#help"><span class="bi bi-help"></span> Help</a></li>
                   </ul>
-
-            </nav>
+                  </div>
+              </nav>
       </section>
       <!-- content -->
 
@@ -42,7 +47,11 @@
                   <div class="col-md-5 ms-5 mt-3"> 
                         <div class="card border border-danger "></div>
                         <div class="header bg-danger text-white p-3"><h3><span>My Pending Request</span></h3></div>
-                        <div class="body border border-danger p-3"><h4>Pending Request</h4></div>
+                        <div class="body border border-danger p-3">
+                              <h4 class=" border-bottom p-1">Leave Request</h4>
+                              <h4 class=" border-bottom p-1">Overtime Request</h4>
+                              <h4 class=" border-bottom p-1">Shift change Request</h4>
+                        </div>
                   </div>
 
                   <div class="col-md-5 ms-5 mt-3">
@@ -93,5 +102,24 @@
       <section id="footer"  class="container-fluid bg-dark mt-3 p-3">
             <p class="text-white text-center">copyright @ 2024 all rights reserve 
       </section>
+
+      <!-- help -->
+
+      <div class="modal fade" id="help" role="dialog">
+            <div class="modal-dialog" style="min-width: 60%;">
+                  <div class="modal-content p-3">
+                  <div class="row">
+                        <div class="col-md-5">
+                              <img src="https://cdn.dribbble.com/users/3532751/screenshots/10908619/media/f5ebe608a5f11261edc763df8c9ee238.gif" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                              <h3>For any help <button type="button" class="btn btn-sm btn-danger float-end" data-bs-dismiss="modal">&times;</button></h3>
+                              <hr class="border border-1 w-50 border-dark">
+                              <h3>(+91) 9998003879</h3>
+                        </div>
+                  </div>
+            </div>
+            </div>
+      </div>
 </body>
 </html>

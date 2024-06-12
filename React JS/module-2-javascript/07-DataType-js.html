@@ -1,0 +1,74 @@
+javascript Data types :
+
+which type of value store in veriables i.e. data type of veriable.
+
+types of Data type in javascript : 
+
+a) number : 
+
+      example :   a=10
+                  b=10.253
+
+b) undefined : 
+      example : 
+                  let a;
+                  var a;
+                  const a;
+
+c) undeclare : 
+      example : 
+                  let;
+                  var;
+                  const;
+
+d) boolean : 
+      example : 
+                  true;
+                  false;
+
+e) string : 
+      example : 
+                  let name = 'rakesh';
+                  let post = 'developer'
+
+<script>
+
+      //  method of declare string.......
+
+      var name = 'my name is nishant'
+      console.log(typeof(name));                       //string
+
+      var name = "my name is nishant"
+      console.log(typeof(name));                       //string
+
+      var name = `my name is nishant`
+      console.log(typeof(name));                       // string
+
+      // var name = "my name is nishant              // line break down not acceptable with  "..."
+      // my age is 28 yr."                           // unterminated string literal
+      // console.log(typeof(name));
+
+      var name = `my name is nishant                 
+      my age is 28 yr.`                               // use for store peragraph as string  `.....`
+      console.log(typeof(name));
+
+      let emp = {'name': 'rakesh', 'age': '25 yr', 'Home-town' : 'rajkot'}
+      console.log(typeof(emp));                      //object
+
+      let num = [10, 20, 30,]
+      console.log(num);
+      console.log(typeof(num));                      // array data type is object
+
+      let a=Symbol(10)
+      console.log(a);                                // Symbol(10)
+      console.log(typeof(a));                        // symbol
+
+
+      let b = 1254535896333363521151515
+      console.log(typeof(b));                        // number     
+      
+
+      let c = 12161514181917n;                       // add 'n' at end it convert in bigint
+      console.log(typeof(c));                        //  bigint
+      
+</script>

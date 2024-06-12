@@ -241,7 +241,10 @@ line-height: 8px; /* 100% */
             height: 100%;
       }
 
-
+      .ft{
+            margin: 0;
+            padding: 0;
+      }
       .ft .flex p{
             display: none;
       }
@@ -257,7 +260,9 @@ line-height: 8px; /* 100% */
             width: 150px;
             height: 50px;
       }
-
+      .ft2{
+            margin-top: 0px;
+      }
       .ft2 .img{
             display: none;
       }

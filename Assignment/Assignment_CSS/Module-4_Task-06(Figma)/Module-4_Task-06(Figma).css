@@ -657,7 +657,7 @@ line-height: 16px; /* 100% */
 }
 
 .ft .flex p{
-      padding-top: 15px;
+      padding-top: 5%;
       color: #FFF;
 font-feature-settings: 'salt' on, 'liga' off;
 font-family: Inter;

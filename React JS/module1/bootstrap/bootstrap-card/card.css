@@ -2,18 +2,17 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      overflow-x: hidden;
 }
 .brijesh-img img{
       height: 65px !important;
       width: 65px !important;
 }
 .navbar ul{
-      margin-left: 3%;
+      margin-left: 3% !important;
 }
 .navbar-link li{
-      display: inline-block ;
-      padding: 5px 15px;
+      display: inline-block !important ;
+      padding: 5px 15px !important;
 }
 
 .navbar-link a{
@@ -33,7 +32,8 @@
             width: 45px !important;
       }
       .navbar-link li{
-            display: block !important;
+            display: inline-block !important;
+            padding: 5px 15px !important;
       }
       .row{
             margin: 0 !important;

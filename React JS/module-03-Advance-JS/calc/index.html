@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculator</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <!-- <link rel="stylesheet" href="calc.css"> -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <!-- <link rel="stylesheet" href="calc.js"> -->
+       <style>
+            body{
+                  margin: 0;
+                  padding: 0;
+                  overflow-x: hidden;
+                  box-sizing: border-box;
+                  background-color: aliceblue !important;
+            }
+
+            .calculator-app {
+                  width: 80%;
+                  height: auto;
+                  margin-top: 5% !important;
+            }
+
+            .calculator-app  table input{
+                  width: 100%;
+                  height: 50px;
+                  padding: 10px !important;
+                  text-align: right !important;
+                  font-size: 28px !important;
+                  border: none !important;
+                  background-color: aliceblue !important;
+            }
+       </style>
+</head>
+<body>
+      <div class="calculator-app container ">
+            <table class="table table-responsive">
+                  <tr>
+                        <td colspan="4"><input type="text" name="" id="result" placeholder="0" class="form-control"></td>
+                  </tr>
+
+                  <tr>
+                        <td><button type="button" value="%" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4">%</button></td>
+                        <td><button type="button" value="%" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4">CE</button></td>
+                        <td><button type="button" value="%" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="clr()">C</button></td>
+                        <td><button type="button" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return clrSlice(this.value)"><span class="bi bi-backspace"></span></button></td>
+                  </tr>
+
+                  <tr>
+                        <td><button type="button" value="1/x" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">1/x</button></td>
+                        <td><button type="button" value="" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">x <sup>2</sup></button></td>
+                        <td><button type="button" value="" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">2↓x</button></td>
+                        <td><button type="button" value="/" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">/</button></td>
+                  </tr>
+
+                  <tr>
+                        <td><button type="button" value="7" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">7</button></td>
+                        <td><button type="button" value="8" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">8</button></td>
+                        <td><button type="button" value="9" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">9</button></td>
+                        <td><button type="button" value="x" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">x</button></td>
+                  </tr>
+
+                  <tr>
+                        <td><button type="button" value="4" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">4</button></td>
+                        <td><button type="button" value="5" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">5</button></td>
+                        <td><button type="button" value="6" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">6</button></td>
+                        <td><button type="button" value="-" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">-</button></td>
+                  </tr>
+
+                  <tr>
+                        <td><button type="button" value="1" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">1</button></td>
+                        <td><button type="button" value="2" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">2</button></td>
+                        <td><button type="button" value="3" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">3</button></td>
+                        <td><button type="button" value="+" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4" onclick="return getResult(this.value)">+</button></td>
+                  </tr>
+
+                  <tr>
+                        <td><button type="button" value="%" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4">+/-</button></td>
+                        <td><button type="button" value="%" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4">0</button></td>
+                        <td><button type="button" value="%" class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4">.</button></td>
+                        <td><button type="button" value="%" class="btn btn-lg border border-0 bg-primary text-white w-100 p-3 shadow fs-4">=</button></td>
+                  </tr>
+            </table>
+      </div>
+
+      <script>
+      // clear when click on c button
+
+            function clr() {
+                  document.getElementById("result").value="";
+            }
+
+      // when press on button its value get in result
+
+            function getResult(val) {
+                  document.getElementById("result").value+=val;
+            }
+
+      // when press on backspace its clear or slice one-one values
+            function clrSlice(val){
+                  var bck = document.getElementById("result").value=+val;
+                  console.log(bck);
+                  var res = bck.clrSlice(0,-1);
+                  console.log(res);
+                  document.getElementById("result")=+res.value;
+            }
+      </script>
+</body>
+</html>

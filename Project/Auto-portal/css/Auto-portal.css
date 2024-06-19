@@ -1,0 +1,243 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+.bg-white{
+      background-color: #fafafa;
+}
+
+/* -----------header start----------------------- */
+.header{
+      height: 70px;
+      width: 100%;
+      box-shadow: #465166;
+      
+}
+.header ul{
+      display: inline;
+      line-height: 70px;
+}
+.header .menu li{
+      list-style: none;
+      display: inline;
+} 
+.header .menu li a{
+      color: #465166;
+      text-decoration: none;
+      padding-left: 5%;
+      font-size: 1em;
+      font-weight: 600;
+} 
+.header .menu li a:hover{
+      color: #ed6b00;
+}
+.header .log{
+      margin-left: 20%;
+}
+.header .log li{
+      list-style: none;
+      display: inline;
+      text-align: center;
+      margin-left: 1%;
+}
+.header .log li i{
+      color: #465166;
+      padding-left: 5%;
+      font-size: 1.5em;
+      font-weight: 600;
+}
+.header .log li button{
+      background-color: #0071bc;
+      color: #fff;
+      padding: auto;
+      font-size: 1.2em;
+      font-weight: 600;
+      border-radius: 7px;
+      height: 30px;
+      width: 100px;
+      border-style: hidden;
+}
+.header .log li button:hover{
+      scale: 1.2;
+}
+/* -----------------headre end----------------- */
+.content{
+      height: 87vh;
+      width: 100%;
+      background-image: url(https://assets.cars24.com/production/c2b-website/240607235537/js/b826677e31b9d490bc0e9ff5b810e87a.png);
+      background-size: 100% 100%;
+}
+.content .info{
+      padding-top: 7%;
+      padding-left: 5.5%;
+}
+.content h4{
+      font-weight: 600;
+      font-size: 2em;
+      color: #fff;
+      font-family: var(--main-font);
+}
+.content h2{
+      font-weight: 600;
+      font-size: 3em;
+      color: #fff;
+      font-family: var(--main-font);
+}
+.content .info input{
+      height: 50px;
+      width: 45%;
+      border-radius: 10px;
+      border-style: none;
+      padding-left: 2%;
+      font-size: 1.2em;
+}
+.content .info button{
+      height: 80px;
+      width: 100px;
+      border-style: none;
+      border-radius: 15px;
+      background-color: #fff;
+      text-align: center;
+      padding: 5px;
+}
+.content .info .company img{
+      height: 80%;
+      width: 90%;
+}
+
+/* ------ cards ------- */
+.card-title{
+      margin-left: 5.5%;
+      font-size: 2em;
+      font-weight: 700;
+      color: #002441;
+}
+.card-cont{
+      width: 90%;
+      margin: 5% auto;
+      display: flex;
+      gap: 3%;
+}
+
+.card{
+      width: 25%;
+      height: 50%;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+}
+.card img{
+      width: 100%;
+      height: 50%;
+}
+.card h3{
+      color: #002441;
+      text-align: start;
+      padding-left: 3%;
+}
+.card h5{
+      color: #6c757d;
+      font-size: 1.1em;
+      text-align: start;
+      padding-left: 3%;
+      font-weight: 400;
+}
+.card p{
+      color: #ed6b00;
+      font-weight: 700;
+      text-align: start;
+      padding-left: 3%;
+}
+.card p i{
+      color: #ed6b00;
+}
+.card:hover{
+      scale: 1.05;
+}
+
+/* ---------new added------------- */
+
+.new-add{
+      width: 100%;
+      height: auto;
+      background-color: #007bff;
+      padding: 5% 5%;
+}
+.new-add p{
+      color: #fff;
+      margin-bottom: 3%;
+      font-size: 2em;
+      font-weight: 600;
+}
+.new-add .new-cont{
+      display: flex;
+      gap: 3%;
+}
+.new{
+      width: 25%;
+      height: 30%;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      overflow: hidden;
+}
+.new img{
+      width: 100%;
+      height: 45%;
+}
+.new h3{
+      text-align: start;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #002441;
+      padding-left: 7%;
+}
+.new h4{
+      text-align: start;
+      font-size: 1.1em;
+      font-weight: 500;
+      color: #465166;
+      padding-left: 7%;
+      padding-top: 3%;
+}
+.new h4 i{
+      font-size: 0.6em;
+}
+.new h5{
+      text-align: start;
+      font-size: 0.9em;
+      font-weight: 300;
+      color: #465166;
+      padding-left: 7%;
+      padding-top: 6%;
+}
+.new p{
+      text-align: start;
+      font-size: 0.8em;
+      font-weight: 300;
+      color: #465166;
+      padding-left: 7%;
+      padding-bottom: 2%;
+}
+.new h6{
+      text-align: start;
+      font-size: 1em;
+      font-weight: 300;
+      color: #ed6b00;
+      padding-left: 7%;
+      padding-bottom: 2%;
+}
+.new:hover{
+      scale: 1.05;
+}
+.new-add button{
+      background-color: #ed6b00;
+      color: #fff;
+      padding: auto;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 10px;
+      height: 50px;
+      width: 200px;
+      border-style: hidden;
+      margin-top: 5%;
+}

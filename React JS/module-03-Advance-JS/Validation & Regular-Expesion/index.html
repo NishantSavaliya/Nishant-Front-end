@@ -94,10 +94,15 @@
                         </marquee>
                         </div> 
                   </div>
+
+<!-- ----------- form start ----------------- -->
+
                   <div class="col-md-4 ms-5 mt-3 frm">
                         <div class="card border border-success "></div>
                         <div class="header bg-success text-white p-3"><h3><span class="bi bi-celendar"></span><span>Resistration From</span></h3></div>
-                        <form name="frm" class="border border-1 border-success p-2">
+                        
+                        
+                        <form name="frm" action="thanks.html" class="border border-1 border-success p-2" onsubmit="return valid(this.value)">
                               <div class="input-group border border-0 w-75 ms-2 mt-2">
                                     <span class="input-group-text border border-0"><i class="bi bi-person-add"></i></span>
                                     <input type="text" name="fname" placeholder="First name" class="form-control border-1 border-dark">
@@ -159,5 +164,7 @@
         </section>
 
       <script src="../Loader/loader-js/loader.js"></script>
+
+      <script src="../Validation & Regular-Expesion/Java-Script/Validation.js"></script>
 </body>
 </html>

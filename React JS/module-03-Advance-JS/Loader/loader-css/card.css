@@ -1,0 +1,57 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+/* loader css */
+
+.loader{
+      width: 450px;
+      height: 350px;
+      position: absolute;
+      left: 32%;
+      top: 15%;
+      background-image: url(../loader-images/loader.gif);
+      background-size: 450px 350px;    
+}
+.main-page{
+      display: none;
+}
+.brijesh-img img{
+      height: 65px !important;
+      width: 65px !important;
+}
+.navbar ul{
+      margin-left: 3% !important;
+}
+.navbar-link li{
+      display: inline-block !important ;
+      padding: 5px 15px !important;
+}
+
+.navbar-link a{
+      text-decoration: none;
+      list-style-type: none;
+      color: white;
+      font-size: 18px;
+}
+
+@media only screen and (max-width:553px){
+      .logo img{
+            width: 70% !important;
+      }
+
+      .brijesh-img img{
+            height: 45px !important;
+            width: 45px !important;
+      }
+      .navbar-link li{
+            display: inline-block !important;
+            padding: 5px 15px !important;
+      }
+      .row{
+            margin: 0 !important;
+            padding: 0 !important;
+      }
+}

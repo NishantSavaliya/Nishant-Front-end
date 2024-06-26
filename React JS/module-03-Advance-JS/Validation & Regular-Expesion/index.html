@@ -39,7 +39,7 @@
                   <ul class="navbar-link">
                       <li><a href=""><span class="bi bi-house"></span> Dashboard</a></li>
                       <li><a href="">My Request</a></li>
-                      <li><a href="">Report</a></li>
+                      <li><a href="" data-bs-toggle="modal" data-bs-target="#log-in">Log in</a></li>
                       <li><a href="" data-bs-toggle="modal" data-bs-target="#help"><span class="bi bi-help"></span> Help</a></li>
                   </ul>
                   </div>
@@ -142,6 +142,36 @@
             <p class="text-white text-center">copyright @ 2024 all rights reserve 
       </section>
 
+      <!-- log in -->
+
+      <div class="modal fade" id="log-in" role="dialog">
+            <div class="modal-dialog" style="min-width: 60%;">
+                  <div class="modal-content p-3">
+                        <div class="row">
+                              <div class="col-md-6 bg-primary login-img p-5 rounded">
+                                    <h2 class="text-white">Look like you're new here!</h2>
+                                    <p class="text-white">Log in with your mobile number</p>
+                                    <img src="../Validation & Regular-Expesion/Images/login-img.jpeg" alt="" class="img-fluid w-75 mt-2 m-auto">
+                              </div>
+
+                              <div class="col-md-6">
+                                    <button type="button" class="btn btn-sm btn-danger float-end" data-bs-dismiss="modal">&times;</button></h3>
+                                    <div class="input-group border border-0 w-100 m-2 mt-5 ms-4">
+                                          <span class="input-group-text border border-1 border-primary"><i class="bi bi-person-add"></i></span>
+                                          <input type="text" name="email" id="email" data-bvalidator="required, email" placeholder="Email" class="border border-1 border-primary rounded-end p-3 ">
+                                    </div>
+                                    <div class="input-group border border-0 w-100 m-2 mt-5 ms-4">
+                                          <span class="input-group-text border border-1 border-primary"><i class="bi bi-lock"></i></span>
+                                          <input type="password" name="pwd" id="pwd" data-bvalidator="required, minlen[4], maxlen[12]" placeholder="Password" class="border border-1 border-primary rounded-end p-3">
+                                    </div>
+
+                                    <button type="button" class="btn btn-sm m-0 p-1 w-25 text-white bg-primary ms-4 mt-5 fs-4" onclick="return lg(this.value)">Log in</button>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      
       <!-- help -->
 
       <div class="modal fade" id="help" role="dialog">
@@ -166,5 +196,9 @@
       <script src="../Loader/loader-js/loader.js"></script>
 
       <script src="../Validation & Regular-Expesion/Java-Script/Validation.js"></script>
+
+      <script src="../Validation & Regular-Expesion/Java-Script/log-in.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

@@ -52,8 +52,7 @@
             display: inline-block !important;
             padding: 5px 15px !important;
       }
-      .row{
-            margin: 0 !important;
-            padding: 0 !important;
+      #content{
+            margin: auto !important;
       }
 }

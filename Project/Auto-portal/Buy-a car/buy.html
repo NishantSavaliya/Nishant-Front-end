@@ -25,27 +25,19 @@
       <div class="log">
             <p><img src="https://fastly-production.24c.in/cars24/seo/static/1_20230830_1693395013.png" alt=""></p>
       </div> </div>
-      <!-- content -->
-      <div class="content">
-            <div class="info">
-                  <h4>Your dream car comes with</h4>
-                  <br>
-                  <h2>Zero Down Payment</h2>
-                  <br><br><br>
-                  <input type="text" placeholder="Search for your favrourite cars">
-                  <br><br><br>
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/maruti-suzuki.png" alt=""></button> &nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/hyundai.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/honda.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/tata.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/renault.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/ford.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/mahindra.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/nissan.png" alt=""></button>
 
+      <!-- login -->
+       <div class="login">
+            <div class="log-use">
+                  <p>User Name :</p><br>
+                  <input type="text" placeholder="Enter email "> <br><br>
+                  <p>Password :</p><br>
+                  <input type="password" placeholder="Enter password ">
+                  <br><br>
+                  <button>Login</button>
             </div>
-      </div>
-
+       </div>
+      
       <!-- cards -->
        <br><br>
        <p class="card-title"> why buy from us ?</p>
@@ -140,10 +132,13 @@
                         <h5>10 lakh</h5>
                   </button>
             </div>
+            <div class="cat-city">
+                  <input type="text" placeholder="Search by city...">
+            </div>
       </div>
 
 
-      <!-- new added -->
+    <!-- new added  -->
 
       <div class="new-add">
             <p>Please ! Register here</p>
@@ -154,15 +149,100 @@
             <div class="reg-inp">
                   <p><button><i class="fa-regular fa-user"></i></button>&nbsp;&nbsp;<input type="text" placeholder="Enter Full name *"></p>
 
-                  <p><span><i class="fa-solid fa-table-cells"></i></span><input type="number" placeholder="Enter phone number "></p>
+                  <p><button><i class="fa-solid fa-table-cells"></i></button>&nbsp;&nbsp;<input type="number" placeholder="Enter phone number *"></p>
 
-                  <p><span><i class="fa-regular fa-envelope"></i></span><input type="email" placeholder="Enter Email "></p>
+                  <p><button><i class="fa-regular fa-envelope"></i></button>&nbsp;&nbsp;<input type="email" placeholder="Enter Email  *"></p>
 
-                  <p><span><i class="fa-regular fa-message"></i></span><textarea name="msg" id="msg" placeholder="Write comment here..."></textarea></p>
+                  <p><button><i class="fa-regular fa-message"></i></button>&nbsp;&nbsp;<textarea name="msg" id="msg" placeholder="Write comment here..."></textarea></p>
 
-                  <p><span><i class="fa-solid fa-unlock-keyhole"></i></span><input type="password" placeholder="set password"></p>
+                  <p><button><i class="fa-solid fa-unlock-keyhole"></i></button>&nbsp;&nbsp;<input type="password" placeholder="set password *"></p>
+
+                  <p><input class="reg-sub" type="submit" value="Submit"></p>
             </div>
             
+      </div>
+
+      <!-- car collection -->
+
+      <div class="car-col">
+            <p>Recently added cars</p>
+            <div class="car-cont">
+            
+                  <div class="car c-1">
+                        <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/666c237811339754adb8d711/5ccd3789-7541-40fd-a0d5-c9e1e4b72874/slot/10127637719-caab9489772b4ed58ba50ba460810f16-Exterior-7.jpg?w=690&auto=format" alt="" class="">
+                        <br><br>
+                        <h3>2016 Maruti Baleno &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
+                        <h4>Zeta CVT Petrol 1.2</h4>
+                        <h5>68,060 km  &nbsp;&nbsp;&nbsp;  2ND Owner  &nbsp;&nbsp;&nbsp;  </h5>
+                        <h5>PETROL  &nbsp;&nbsp;&nbsp;  Automatic</h5><br>
+                        <h3>  Rs 4,90,000</h3>
+                        <br>
+                        <p>Zero down payment</p>
+                        <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Mavdi chowkdi, Rajkot</h6>
+                        <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
+                  </div>
+            <div class="car c-2">
+                  <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/789c04d4-ace1-4d17-b4a9-a29ae85dd7a9/631b971d-e7b2-416e-87f1-30282b07f557/42.jpg?w=690&auto=format" alt="" class="">
+                  <br><br>
+                  <h3>2012 Maruti Ritz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
+                  <h4>LXI </h4>
+                  <h5>60,350 km  &nbsp;&nbsp;&nbsp;  2ND Owner  &nbsp;&nbsp;&nbsp;  </h5>
+                  <h5>PETROL  &nbsp;&nbsp;&nbsp;  Manual</h5><br>
+                  <h3>  Rs 2,18,000</h3>
+                  <br>
+                  <p>Zero down payment</p>
+                  <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Nikol, Ahmedabad</h6>
+                  <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
+            </div>
+            <div class="car c-3">
+                  <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/37948a0c-b8d9-48cf-92ce-ce98bb594362/25ec3d31-e7e6-4595-a32c-b1258f63502f/42.jpg?w=690&auto=format" alt="" class="">
+                  <br><br>
+                  <h3>2018 Hyundai Creta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
+                  <h4>Sx Plus 1.6 Petrol</h4>
+                  <h5> 1,18,000  km  &nbsp;&nbsp;&nbsp;  1st Owner  &nbsp;&nbsp;&nbsp;  </h5>
+                  <h5>PETROL  &nbsp;&nbsp;&nbsp;  Automatic</h5><br>
+                  <h3>  Rs 6,53,000</h3>
+                  <br>
+                  <p>Zero down payment</p>
+                  <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Jamnagar Road, Rajkot</h6>
+                  <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
+            </div>
+            <div class="car c-4">
+                  <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/666c214ae9424f19d555c3ba/298bcc2b-f073-4cad-9b65-01570c65f163/slot/10195339717-e0e4456ecc60481bba74103ced08fe4a-Exterior-7.jpg?w=690&auto=format" alt="" class="">
+                  <br><br>
+                  <h3>2013 Hyundai i20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
+                  <h4>Sportz 1.2</h4>
+                  <h5>1,23,000 km  &nbsp;&nbsp;&nbsp;  1st Owner  &nbsp;&nbsp;&nbsp;  </h5>
+                  <h5>PETROL  &nbsp;&nbsp;&nbsp;  Manual</h5><br>
+                  <h3>  Rs 3,06,000</h3>
+                  <br>
+                  <p>Zero down payment</p>
+                  <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Vadodara</h6>
+                  <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
+            </div>
+            </div>
+            <button>View More Cars</button>
+      </div>
+
+      <!-- content -->
+      <div class="content">
+            <div class="info">
+                  <h4>Love it? keep it. change your mind?</h4>
+                  <br>
+                  <h2>Return in 7 Days.</h2>
+                  <br><br><br>
+                  <input type="text" placeholder="Search for your favrourite cars">
+                  <br><br><br>
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/maruti-suzuki.png" alt=""></button> &nbsp; &nbsp;
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/hyundai.png" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/honda.png" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/tata.png" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/renault.png" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/ford.png" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/mahindra.png" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/nissan.png" alt=""></button>
+
+            </div>
       </div>
 
       <!-- ------ review ------------- -->

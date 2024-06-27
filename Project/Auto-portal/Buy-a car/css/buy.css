@@ -36,6 +36,8 @@
 } 
 .header .menu li a:hover{
       color: #ed6b00;
+      font-size: 1.2em;
+      transition: 1s;
 }
  .header .log{
       width: 20%;
@@ -53,10 +55,69 @@
 
 /* -----------------headre end----------------- */
 
+/* ----- login -------- */
+.login{
+      height: 86vh;
+      width: 100%;
+      background-image: url(https://assets.cars24.com/production/c2b-website/240620160903/js/d8e03eca1c5e5bcf4363a9191a0a406b.webp);
+      background-size: 100% 100%;
+      position: relative;
+}
+.login .log-use{
+      width: 30%;
+      height: 70vh;
+      background-color: #dde5eb;
+      border-radius: 10px;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      padding-top: 3%;
+      padding-left: 3%;
+}
+.log-use p{
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #002441;
+}
+.log-use input{
+      width: 90%;
+      height: 40px;
+      border: 2px solid #6c757d;
+      border-radius: 10px;
+      vertical-align: bottom;
+      font-size: 1.2em;
+      padding: 20px;
+      background-color: #fff;
+}
+.log-use input:hover{
+      scale: 1.03em;
+      transition: 1s;
+      box-shadow: #d69661 5px 5px;
+      border-style: none;
+}
+.log-use button{
+      background-color: #ed6b00;
+      color: #fff;
+      padding: auto;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 10px;
+      height: 40px;
+      width: 100px;
+      border-style: hidden;
+      margin-top: 5%;
+      margin-left: 25%;
+}
+.log-use button:hover{
+      font-size: 1.1em;
+      transition: 1s;
+      scale: 1.05;
+}
+/* ------- content ---------- */
 .content{
       height: 87vh;
       width: 100%;
-      background-image: url(https://assets.cars24.com/production/c2b-website/240607235537/js/b826677e31b9d490bc0e9ff5b810e87a.png);
+      background-image: url(https://assets.cars24.com/production/c2b-website/240620160903/js/add3515cee57c3f3d36023ce13b5c8e2.png);
       background-size: 100% 100%;
 }
 .content .info{
@@ -143,16 +204,17 @@
       color: #ed6b00;
 }
 .card:hover{
-      scale: 1.05;
-      transition: 1s;
+      scale: 1.01;
+      transition: 2s;
 }
 
 /* ------------- category ---------- */
 
 .category{
       width: 100%;
-      height: auto;
-      margin: 5% 5.5%;     
+      height: auto; 
+      background-color: #f8f9fa;  
+      padding: 5% 5.5%; 
 }
 .cat-title{
       color: #002441;
@@ -192,7 +254,7 @@
       transition: 1s;
 }
 .sub-cat button{
-      background-color: #f8f9fa;
+      background-color: #fff;
       padding: 2% auto;
       text-align: start;
       border-radius: 10px;
@@ -220,6 +282,25 @@
       color: #0059a3;
       transition: 1s;
 }
+.cat-city{
+      margin-top: 5%;
+}
+.cat-city input{
+      width: 60%;
+      height: 50px;
+      border: 2px solid #6c757d;
+      border-radius: 10px;
+      vertical-align: bottom;
+      font-size: 1.2em;
+      padding: 20px;
+      background-color: #fff;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi_CVTmoL1ITHFxQkfLwvj93hcsgA1Olkhg&s);
+      background-size: 30px 30px;
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+      padding-left: 5%;
+}
+
 /* ---------new added------------- */
 
 .new-add{
@@ -241,15 +322,22 @@
       font-size: 1em;
       font-weight: 600;
       border-radius: 10px;
-      height: 30px;
-      width: 150px;
+      height: 40px;
+      width: 120px;
       border-style: hidden;
 }
-
+.new-add .reg-opt button:hover{
+      box-shadow: 0 5px 10px 0 #e69d62, 0 6px 20px 0 #e0a26f;
+      transition: 1s;
+      scale: 1.02;
+}
 .new-add .reg-opt .reg-edit{
       position: absolute;
-      top: 60%;
-      right: 5%;
+      top: 15%;
+      right: 10%;
+}
+.reg-inp{
+      margin-top: 7%;
 }
 
 .reg-inp button{
@@ -273,7 +361,134 @@
       font-size: 0.6em;
       padding: 20px;
 }
+.reg-inp textarea{
+      width: 60%;
+      height: 50px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      vertical-align: top;
+      font-size: 0.6em;
+      padding: 20px;
+}
+.reg-inp input:hover{
+      box-shadow: 0 5px 10px 0 #6c757d, 0 6px 20px 0 #6c757d;
+      transition: 1s;
+      scale: 1.02;
+}
+.reg-inp textarea:hover{
+      box-shadow: 0 5px 10px 0 #6c757d, 0 6px 20px 0 #6c757d;
+      transition: 1s;
+      scale: 1.02;
+}
+.reg-inp .reg-sub{
+      background-color: #ed6b00;
+      color: #fff;
+      font-size: 0.8em;
+      font-weight: 600;
+      border-radius: 10px;
+      height: 50px;
+      width: 140px;
+      border-style: hidden;
+      line-height: 10px;
+      margin-top: 5%;
+}
 
+/* --------- car collection ------------ */
+.car-col{
+      width: 100%;
+      height: auto;
+      background-color: #f8f9fa;
+      padding: 5% 5%;
+}
+.car-col p{
+      color: #465166;
+      margin-bottom: 3%;
+      font-size: 2em;
+      font-weight: 600;
+}
+.car-col .car-cont{
+      display: flex;
+      gap: 3%;
+}
+.car{
+      width: 27%;
+      height: 30%;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+}
+.car img{
+      width: 100%;
+      height: 45%;
+}
+.car h3{
+      text-align: start;
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #002441;
+      padding-left: 7%;
+}
+.car h4{
+      text-align: start;
+      font-size: 1em;
+      font-weight: 500;
+      color: #465166;
+      padding-left: 7%;
+      padding-top: 3%;
+}
+.car h4 i{
+      font-size: 0.6em;
+}
+.car h5{
+      text-align: start;
+      font-size: 0.9em;
+      font-weight: 300;
+      color: #465166;
+      padding-left: 7%;
+      padding-top: 6%;
+}
+.car p{
+      text-align: start;
+      font-size: 0.8em;
+      font-weight: 300;
+      color: #465166;
+      padding-left: 7%;
+      padding-bottom: 2%;
+}
+.car h6{
+      text-align: start;
+      font-size: 1em;
+      font-weight: 300;
+      color: #ed6b00;
+      padding-left: 7%;
+      padding-bottom: 2%;
+}
+.car textarea{
+      height: 60px;
+      width: 90%;
+      margin-left: 7%;
+      margin-bottom: 2%;
+      border: 2px solid #31414e;
+      border-radius: 5px;
+      padding-left: 5%;
+      padding-top: 5%;
+}
+.car:hover{
+      scale: 1.05;
+      transition: 1s;
+}
+.car-col button{
+      background-color: #ed6b00;
+      color: #fff;
+      padding: auto;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 10px;
+      height: 50px;
+      width: 200px;
+      border-style: hidden;
+      margin-top: 5%;
+}
 
 /* --------------- review ------------- */
 

@@ -36,6 +36,8 @@
 } 
 .header .menu li a:hover{
       color: #ed6b00;
+      font-size: 1.2em;
+      transition: 1s;
 }
  .header .log{
       width: 20%;

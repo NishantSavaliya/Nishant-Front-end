@@ -1,0 +1,90 @@
+<!-- // What is function ?
+
+// A block of that can be used to complete any task i.e. called 
+
+// syntax : function functionName(argument/perameter/signature)
+//    {
+//          statement
+//    }
+  
+//    function call()
+
+/* 
+      type of function
+
+      1. Normal function 
+
+            a.    user difine function
+            b.    pre define function
+
+            how to call normal function
+
+            a.    call by value
+            b.    call by referance
+
+      2. aero function
+
+            this function used in ES5.0 and ES6.0 version of javascript
+
+            const name=()=>{
+                        statement;
+                  }
+
+*/ -->
+
+<script>
+      // function test(){
+      //       var name = 'my name is nishant';
+      //       console.log(name);
+      //       document.write(name);
+      // }
+
+      // test();
+
+
+//function should be return 
+
+function test(){
+            var name = 'my name is nishant';
+            // console.log(name);
+            // document.write(name);
+            return name;
+       }
+
+       console.log(test());
+
+
+//pass an argument and perameter
+
+function test(a,b){
+            var a;
+            var b;
+            var c=a+b;
+            return c;
+       }
+
+       console.log(test(10,10));
+
+// call by referance
+
+       function test(fnm){
+            var firstName=fnm;
+            return firstName;
+       }
+
+       console.log(test('brijesh'));
+      
+// user define function
+
+       function display(adress){
+            var ad= adress;
+            return ad;
+       }
+       console.log(display('mavdi chowkdi, rajkot'));
+
+// pre define function
+
+       var num=1233655563n;
+       console.log(typeof(num));
+
+</script>

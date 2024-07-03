@@ -1,0 +1,199 @@
+<script>
+      // 1) entries : this method return iterator object with the key/value pairs from an array
+
+      // num = [10, 20, 30, 40]
+      // list=num.entries()
+
+      // console.log(list);
+
+
+
+
+      // 2) copywithin : copy array elements to another position in array
+
+            // num = [10,20,30,40];
+            // // var res1 = num.copyWithin(2, 0);
+            // // console.log(res1); //  [10, 20, 10, 20]
+
+            // var res2 = num.copyWithin(1, 0);
+            // console.log(res2); // [10, 10, 20, 30]
+
+            // res3=num.copyWithin(2, 1);
+            // console.log(num); //  [10, 20, 20, 30]
+            
+      /* 3) every :  executes function for each element of array
+                        return 'true' if the function return true for all element 
+                        return 'false' if the function return false for one element
+                        does not executes the function for empty element */
+
+            // num = [10, 20, 30, 40]
+            // function checkNum(num){
+            //       return num > 1
+            // }
+
+            // console.log(num.every(checkNum)); //true
+
+
+
+      // 4) fill : fill specified elements in an array with a value
+            //           over write original array
+            //           start and end position can be specified. if not, all elements will be filled 
+
+            // num = [10, 20, 30, 40];
+            // // console.log(num.fill(50)); // [50, 50, 50, 50]
+
+            // console.log(num.fill(50, 1, 3)); //[10, 50, 50, 40]
+
+      // 5) filter : create new array filled with elements that pass test provided by function
+                  // does not execute for empty elements
+                  // does not change original array
+
+                  // num = [10,15,20,30,40]
+
+                  // function checkAdult(num){
+                  //       return num < 18;
+                  // }
+
+                  // console.log(num.filter(checkAdult));// [10,15]
+
+      // 6) find : return the value of first elements that passes test
+                  // execute function for each array elements.
+                  // return 'undefined' if not elements are found
+                  // does not execute for empty elements
+
+            // num = [10,15,20,30,40]
+
+            // function checkAdult(num){
+            //       return num < 18;
+            // }
+
+            // console.log(num.find(checkAdult)); // 10
+
+      // 7) lastIndexOf : return last index (position) of specified value
+                        // return '-1' if the value is not found
+                        // start at specified index and search from right to left 
+
+                        // num = [10, 20, 10, 20, 10]
+
+                        // index = num.lastIndexOf(10)
+
+                        // console.log(index); // 4
+
+      // 8) findIndexOf : return the index (position) of the first elements that passes test
+                        // return '-1' if the value is not found
+                        // does not execute for empty elements
+                        // execute function for each array elements.
+
+                        // num = [10,15,20,30,40]
+
+                        // function checkAdult(num){
+                        //       return num > 18;
+                        // }
+
+                        // console.log(num.findIndex(checkAdult)); // 2
+
+      // 9) join : used to join all array element into string
+
+            // var num = [10,20,30,40];
+
+            // // var res = num.join(" ");
+
+            // // console.log(res); // 10 20 30 40
+
+            // var res = num.join("*");
+
+            // console.log(res); // 10*20*30*40
+
+
+      // 10) keys : return iterator with the key of array
+
+            // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            // // Create an Iterable
+            // const list = fruits.keys();
+
+            // // List the Keys
+            // let text = "";
+            // for (let x of list) {
+            // text += x + "<br>";
+            // }
+
+            // console.log(list);
+
+      // 11) forEach : call function for each elements in array
+
+            // let text = "";
+            // const fruits = ["apple", "orange", "cherry"];
+            // fruits.forEach(myFunction);
+            
+            // function myFunction(item, index) {
+            // text += index + ": " + item + "<br>"; 
+            // }
+
+            // console.log(myFunction());
+
+      // 12) indexOf : return first index (position) of specified value
+                        // return '-1' if the value is not found
+                        // does not execute for empty elements
+                        // execute function for each array elements.
+
+                        //  num = [10,15,20,30,40]
+                        //  res = num.indexOf(10)
+                        //  console.log(res); // 0                   
+
+      // 13) length : used to return length(size) of array
+
+            // var num = [10,20,30,40];
+
+            // var size = num.length;
+
+            // console.log(size); // 4
+
+
+      // 14) map : create new array calling a function for every array elements
+                  // not execute for empty array
+
+                  // num = [1, 4, 9, 25]
+                  // newArray = num.map(Math.sqrt)
+
+                  // console.log(newArray); // [1, 2, 3, 5]
+
+
+
+      // 15) reduce : execute reducer function for array elements
+                        //  returns a single value: the function's accumulated result.
+
+      // 16) slice : scile out a piece of array in new array
+
+            // num = [10,20,30,40];
+            // var res = num.slice(0,1);
+            //  console.log(res); // [10]
+            // console.log(num); //[10, 20, 30, 40]
+
+            // res2 = num.slice(3)
+            // console.log(res2) // [40]
+
+            // res3 =num.slice(-1)
+            // console.log(res3); // [40]
+
+      // 17) shift : remove first array element an shift all other elements to lower index
+
+            // var num = [10,20,30,40];
+            // var res = num.shift();
+            // console.log(res); // 10
+            // console.log(num); // [20, 30, 40]
+
+      // 18) unshift : add new array element at biginning  and unshift older elements
+
+            // num = [10,20,30,40];
+            // var res = num.unshift(50);
+            // console.log(res); // 5
+            // console.log(num); // [50, 10, 20, 30, 40]
+
+      // 19) sort : sort array elements
+                  // sort elements as string alphabetical and ascending order
+
+                  // num =[20,30,10,5]
+                  // console.log(num.sort(function (a, b){return a-b})); // 5 10 20 30
+
+</script>

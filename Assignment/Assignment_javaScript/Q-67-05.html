@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Q-67-05</title>
-</head>
-<body>
-      <h3>Q-67-05 : What are undeclared and undefined variables?</h3>
-      <p>Ans : </p>
-      <p><b>undeclared variables</b></p>
-      <p>-> It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. </p>
-      <p>-> For example : </p>
-      <script>
-            let x
-            console.log(x + "test")
-            // x is undefined
-      </script>
-      
-      <br>
-      <p><b>undefined variables</b></p>
-      <p>-> It occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword.</p>
-      <p>-> For example : </p>
-      <script>
-            testVar = "Syam" // undeclared
-           
-            let testVar = "Syam" // declared
-      </script>
-      
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-05</title>
+    <style>
+      * {
+        font-size: x-large;
+      }
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What are undeclared and undefined variables? <br />
+
+    <b>Ans:</b> <br />
+    <h1>Undeclared</h1>
+    <p>
+      When a variable is “undeclared,” it means that it has not been declared or
+      defined in the current scope. In other words, it hasn’t been given a value
+      or a type. This can happen if you try to use a variable without declaring
+      it first, or if you misspell the variable name.
+    </p>
+
+    <h2>Example</h2>
+    <div>
+      // This code will throw a ReferenceError because the variable "x" is
+      undeclared <br />
+      <br />
+      console.log(x); <br />
+      <p>
+        Here, the console.log() statement is trying to log the value of the x
+        variable, but x has not been declared anywhere in the code. As a result,
+        JavaScript will throw a ReferenceError, indicating that x is not
+        defined. <br />
+
+        It’s important to note that undeclared variables are not the same as
+        uninitialized variables. Uninitialized variables are those that have
+        been declared, but have not been given a value.
+      </p>
+    </div>
+    <h1>Undefined</h1>
+    <p>
+      undefined is a property of the global object. That is, it is a variable in
+      global scope. <br />
+
+      In all non-legacy browsers, undefined is a non-configurable, non-writable
+      property. Even when this is not the case, avoid overriding it. <br />
+
+      A variable that has not been assigned a value is of type undefined. A
+      method or statement also returns undefined if the variable that is being
+      evaluated does not have an assigned value. A function returns undefined if
+      a value was not returned. <br />
+    </p>
+    <h2>Example</h2>
+    <div>
+      /* This code will not throw an error because the variable "x" is declared,
+      even though it has not been initialized with a value */ <br />
+      let x; <br />
+      console.log(x); // Output: undefined <br />
+      <p>
+        In this code, the let x statement declares the x variable, but does not
+        initialize it with a value. As a result, when we try to log the value of
+        x, the output is undefined.
+      </p>
+    </div>
+    <br />
+  </body>
 </html>

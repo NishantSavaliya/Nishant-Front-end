@@ -3,10 +3,10 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Sell a car</title>
+      <title>Auto-Portal</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="../Sell-a-car/css/sell.css">
+      <link rel="stylesheet" href="css/Auto-portal.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,85 +14,82 @@
       <div class="header bg-white">
             <div class="h-menu">
                   <ul class="menu">
-                        <li><a href="../index.html">HOME</a></li>
-                        <li><a href="../Buy-a car/buy.html">BUY A CAR</a></li>
-                        <li><a href="#">SELL A CAR</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#buy">BUY A CAR</a></li>
+                        <li><a href="#sell">SELL A CAR</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                   </ul>
             </div>
       
       <div class="log">
-            <p><img src="https://fastly-production.24c.in/cars24/seo/static/1_20230830_1693395013.png" alt=""></p>
+            <p><img src="images/logo.webp" alt=""></p>
       </div> </div>
-
-      <!-- login -->
-       <div class="login">
-            <div class="log-use">
-                  <p>Enter your car number</p><br>
-                  <input type="text" placeholder="xx xx xx xxxx "> <br><br>
-                  <!-- <p>Password :</p><br>
-                  <input type="password" placeholder="Enter password ">
-                  <br><br> -->
-                  <button>Get price</button>
-            </div>
-            <div class="log-info">
-                  <h3>Sell your car </h3>
-                  <h3>in minutes</h3>
+      <!-- content -->
+      <div class="content">
+            <div class="info">
+                  <h4>Your dream car comes with</h4>
                   <br>
-                  <p>Get doorstep pick up</p>
-                  <p>and instant payment</p>
+                  <h2>Zero Down Payment</h2>
+                  <br><br><br>
+                  <input type="text" placeholder="Search for your favrourite cars">
+                  <br><br><br>
+                  <button class="company"><img src="images/maruti-suzuki.webp" alt=""></button> &nbsp; &nbsp;
+                  <button class="company"><img src="images/hyundai.webp" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="images/honda.webp" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="images/tata.webp" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="images/renault.webp" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="images/mahindra.webp" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="images/kia.webp" alt=""></button>&nbsp; &nbsp;
+                  <button class="company"><img src="images/toyota.webp" alt=""></button>
+
             </div>
-       </div>
-      
+      </div>
+
       <!-- cards -->
        <br><br>
-       <p class="card-title"> why car sell to CARS24 ?</p>
+       <p class="card-title" id="buy"> why buy from us ?</p>
     
 
       <div class="card-cont">
             <div class="card c-1">
-                  <img src="../Sell-a-car/images/great-prize-card-01.svg" alt="" class="">
+                  <img src="images/buy-01.webp" alt="" class="">
                   <br><br>
-                  <h3>Great</h3>
-                  <h3>price</h3>
+                  <h3>CAR24 Warrenty</h3>
                   <br>
-                  <h5>Largest dealer network + Smart AI Pricing Engine = great deal for your car</h5><br>
-                  <!-- <br>
+                  <h5>Enjoy complete peace of mind with warranty plans up to 12 months to protect your car against unforeseen repairs</h5>
+                  <br>
                   <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
-                  <br> -->
+                  <br>
             </div>
             <div class="card c-2">
-                  <img src="../Sell-a-car/images/instant-payment-card-02.svg" alt="">
+                  <img src="images/buy-02.webp" alt="">
                   <br><br>
-                  <h3>Instant</h3>
-                  <h3>payment</h3>
+                  <h3>7-Day Return</h3>
                   <br>
-                  <h5>The amount is transferred directly to your bank account within minutes</h5>
-                  <!-- <br><br>
+                  <h5>Love it, keep it. Changed your mind? Return it within 7 days for a full refund</h5>
+                  <br><br>
                   <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
-                  <br> -->
+                  <br>
             </div>
             <div class="card c-3">
-                  <img src="../Sell-a-car/images/hassle-free-card-03.svg" alt="">
+                  <img src="images/buy-03.webp" alt="">
                   <br><br>
-                  <h3>Hassle-free</h3>
-                  <h3>documentation</h3>
+                  <h3>140-Quality check</h3>
                   <br>
-                  <h5>Documentation and RC transfers can take months! We’ll handle it all</h5>
-                  <!-- <br>
+                  <h5>Inspected across 140 parameters and refurbished by auto-experts, our cars are ready for the road</h5>
+                  <br>
                   <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
-                  <br> -->
+                  <br>
             </div>
             <div class="card c-4">
-                  <img src="../Sell-a-car/images/sell-from-card-04.svg" alt="">
+                  <img src="images/buy-04.webp" alt="">
                   <br><br>
-                  <h3>Sell from</h3>
-                  <h3>anywhere</h3>
+                  <h3>Easy Financing Option</h3>
                   <br>
-                  <h5>From inspection to payment, everything right from your doorstep!</h5><br>
-                  <!-- <br><br>
+                  <h5>Become eligible for Zero Down Payment via EMIs of up to 72 months and instant loans</h5>
+                  <br><br>
                   <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
-                  <br> -->
+                  <br>
             </div>
       </div>
 
@@ -142,44 +139,71 @@
                         <h5>10 lakh</h5>
                   </button>
             </div>
-            <div class="cat-city">
-                  <input type="text" placeholder="Search by city...">
-            </div>
       </div>
 
+<!-- sell a car -->
+ <div id="sell">
+      <br><br>
+      <p class="crd-title"> why car sell to CARS24 ?</p>
 
-    <!-- new added  -->
+
+      <div class="crd-cont">
+      <div class="crd c-1">
+            <img src="images/great-prize-card-01.svg" alt="" class="">
+            <br><br>
+            <h3>Great</h3>
+            <h3>price</h3>
+            <br>
+            <h5>Largest dealer network + Smart AI Pricing Engine = great deal for your car</h5><br>
+            <!-- <br>
+            <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
+            <br> -->
+      </div>
+      <div class="crd c-2">
+            <img src="images/instant-payment-card-02.svg" alt="">
+            <br><br>
+            <h3>Instant</h3>
+            <h3>payment</h3>
+            <br>
+            <h5>The amount is transferred directly to your bank account within minutes</h5>
+            <!-- <br><br>
+            <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
+            <br> -->
+      </div>
+      <div class="crd c-3">
+            <img src="images/hassle-free-card-03.svg" alt="">
+            <br><br>
+            <h3>Hassle-free</h3>
+            <h3>documentation</h3>
+            <br>
+            <h5>Documentation and RC transfers can take months! We’ll handle it all</h5>
+            <!-- <br>
+            <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
+            <br> -->
+      </div>
+      <div class="crd c-4">
+            <img src="images/sell-from-card-04.svg" alt="">
+            <br><br>
+            <h3>Sell from</h3>
+            <h3>anywhere</h3>
+            <br>
+            <h5>From inspection to payment, everything right from your doorstep!</h5><br>
+            <!-- <br><br>
+            <p>KNOW MORE <i class="fa-solid fa-forward"></i></p>
+            <br> -->
+      </div>
+      </div>
+
+</div>
+
+      <!-- new added -->
 
       <div class="new-add">
-            <p>Please ! Register here</p>
-            <div class="reg-opt">
-                  <button class="reg-edit"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<span>edit profile</span></button>
-            </div>
-            
-            <div class="reg-inp">
-                  <p><button><i class="fa-regular fa-user"></i></button>&nbsp;&nbsp;<input type="text" placeholder="Enter Full name *"></p>
-
-                  <p><button><i class="fa-solid fa-table-cells"></i></button>&nbsp;&nbsp;<input type="number" placeholder="Enter phone number *"></p>
-
-                  <p><button><i class="fa-regular fa-envelope"></i></button>&nbsp;&nbsp;<input type="email" placeholder="Enter Email  *"></p>
-
-                  <p><button><i class="fa-regular fa-message"></i></button>&nbsp;&nbsp;<textarea name="msg" id="msg" placeholder="Write comment here..."></textarea></p>
-
-                  <p><button><i class="fa-solid fa-unlock-keyhole"></i></button>&nbsp;&nbsp;<input type="password" placeholder="set password *"></p>
-
-                  <p><input class="reg-sub" type="submit" value="Submit"></p>
-            </div>
-            
-      </div>
-
-      <!-- car collection -->
-
-      <div class="car-col">
             <p>Recently added cars</p>
-            <div class="car-cont">
+            <div class="new-cont">
             
-                  <div class="car c-1">
-                        <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/666c237811339754adb8d711/5ccd3789-7541-40fd-a0d5-c9e1e4b72874/slot/10127637719-caab9489772b4ed58ba50ba460810f16-Exterior-7.jpg?w=690&auto=format" alt="" class="">
+                  <div class="new n-1">
+                        <img src="images/baleno.webp" alt="" class="">
                         <br><br>
                         <h3>2016 Maruti Baleno &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
                         <h4>Zeta CVT Petrol 1.2</h4>
@@ -189,10 +213,9 @@
                         <br>
                         <p>Zero down payment</p>
                         <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Mavdi chowkdi, Rajkot</h6>
-                        <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
                   </div>
-            <div class="car c-2">
-                  <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/789c04d4-ace1-4d17-b4a9-a29ae85dd7a9/631b971d-e7b2-416e-87f1-30282b07f557/42.jpg?w=690&auto=format" alt="" class="">
+            <div class="new n-2">
+                  <img src="images/ritz.webp" alt="" class="">
                   <br><br>
                   <h3>2012 Maruti Ritz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
                   <h4>LXI </h4>
@@ -202,10 +225,9 @@
                   <br>
                   <p>Zero down payment</p>
                   <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Nikol, Ahmedabad</h6>
-                  <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
             </div>
-            <div class="car c-3">
-                  <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/37948a0c-b8d9-48cf-92ce-ce98bb594362/25ec3d31-e7e6-4595-a32c-b1258f63502f/42.jpg?w=690&auto=format" alt="" class="">
+            <div class="new n-3">
+                  <img src="images/creta.webp" alt="" class="">
                   <br><br>
                   <h3>2018 Hyundai Creta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
                   <h4>Sx Plus 1.6 Petrol</h4>
@@ -215,10 +237,9 @@
                   <br>
                   <p>Zero down payment</p>
                   <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Jamnagar Road, Rajkot</h6>
-                  <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
             </div>
-            <div class="car c-4">
-                  <img src="https://fastly-production.24c.in/hello-ar/dev/uploads/666c214ae9424f19d555c3ba/298bcc2b-f073-4cad-9b65-01570c65f163/slot/10195339717-e0e4456ecc60481bba74103ced08fe4a-Exterior-7.jpg?w=690&auto=format" alt="" class="">
+            <div class="new n-4">
+                  <img src="images/i20.webp" alt="" class="">
                   <br><br>
                   <h3>2013 Hyundai i20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <i class="fa-regular fa-heart"></i></h3> 
                   <h4>Sportz 1.2</h4>
@@ -228,31 +249,9 @@
                   <br>
                   <p>Zero down payment</p>
                   <h6><font-awesome-icon :icon="['fas', 'location-dot']" />  Vadodara</h6>
-                  <textarea name="msg" id="msg-dp" placeholder="Drop message to seller"></textarea>
             </div>
             </div>
             <button>View More Cars</button>
-      </div>
-
-      <!-- content -->
-      <div class="content">
-            <div class="info">
-                  <h4>Love it? keep it. change your mind?</h4>
-                  <br>
-                  <h2>Return in 7 Days.</h2>
-                  <br><br><br>
-                  <input type="text" placeholder="Search for your favrourite cars">
-                  <br><br><br>
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/maruti-suzuki.png" alt=""></button> &nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/hyundai.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/honda.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/tata.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/renault.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/ford.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/mahindra.png" alt=""></button>&nbsp; &nbsp;
-                  <button class="company"><img src="https://fastly-production.24c.in/cars24/brand/nissan.png" alt=""></button>
-
-            </div>
       </div>
 
       <!-- ------ review ------------- -->
@@ -268,18 +267,18 @@
                         <h4>online rating</h4>
                         <br>
                         <p>
-                              <img src="https://assets.cars24.com/production/c2b-website/240618100139/js/d75266d934490a3a14ea8aa98f929f98.svg" alt="">
+                              <img src="images/g-play.svg" alt="">
                         </p> 
                         <p>
-                              <img src="https://assets.cars24.com/production/c2b-website/240618100139/js/3d67091841837be4b8deb40296d98f85.svg" alt="">
+                              <img src="images/app-store.svg" alt="">
                         </p>
                         <p>
-                              <img src="https://assets.cars24.com/production/c2b-website/240618100139/js/d04b37a51ebe895f2649f2c4ac89c347.svg" alt="">
+                              <img src="images/truspilot.svg" alt="">
                         </p>
                   </div>
                   <div class="msg-box mb-1">
                         <span>
-                              <button class="btn-1"><img src="https://fastly-production.24c.in/cars24/social_post_images/Aaryan_1650879212.jpg" alt=""></button>
+                              <button class="btn-1"><img src="images/rev-aryan.webp" alt=""></button>
 
                               <button class="btn-2">
                                     <h4>Aaryan</h4><br>
@@ -295,7 +294,7 @@
                   </div>
                   <div class="msg-box mb-2">
                         <span>
-                              <button class="btn-1"><img src="https://fastly-production.24c.in/cars24/social_post_images/Rajesh_Nayi_1651225338.jpg" alt=""></button>
+                              <button class="btn-1"><img src="images/rev-rajesh.webp" alt=""></button>
 
                               <button class="btn-2">
                                     <h4>Rajesh Nayi</h4><br>
@@ -311,7 +310,7 @@
                   </div>
                   <div class="msg-box mb-3">
                         <span>
-                              <button class="btn-1"><img src="https://fastly-production.24c.in/cars24/social_post_images/Arpan_Sam_1652691590.jpg" alt=""></button>
+                              <button class="btn-1"><img src="images/rev-arpan.webp" alt=""></button>
 
                               <button class="btn-2">
                                     <h4>Arpan sam</h4><br>
@@ -325,6 +324,22 @@
                               <br><br><br><br>
                               <p> 19,May 2024</p>
                   </div>
+            </div>
+      </div>
+
+      
+      <!-- contact -->
+      
+      <div class="cont" id="contact">
+            <div class="cont-title">
+                  <p>Contact us</p>
+            </div>
+            <div class="cont-form">
+                  <input type="text" placeholder="Enter your Name :"><br><br>
+                  <input type="text" placeholder="Mobile No.-"><br><br>
+                  <input type="email" placeholder="Email : "><br><br>
+                  <textarea name="msg" id="msg" placeholder="Drop messages..."></textarea><br><br>
+                  <button>Submit</button>
             </div>
       </div>
 
@@ -343,9 +358,9 @@
                   <h4>EXPERIENCE CARS24 APP ON MOBILE</h4><br>
                   <h4>POWERED BY CARS24</h4><br>
                   <p>
-                        <button><img src="https://fastly-production.24c.in/cars24/link_category_items/android_app_1679302864.png" alt=""></button>
+                        <button><img src="images/dark-g-play.webp" alt=""></button>
                         <button>
-                              <img src="https://fastly-production.24c.in/cars24/link_category_items/iphone_app_1679302874.png" alt="">
+                              <img src="images/dark-app-store.webp" alt="">
                         </button>
                   </p>
             </div>

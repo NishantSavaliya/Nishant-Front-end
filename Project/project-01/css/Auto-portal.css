@@ -4,6 +4,9 @@
       box-sizing: border-box;
       font-family: -apple-system, "Poppins", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+html{
+      scroll-behavior: smooth;
+}
 .bg-white{
       background-color: #fafafa;
 }
@@ -36,16 +39,14 @@
 } 
 .header .menu li a:hover{
       color: #ed6b00;
-      font-size: 1.2em;
-      transition: 1s;
 }
  .header .log{
       width: 20%;
       height: 100px;
 } 
 .header .log p{
-      height: 50px;
-      width: 150px;
+      height: 60px;
+      width: 180px;
       margin-top: 20px;
 }
 .header .log p img{
@@ -55,69 +56,10 @@
 
 /* -----------------headre end----------------- */
 
-/* ----- login -------- */
-.login{
-      height: 86vh;
-      width: 100%;
-      background-image: url(https://assets.cars24.com/production/c2b-website/240620160903/js/d8e03eca1c5e5bcf4363a9191a0a406b.webp);
-      background-size: 100% 100%;
-      position: relative;
-}
-.login .log-use{
-      width: 30%;
-      height: 70vh;
-      background-color: #dde5eb;
-      border-radius: 10px;
-      position: absolute;
-      top: 10%;
-      left: 5%;
-      padding-top: 3%;
-      padding-left: 3%;
-}
-.log-use p{
-      font-size: 1.1em;
-      font-weight: 600;
-      color: #002441;
-}
-.log-use input{
-      width: 90%;
-      height: 40px;
-      border: 2px solid #6c757d;
-      border-radius: 10px;
-      vertical-align: bottom;
-      font-size: 1.2em;
-      padding: 20px;
-      background-color: #fff;
-}
-.log-use input:hover{
-      scale: 1.03em;
-      transition: 1s;
-      box-shadow: #d69661 5px 5px;
-      border-style: none;
-}
-.log-use button{
-      background-color: #ed6b00;
-      color: #fff;
-      padding: auto;
-      font-size: 1em;
-      font-weight: 600;
-      border-radius: 10px;
-      height: 40px;
-      width: 100px;
-      border-style: hidden;
-      margin-top: 5%;
-      margin-left: 25%;
-}
-.log-use button:hover{
-      font-size: 1.1em;
-      transition: 1s;
-      scale: 1.05;
-}
-/* ------- content ---------- */
 .content{
       height: 87vh;
       width: 100%;
-      background-image: url(https://assets.cars24.com/production/c2b-website/240620160903/js/add3515cee57c3f3d36023ce13b5c8e2.png);
+      background-image: url(../images/container-bg.webp);
       background-size: 100% 100%;
 }
 .content .info{
@@ -204,17 +146,16 @@
       color: #ed6b00;
 }
 .card:hover{
-      scale: 1.01;
-      transition: 2s;
+      scale: 1.05;
+      transition: 1s;
 }
 
 /* ------------- category ---------- */
 
 .category{
       width: 100%;
-      height: auto; 
-      background-color: #f8f9fa;  
-      padding: 5% 5.5%; 
+      height: auto;
+      margin: 5% 5.5%;     
 }
 .cat-title{
       color: #002441;
@@ -254,7 +195,7 @@
       transition: 1s;
 }
 .sub-cat button{
-      background-color: #fff;
+      background-color: #f8f9fa;
       padding: 2% auto;
       text-align: start;
       border-radius: 10px;
@@ -282,23 +223,58 @@
       color: #0059a3;
       transition: 1s;
 }
-.cat-city{
-      margin-top: 5%;
+
+/* ---------- sell car -------------- */
+
+.crd-title{
+      margin-left: 5.5%;
+      font-size: 2em;
+      font-weight: 700;
+      color: #002441;
 }
-.cat-city input{
-      width: 60%;
-      height: 50px;
-      border: 2px solid #6c757d;
+.crd-cont{
+      width: 90%;
+      margin: 5% auto;
+      display: flex;
+      gap: 3%;
+}
+
+.crd{
+      width: 25%;
+      height: 50%;
+      background-color: #f8f9fa;
       border-radius: 10px;
-      vertical-align: bottom;
-      font-size: 1.2em;
-      padding: 20px;
-      background-color: #fff;
-      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi_CVTmoL1ITHFxQkfLwvj93hcsgA1Olkhg&s);
-      background-size: 30px 30px;
-      background-repeat: no-repeat;
-      background-position: 10px 10px;
-      padding-left: 5%;
+      padding: 3%;
+      transition: 1s;
+}
+.crd img{
+      width: 35%;
+      height: 35%;
+}
+.crd h3{
+      color: #002441;
+      text-align: start;
+      padding-left: 3%;
+      font-size: 1.5em;
+}
+.crd h5{
+      color: #6c757d;
+      font-size: 1em;
+      text-align: start;
+      padding-left: 3%;
+      font-weight: 400;
+}
+.crd p{
+      color: #ed6b00;
+      font-weight: 700;
+      text-align: start;
+      padding-left: 3%;
+}
+.crd p i{
+      color: #ed6b00;
+}
+.crd:hover{
+      scale: 1.01;
 }
 
 /* ---------new added------------- */
@@ -308,7 +284,6 @@
       height: auto;
       background-color: #007bff;
       padding: 5% 5%;
-      position: relative;
 }
 .new-add p{
       color: #fff;
@@ -316,119 +291,29 @@
       font-size: 2em;
       font-weight: 600;
 }
-.new-add .reg-opt button{
-      background-color: #ed6b00;
-      color: #fff;
-      font-size: 1em;
-      font-weight: 600;
-      border-radius: 10px;
-      height: 40px;
-      width: 120px;
-      border-style: hidden;
-}
-.new-add .reg-opt button:hover{
-      box-shadow: 0 5px 10px 0 #e69d62, 0 6px 20px 0 #e0a26f;
-      transition: 1s;
-      scale: 1.02;
-}
-.new-add .reg-opt .reg-edit{
-      position: absolute;
-      top: 15%;
-      right: 10%;
-}
-.reg-inp{
-      margin-top: 7%;
-}
-
-.reg-inp button{
-      width: 50px;
-      height: 50px;
-      border: 2px solid #fff;
-      border-radius: 10px;
-      vertical-align: bottom;
-}
-.reg-inp button i{
-      color: #007bff;
-      font-size: 2em;
-}
-
-.reg-inp input{
-      width: 60%;
-      height: 50px;
-      border: 2px solid #fff;
-      border-radius: 10px;
-      vertical-align: bottom;
-      font-size: 0.6em;
-      padding: 20px;
-}
-.reg-inp textarea{
-      width: 60%;
-      height: 50px;
-      border: 2px solid #fff;
-      border-radius: 10px;
-      vertical-align: top;
-      font-size: 0.6em;
-      padding: 20px;
-}
-.reg-inp input:hover{
-      box-shadow: 0 5px 10px 0 #6c757d, 0 6px 20px 0 #6c757d;
-      transition: 1s;
-      scale: 1.02;
-}
-.reg-inp textarea:hover{
-      box-shadow: 0 5px 10px 0 #6c757d, 0 6px 20px 0 #6c757d;
-      transition: 1s;
-      scale: 1.02;
-}
-.reg-inp .reg-sub{
-      background-color: #ed6b00;
-      color: #fff;
-      font-size: 0.8em;
-      font-weight: 600;
-      border-radius: 10px;
-      height: 50px;
-      width: 140px;
-      border-style: hidden;
-      line-height: 10px;
-      margin-top: 5%;
-}
-
-/* --------- car collection ------------ */
-.car-col{
-      width: 100%;
-      height: auto;
-      background-color: #f8f9fa;
-      padding: 5% 5%;
-}
-.car-col p{
-      color: #465166;
-      margin-bottom: 3%;
-      font-size: 2em;
-      font-weight: 600;
-}
-.car-col .car-cont{
+.new-add .new-cont{
       display: flex;
       gap: 3%;
 }
-.car{
+.new{
       width: 27%;
       height: 30%;
-      background-color: #fff;
+      background-color: #f8f9fa;
       border-radius: 10px;
       overflow: hidden;
 }
-.car img{
+.new img{
       width: 100%;
       height: 45%;
 }
-.car h3{
+.new h3{
       text-align: start;
       font-size: 1.1em;
       font-weight: 600;
       color: #002441;
       padding-left: 7%;
 }
-.car h4{
+.new h4{
       text-align: start;
       font-size: 1em;
       font-weight: 500;
@@ -436,10 +321,10 @@
       padding-left: 7%;
       padding-top: 3%;
 }
-.car h4 i{
+.new h4 i{
       font-size: 0.6em;
 }
-.car h5{
+.new h5{
       text-align: start;
       font-size: 0.9em;
       font-weight: 300;
@@ -447,7 +332,7 @@
       padding-left: 7%;
       padding-top: 6%;
 }
-.car p{
+.new p{
       text-align: start;
       font-size: 0.8em;
       font-weight: 300;
@@ -455,7 +340,7 @@
       padding-left: 7%;
       padding-bottom: 2%;
 }
-.car h6{
+.new h6{
       text-align: start;
       font-size: 1em;
       font-weight: 300;
@@ -463,21 +348,11 @@
       padding-left: 7%;
       padding-bottom: 2%;
 }
-.car textarea{
-      height: 60px;
-      width: 90%;
-      margin-left: 7%;
-      margin-bottom: 2%;
-      border: 2px solid #31414e;
-      border-radius: 5px;
-      padding-left: 5%;
-      padding-top: 5%;
-}
-.car:hover{
+.new:hover{
       scale: 1.05;
       transition: 1s;
 }
-.car-col button{
+.new-add button{
       background-color: #ed6b00;
       color: #fff;
       padding: auto;
@@ -575,6 +450,75 @@
       padding: 5% 5%;
       text-align: start;
 }
+
+/* ------------ contact ---------------- */
+
+.cont{
+      margin-top: 0%;
+      margin-bottom: 0%;
+     width: 100%;
+     height: 90vh;
+     background-image: url(../images/contact.webp);
+     background-size: 100%; 
+     background-repeat: no-repeat;
+}
+.cont .cont-form{
+      padding-top: 3%;
+      padding-left: 5.5%;
+}
+.cont .cont-title p{
+      color: #fff;
+      font-size: 2em;
+      font-weight: 600;
+     padding-top: 3%;
+     padding-left: 5.5%;
+}
+.cont .cont-form input{
+      width: 40%;
+      height: 35px;
+      border: 1px dotted #fff;
+      border-radius: 10px;
+      vertical-align: bottom;
+      font-size: 1em;
+      padding: 20px;
+      background: transparent;
+      color: #fff;
+      font-weight: 500px;
+}
+.cont .cont-form input::placeholder {
+      font-weight: 500;
+      opacity: 1;
+      color: #fff;
+}
+.cont .cont-form textarea{
+      width: 40%;
+      height: 70px;
+      border: 1px dotted #fff;
+      border-radius: 10px;
+      vertical-align: top;
+      font-size: 0.9em;
+      padding: 20px;
+      background: transparent;
+}
+.cont .cont-form textarea::placeholder {
+      font-weight: 500;
+      opacity: 1;
+      color: #fff;
+}
+.cont .cont-form button{
+      background-color: #ed6b00;
+      color: #fff;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 10px;
+      height: 35px;
+      width: 100px;
+      border-style: hidden;
+      line-height: 10px;
+      margin-top: 2%;
+}
+/* ---- footer ---------- */
+
 .footer{
       width: 100%;
       height: auto;
@@ -582,6 +526,7 @@
       padding: 5% 5%;
       display: flex;
       gap: 3%;
+      margin-top: 0%;
 }
 .footer .ft-part{
       width: 25%;

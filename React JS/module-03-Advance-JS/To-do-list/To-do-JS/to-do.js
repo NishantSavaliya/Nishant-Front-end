@@ -19,6 +19,8 @@ window.onload=()=>{
       //remove items via user create event listner
 
       items.addEventListener("click", removeItem)
+
+      let editItem=null;
 }
 
 // add items callback function
@@ -28,6 +30,22 @@ function addItem(e){
       e.preventDefault(); // prevent refress or redirection after click on submit btn
 
       let newItem = document.getElementById("item").value;
+
+      // for edit data......................................
+
+      if(add_data.value!="submit"){
+            editItem.target.parentNode.childNodes[0].data=document.getElementById("item").value;
+            add_data.value="submit";
+            document.getElementById("item").value="";
+            Swal.fire({
+                  title: "Success",
+                  text: "Your Data successfully Updated",
+                  icon: "success"
+            });
+
+            return false;
+      
+      }
 
       // trim white space from start & end of input value
 
@@ -89,3 +107,28 @@ function addItem(e){
 }      
 
 // remove items callback function
+
+function removeItem(e){
+      e.preventDefault();
+
+      if(e.target.classList.contains("delete")){
+
+            if (confirm('Are you sure to delete Items')){
+                  let li=e.target.parentNode;
+                  items.removeChild(li);
+                  Swal.fire({
+                        title: "Erros",
+                        text: "Data Deleted successfully",
+                        icon: "error"
+                  });
+            }
+      }
+
+      // edit data
+
+      if(e.target.classList.contains("edit")){
+            document.getElementById("item").value=e.target.parentNode.childNodes[0].data;
+            add_data.value="Update Data";
+            editItem=e;
+      }
+}

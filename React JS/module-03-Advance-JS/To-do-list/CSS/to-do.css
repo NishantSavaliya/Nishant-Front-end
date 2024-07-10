@@ -1,0 +1,13 @@
+body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      background-color: blueviolet;
+}
+.row .adv{
+      margin-left: 5%;
+}
+.add-form .items .new-item{
+      list-style: none;
+}

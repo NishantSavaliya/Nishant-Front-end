@@ -1,0 +1,33 @@
+<!-- 
+
+      whenever we access only one parent class properties by its one child class i.e. called single inheritance
+
+-->
+
+<script>
+
+      class A 
+      {
+            constructor(nm,age)
+            {
+            
+                  this.nm=nm;
+                  this.age=age;
+      
+            }
+
+      }
+      class B extends A
+      {
+            constructor(nm,age,dep,salary)
+            {
+                  super(nm,age); // parent class properties access by its child class then used super();
+                  this.dep=dep;
+                  this.salary=salary;
+            }
+      }
+
+      var obj=new B("brijesh",35,"Information technology",89500);
+      console.log(obj);
+      
+</script>

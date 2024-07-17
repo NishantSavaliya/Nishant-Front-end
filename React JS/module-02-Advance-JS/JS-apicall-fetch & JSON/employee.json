@@ -1,0 +1,35 @@
+{
+      "employee details": [
+            {
+                  "id": 101,
+                  "name": "rajesh",
+                  "department": "designer",
+                  "city": "rajkot"
+            },
+
+            {
+                  "id": 102,
+                  "name": "ramesh",
+                  "department": "designer",
+                  "city": "gondal"
+            },
+
+            {
+                  "id": 103,
+                  "name": "rakesh",
+                  "department": "designer",
+                  "city": "bhavnagar"
+            }
+      ],
+
+      "contact-us": [
+
+            {
+                  "id": 1,
+                  "name": "brijesh",
+                  "mobile": 9276545455,
+                  "city": "rajkot",
+                  "email": "b007@gamil.com"
+            }
+      ]
+}

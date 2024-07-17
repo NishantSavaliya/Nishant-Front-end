@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inheritance</title>
+</head>
+<body>
+      <div>
+            <h1>What is inheritance?</h1>
+            <br>
+            <pre>
+                  -> Inheritance is used to access one class properties with another class i.e. called inheritance
+
+                  A => B
+
+            * Types of inheritance :
+
+                  a) single inheritance
+                  b) multilevel inheritance
+                  c) multiple inheritance
+
+            * Note : inheritance is using extends keyword
+                  
+            </pre>
+      </div>
+
+      <script>
+
+            class A 
+            {
+                  constructor(nm,age)
+                  {
+                  
+                        this.nm=nm;
+                        this.age=age;
+            
+                  }
+
+            }
+            class B extends A
+            {
+                  constructor(nm,age,dep,salary)
+                  {
+                        super(nm,age); // parent class properties access by its child class then used super();
+                        this.dep=dep;
+                        this.salary=salary;
+                  }
+            }
+
+            var obj=new B("brijesh",35,"Information technology",89500);
+            console.log(obj);
+      </script>
+</body>
+</html>

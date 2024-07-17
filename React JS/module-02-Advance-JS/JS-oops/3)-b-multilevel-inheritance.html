@@ -1,0 +1,42 @@
+<!-- 
+ 
+      whenever we acess one parent properties access by its childs class i.e. called multilevel inheritance
+
+      A => B => C => D
+
+-->
+
+<script>
+
+class HR{
+
+      constructor(nm,age){
+            this.nm=nm;
+            this.age=age;
+      }
+
+}
+
+class empl extends HR{
+
+      constructor(nm,age,dep,salary){
+            super(nm,age)
+            this.dep=dep;
+            this.salary=salary;
+      }
+}
+
+class Boss extends empl{
+
+      constructor(nm,age,dep,salary,bossnm,adress){
+            super(nm,age,dep,salary)
+            this.bossnm=bossnm;
+            this.adress=adress;
+      }
+      
+}
+
+var obj = new Boss("ramesh", 26, "HR", 25500, "suresh", "Rajkot");
+
+console.log(obj);
+</script>

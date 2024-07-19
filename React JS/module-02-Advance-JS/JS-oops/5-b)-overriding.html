@@ -1,0 +1,29 @@
+<!-- 
+ 
+method overriding : 
+
+      when we used same function pass with same arguments i.e. called method overriding.
+
+-->
+
+<script>
+      class A 
+      {
+            constructor(name,age)
+            {
+                  this.name=name;
+                  this.age=age
+            }
+      }
+
+      class B extends A{
+            constructor(name,age)
+            {
+                  super(name,age)
+            }
+      }
+
+      obj = new B("Ram", 22)
+
+      console.log(obj);
+</script>

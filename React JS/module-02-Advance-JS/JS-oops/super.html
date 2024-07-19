@@ -1,0 +1,35 @@
+<!-- 
+ 
+super : 
+
+super is keyword that is used to access parent class properties to child class.
+
+-->
+
+<script>
+
+class A 
+{
+  constructor(name,age)
+  {
+
+  this.name=name;
+  this.age=age;
+
+  }
+
+}
+class B extends A
+{
+constructor(name,age,dep,salary)
+{
+super(name,age);
+this.dep=dep;
+this.salary=salary;
+}
+}
+
+var obj=new B("brijesh",35,"Information technology",89500);
+console.log(obj);
+
+</script>

@@ -208,12 +208,13 @@
 }
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
 
-@media (min-width:562px) and (max-width:768px){
+@media (min-width:562px) and (max-width:768px){ 
 
 /* ----------- header ------------ */
 
-.header .h-menu{
+/* .header .h-menu{
       width: 70% !important;
       margin-left: 0% !important;
 }
@@ -228,6 +229,17 @@
 .header .log p{
       height: 50px !important;
       width: 150px !important;
+} */
+
+.header button{
+      display: inline-block !important;
+}
+.header .h-menu{
+      display: none;
+      width: 50%;
+}
+.header .log{
+      width: 40% !important;
 }
 
 /* ------- content ------------ */
@@ -243,12 +255,17 @@
       height: 60px !important;
       width: 70px !important;
       margin-top: 8% !important;
-}
-.content .info .company img{
+} 
+ .content .info .company img{
       height: 80%;
       width: 90%;
 }
-
+.content .info .cmp-7{
+      display: none;
+}
+.content .info .cmp-8{
+      display: none;
+}
 /* ------ cards ------- */
 
 .card-title{
@@ -261,7 +278,7 @@
 }
 .card{
       width: 47% !important;
-      height: 40% !important;
+      height: 75vh !important;
       transition: 1s !important;
       margin-top: 3% !important;
       border-style: none !important;
@@ -315,7 +332,7 @@
 
 .crd{
       width: 48% !important;
-      height: 40% !important;
+      height: 70vh !important;
       transition: 1s !important;
       margin-top: 10px !important;
 }
@@ -395,4 +412,69 @@
  .footer .ft-part h3{
       display: none !important;
 }
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width:768px) and (max-width:992px){
+
+/* ----------- header ------------ */
+
+ .header .h-menu{
+      width: 70% !important;
+      margin-left: 0% !important;
+}
+.header .menu li a{
+      padding-left: 5% !important;
+      font-size: 1.2em !important;
+}
+.header .log{
+      width: 25% !important;
+} 
+.header .log p{
+      height: 50px !important;
+      width: 150px !important;
+} 
+
+/* --------- content --------------- */
+
+.content .info input{
+      margin-top: 5% !important;
+      height: 40px !important;
+      width: 70% !important;
+}
+.content .info .cmp-7{
+      display: none;
+}
+.content .info .cmp-8{
+      display: none;
+}
+
+/* ------------- category ---------- */
+
+
+.cat-btn button{
+      height: auto !important;
+}
+.sub-cat button{
+      display: none !important;
+}
+
+/* ------------ sell car ------------- */
+
+.crd{
+      height: 70vh!important;
+      border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
 }

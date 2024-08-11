@@ -11,6 +11,23 @@ html{
       background-color: #fafafa;
 }
 
+/* ---------- loader --------------------- */
+
+#loader{
+      width: 450px;
+      height: 350px;
+      /* position: absolute;
+      left: 40vw;
+      top: 40vh; */
+      margin-top: 10%;
+      margin-left: 35%;
+      background-image: url(../images/loader.gif);
+      background-size: 450px 350px;    
+} 
+#main-page{
+      display: none;
+} 
+
 /* -----------header start----------------------- */
 .header{
       height: 100px;
@@ -18,7 +35,7 @@ html{
       box-shadow: #465166;
       display: flex;
 }
-.header button{
+.header .toggle{
       /* line-height: 100px; */
       display: none;
 }
@@ -165,7 +182,7 @@ html{
 /* ------------- category ---------- */
 
 .category{
-      width: 100%;
+      width: 90%;
       height: auto;
       margin: 5% 5.5%;     
 }
@@ -530,17 +547,10 @@ html{
       opacity: 1;
       color: #fff;
 }
-.cont .cont-form button{
-      background-color: #ed6b00;
-      color: #fff;
-      font-size: 1em;
-      font-weight: 600;
-      border-radius: 10px;
-      height: 35px;
-      width: 100px;
-      border-style: hidden;
-      line-height: 10px;
-      margin-top: 2%;
+.cont .cont-form .submit{
+      background-color: #ed6b00 !important;
+      height: 35px !important; 
+      width: 100px !important;
 }
 /* ---- footer ---------- */
 

@@ -1,0 +1,15 @@
+.content{
+      width: 60%;
+      height: auto;
+      margin: auto;
+    }
+    .content h1{
+      color: blue;
+      font-size: 45px;
+      text-align: left;
+    }
+
+    .content h2{
+      color: gray;
+      font-size: 30px;
+    }

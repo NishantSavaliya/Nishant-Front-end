@@ -1,8 +1,30 @@
 @media (max-width:562px){
 
-      /* ------------ header ------------------  */
+/* ------------ header ------------------  */
 
-.header button{
+.header .toggle{
+      display: inline-block !important;
+}
+.tgl-menu{
+      display: none !important;
+}
+.tgl-menu li{
+      display: inline-block;
+      padding-left: 20px;
+      list-style: none;
+
+}
+.tgl-menu li a{
+      text-decoration: none;
+      color: #465166;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 600;
+}
+.header .tgl-menu li a:hover{
+      color: #ed6b00;
+}
+.hidden{
       display: inline-block !important;
 }
 .header .h-menu{
@@ -10,7 +32,9 @@
       width: 50%;
 }
 .header .log{
+      margin-top: 10px !important;
       width: 40% !important;
+      display: none;
 }
 
 
@@ -231,15 +255,50 @@
       width: 150px !important;
 } */
 
-.header button{
+/* .header button{
+      display: inline-block !important;
+}
+.header .h-menu{
+      display: none;
+      width: 50%;
+} */
+
+.header .toggle{
+      display: inline-block !important;
+}
+.tgl-menu{
+      display: none !important;
+}
+.tgl-menu li{
+      display: inline-block;
+      padding-left: 20px;
+      list-style: none;
+
+}
+.tgl-menu li a{
+      text-decoration: none;
+      color: #465166;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 600;
+}
+.header .tgl-menu li a:hover{
+      color: #ed6b00;
+}
+.hidden{
       display: inline-block !important;
 }
 .header .h-menu{
       display: none;
       width: 50%;
 }
-.header .log{
+/* .header .log{
+      margin-top: 10px !important;
       width: 40% !important;
+      display: none;
+} */
+.header .log{
+      width: 25% !important;
 }
 
 /* ------- content ------------ */

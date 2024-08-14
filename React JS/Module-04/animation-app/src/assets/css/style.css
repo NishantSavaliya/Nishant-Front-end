@@ -1,0 +1,40 @@
+body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      background-color: beige;
+}
+
+.app{
+      width: 60%;
+      height: auto;
+      margin: auto;
+      margin-top: 10%;
+      display: flex;
+      flex-direction: row;
+      animation: alternate 3s fadeInUpBig;
+}
+.app input[type="text"]{
+      width: 300px;
+      height: auto;
+      padding: 7px;
+      background-color: beige;
+      border: none;
+      border-bottom: 2px solid black;
+}
+.app input[type="submit"]{
+      width: 320px;
+      height: auto;
+      padding: 7px;
+      background-color: black;
+      color: beige;
+      border: none;
+      margin-top: 3%;
+}
+.app h1{
+      animation: 2s infinite bounce;
+}
+.box1 img{
+      animation: infinite fadeIn 3s;
+}

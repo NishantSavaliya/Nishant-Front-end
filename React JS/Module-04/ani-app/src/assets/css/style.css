@@ -1,0 +1,6 @@
+.app{
+      width:50%;
+      margin: auto;
+      height: auto;
+      animation: alternate 2s fadeInDown;
+}

@@ -22,7 +22,7 @@ const App=()=>{
             <div className="modal-dialog" style={{minWidth: "5  0%"}}>
                   <div className="modal-content mt-5 p-5">
                         <Row>
-                              <div className="col-md-5">
+      <div className="col-md-5">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeP1FKj9XKP1HRiiHMbw81tbKpjnnALKNSxg&s" alt="" className="img-fluid"/>
                               </div>
                               <div className="col-md-7">

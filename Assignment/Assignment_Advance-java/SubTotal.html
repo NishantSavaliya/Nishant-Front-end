@@ -19,6 +19,12 @@
             height: 100%;
             width: 100%;
       }
+      #price{
+            border-style: none;
+      }
+      #subtotal{
+            border-style: none;
+      }
 </style>
       
 </head>
@@ -43,25 +49,29 @@
                               </div>
                         </td>
                         <td><input type="number" id="qty" class="border-2 border-dark w-50 text-center p-1"></td>
-                        <td><span>$ </span><input type="number" data-price="12"></td>
-                        <td><input type="number" id="subtotal" class="border-2 border-dark w-50 text-center p-1"></td>
+                        <td><span>$</span><input type="text" id="price" value="12" class="p-1"></td>
+                        <td><span>$</span> <input type="text" id="subtotal" class="border-2 border-dark w-50  p-1"></td>
                         <td>
-                              <input type="button" class="btn btn-primary w-75 text-white p-1" value="Save" onclick="SubTotal()"><br>
+                              <input type="button" class="btn btn-primary w-75 text-white p-1" value="Save" onclick="SubTotal(this.value)"><br>
                               <input type="button" class="btn btn-danger w-75 text-white p-1 mt-4" value="Remove">
                         </td>
                   </tr>
-                  <!-- <tr>
+                  
+                  <tr>
                         <td>
                               <div class="info">
                                     <p><img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></p>
                                     <span>Coffee (Hot)</span>
                               </div>
                         </td>
-                        <td><input type="text" class="border-sm border-2 border-dark w-25 text-center p-1"></td>
-                        <td><span>$ </span><span>250</span></td>
-                        <td></td>
-                        <td><input type="button" class="btn btn-danger btn-sm text-white p-1" value="Remove"></td>
-                  </tr> -->
+                        <td><input type="number" id="qty" class="border-2 border-dark w-50 text-center p-1"></td>
+                        <td><span>$</span><input type="text" id="price" value="14" class="p-1"></td>
+                        <td><span>$</span> <input type="text" id="subtotal" class="border-2 border-dark w-50  p-1" ></td>
+                        <td>
+                              <input type="button" class="btn btn-primary w-75 text-white p-1" value="Save" onclick="SubTotal(this.value)"><br>
+                              <input type="button" class="btn btn-danger w-75 text-white p-1 mt-4" value="Remove">
+                        </td>
+                  </tr>
             </tbody>
       
       </table>
@@ -71,13 +81,8 @@
 
       function SubTotal(){
             let Qty = parseFloat(document.getElementById("qty").value);
-            let Price = parseFloat(document.getElementById("price").value);
-            let SubTotal = parseFloat(document.getElementById("subtotal").value= Qty*Price);
-
-            console.log(Qty);
-            console.log(Price);
-            
-            
+            let Price = parseFloat(document.getElementById("price").value) 
+            let SubTotal = parseFloat(document.getElementById("subtotal").value= Qty*Price);      
       }
   
 </script>

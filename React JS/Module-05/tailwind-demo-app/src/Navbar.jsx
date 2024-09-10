@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav=()=>{
       return(
-            <nav className="bg-black p-1">
+            <nav className="bg-green-200 p-1">
                   <div className="flex flex-row text-white">
                         <div className="w-2/5">
                               <h1 className="ms-14 text-2xl mt-2">Flipcart logo</h1>

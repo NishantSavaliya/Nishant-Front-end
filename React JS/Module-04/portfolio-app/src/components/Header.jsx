@@ -5,16 +5,16 @@ const Header=()=>{
     return(
         <>
 
-        <Container fluid className="portfolio-header p-3">
+        <Container fluid className="portfolio-header p-4 shadow">
         <Row>
-            <div className="col-md-6"><h1 className="text-white ms-5 logo">Nishant Savaliya</h1></div>
-            <div className="col-md-6">
-                <ul className="navbar-link">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Download My CV</a></li>
+            <div className="col-md-5"><h1 className=" ms-5 logo">Nishant Savaliya</h1></div>
+            <div className="col-md-7">
+                <ul className="navbar-link mt-2">
+                    <li ><a className="text-white fs-5 ps-0" href="">Home</a></li>
+                    <li><a className="text-white fs-5 ps-5" href="">Portfolio</a></li>
+                    <li><a className="text-white fs-5 ps-5" href="">About</a></li>
+                    <li><a className="text-white fs-5 ps-5" href="">Contact</a></li>
+                    <li><a className="text-white fs-5 ps-5" href="">Download My CV</a></li>
 
                 </ul>
             </div>

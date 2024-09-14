@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
+import About from './components/About'
 
 const Layout=()=>{
       return(
@@ -10,6 +11,7 @@ const Layout=()=>{
             <Header/>
             <Slider/>
             <Content/>
+            <About/>
             <Footer/>
             </>
       )

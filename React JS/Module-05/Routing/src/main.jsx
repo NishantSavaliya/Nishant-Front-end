@@ -6,6 +6,7 @@ import Layout from './Layout'
 import Contact from './Component/Contact'
 import PageNotFound from './Component/PageNotFound'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>

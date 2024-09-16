@@ -70,3 +70,32 @@
   border: #002441 solid 2px;
   border-radius: 3%;
 }
+
+/* About style */
+.about{
+  background-color: #00ba67;
+}
+.about .progress{
+  height: 30px !important;
+}
+.about .row p{
+  vertical-align: baseline !important;
+}
+.about .row progress{
+  vertical-align: baseline !important;
+}
+
+/* Contact style */
+
+.contact .form{
+  border-radius: 1% !important;
+}
+
+/* DownloadMyCv style */
+
+.cv p{
+  color: #002441;
+}
+.cv p a:hover{
+  color: #00ba67 !important;
+}

@@ -32,7 +32,7 @@ const Content=()=>{
         <hr className="border-4 mx-auto w-25" />
 
         <p className="fs-4 mt-5 ">* HTML  -  CSS</p>
-        <Row className=" mt-4">
+        <Row className=" mt-4 g-4">
             <div className="col-md-6">
                 <img src={cssGrid} alt=""  className="img-fluid"/>
             </div>

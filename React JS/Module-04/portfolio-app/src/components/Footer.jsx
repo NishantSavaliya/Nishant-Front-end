@@ -6,8 +6,8 @@ const Footer=()=>{
         <>
         <Container fluid className="bg-dark p-5 mt-5">
 
-            <Row>
-                <div className="col-md-3 text-white text-center ms-5">
+            <Row className="">
+                <div className="col-md-4 text-white text-center">
                     <h2>Location <span className="bi bi-geo-alt-fill fs-3"></span></h2>
                     <p className="mt-5 fs-5">
                         Mavdi Chokdi, Rajkot
@@ -17,7 +17,7 @@ const Footer=()=>{
                     </p>
                 </div>
 
-                <div className="col-md-4 text-white text-center ms-5">
+                <div className="col-md-4 text-white text-center ">
                     <h2>Around The Web  <span className="bi bi-globe-americas"></span></h2>
                     <p className="mt-5 fs-4"> 
                         <span className="bi bi-facebook"></span>
@@ -28,7 +28,7 @@ const Footer=()=>{
                     </p>
                 </div>
 
-                <div className="col-md-3 text-white text-center ms-5">
+                <div className="col-md-4 text-white text-center ">
                     <h2>Contact  <span className="bi bi-telephone-fill fs-3"></span></h2>
                     <p className="mt-5 fs-5">
                         +91 91066 63640

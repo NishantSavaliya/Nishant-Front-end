@@ -31,3 +31,99 @@ import {autoPortal} from '../assets/images/auto-portal.png'
 import {autoSell} from '../assets/images/auto-sell.png'
 import {calc} from '../assets/images/calc.png'
 import {tops} from '../assets/images/tops-profile.png'
+
+*react live on github steps*
+
+step-1:
+      open new reposatary 
+
+step-2: 
+      create name  //name always on - app folder name
+
+step-3: 
+      open - vite.config.js  - in app folder
+
+      export default defineConfig({
+            plugins: [react()],
+           ***  base:'/reposatary name/'   ****
+      })
+
+step-4:
+      - upload an existing file
+
+step-5: 
+      drag and drop app folder //not upload -nord module folder
+
+      commit changes
+
+step-6:
+      go to - action - option on navbar
+
+      set up a workflow yourself  -> select for create workflow
+
+step-7: 
+      change name main.yml to deploy.yml
+
+      paste deploy code // https://github.com/sitek94/vite-deploy-demo
+
+      code :
+
+                  name: Deploy
+
+            on:
+            push:
+            branches:
+                  - main
+
+            jobs:
+            build:
+            name: Build
+            runs-on: ubuntu-latest
+
+            steps:
+                  - name: Checkout repo
+                  uses: actions/checkout@v3
+
+                  - name: Setup Node
+                  uses: actions/setup-node@v3
+
+                  - name: Install dependencies
+                  uses: bahmutov/npm-install@v1
+
+                  - name: Build project
+                  run: npm run build
+
+                  - name: Upload production-ready build files
+                  uses: actions/upload-artifact@v3
+                  with:
+                  name: production-files
+                  path: ./dist
+
+            deploy:
+            name: Deploy
+            needs: build
+            runs-on: ubuntu-latest
+            if: github.ref == 'refs/heads/main'
+
+            steps:
+                  - name: Download artifact
+                  uses: actions/download-artifact@v3
+                  with:
+                  name: production-files
+                  path: ./dist
+
+                  - name: Deploy to GitHub Pages
+                  uses: peaceiris/actions-gh-pages@v3
+                  with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist
+
+      commit changes
+
+      commit changes
+
+step-8:
+      go to - action - option
+
+step-9:
+      

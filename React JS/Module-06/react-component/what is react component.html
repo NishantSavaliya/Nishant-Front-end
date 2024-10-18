@@ -1,0 +1,65 @@
+
+what is react js components  ?
+components is a small peace of file i.e save with .js or .jsx in react .js i.e called components. 
+components is reusables in react js 
+components is a object i.e used to stored state of data.
+components is return in html in form of objects. 
+components is render data in form of objects
+components naming convension is take uppercase of first letter 
+
+examples : App.jsx or App.js 
+
+types of components 
+
+a) function components
+      
+    function components return a data in objects 
+
+    function App()
+    {
+        return(
+            <>
+            statements
+            </>
+        )
+    }
+  
+b) class components
+
+class  components render data and return data in fragments 
+class components default return as module from react 
+
+import React,{Component} from 'react'
+class App extends Component
+{
+  constructor(props)
+  {
+    super(props);
+    this.state={
+        "id":1,
+        "name":"brijesh",
+        "age":35,
+        "salary":115000,
+        department:"R&D departments"
+
+    }
+    render()
+    {
+        return(
+            <>
+            <h1>The name of employee is :{this.state.name}</h1>
+            <h1>The age of employee is :{this.state.age}</h1>
+            <h1>The salary of employee is :{this.state.salary}</h1>
+            </>
+        )
+    }
+
+  } 
+}
+
+export default App 
+
+
+Note : class components is max used in react js 16.8 before version.
+       class components is no more support hooks after in react js 16.8 versions
+       function based components is supported hooks thats why we used max function baed components.

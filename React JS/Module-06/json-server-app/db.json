@@ -1,0 +1,159 @@
+{
+
+      "add-customers":[
+            {
+                  "id":1,
+                  "name":"rajesh",
+                  "age":32,
+                  "adress":"150 feet ring road",
+                  "country":"india",
+                  "state":"gujrat",
+                  "city":"rajkot"
+            }
+      ],
+
+      "add-reviews":[
+            {
+                  "id":1,
+                  "name":"rajesh",
+                  "email":"rk@gmail.com",
+                  "star":"1 star",
+                  "comment":"we are getting defective product",
+                  "date":"19-10-2024"  
+            }
+      ],
+
+      "add-feedbacks":[
+            {
+                  "id":1,
+                  "name":"rajesh",
+                  "email":"rk@gmail.com",
+                  "subject":"customer care",
+                  "comment":"not happy",
+                  "date":"19-10-2024"  
+            }
+      ],
+
+      "contact-us":[
+            {
+                  "id":1,
+                  "name":"rajesh",
+                  "email":"rk@gmail.com",
+                  "mobile":"9879696955",
+                  "messages":"not getting customer care no. anywhere",
+                  "date":"19-10-2024"  
+            }
+      ],
+
+      
+      "orders":[
+         
+         {
+            "id":1,
+            "customername":"brijesh",
+            "pid":1,
+            "photo":"https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1712052017/Croma%20Assets/Communication/Mobiles/Images/193178_0_ghmlfa.png?tr=w-600",
+             "price":1150,
+             "qty":1,
+             "subtotal":1150,
+             "added-date":"19-10-2024",
+             "status":"approved"
+        }
+      ],
+
+      "bills":[
+            
+            {
+            "id":1,
+            "customername":"brijesh",
+            "pid":1,
+            "photo":"https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1712052017/Croma%20Assets/Communication/Mobiles/Images/193178_0_ghmlfa.png?tr=w-600",
+            "price":1150,
+            "qty":1,
+            "subtotal":1150,
+            "bill-date":"19-10-2024",
+            "status":"approved"
+            }
+      ],
+
+
+      "admin-login":[
+            
+            {
+            "id":1,
+            "email":"admin@gmail.com",
+            "password":"admin$$123456"
+            }
+      ],
+
+
+      "add-categories":[
+            
+            {
+            "id":1,
+            "categoryname":"electronics",
+            "added-date":"19-10-2024",
+            "descriptions":"good"
+            }
+      ],
+
+
+
+      "add-subcategories":[
+            
+            {
+            "id":1,
+            "categoryname":"electronics",
+            "subcategoryname":"mobiles",
+            "added-date":"19-10-2024",
+            "descriptions":"good"
+            }
+      ],
+
+
+
+      "add-products":[
+            
+            {
+            "id":1,
+            "categoryname":"electronics",
+            "subcategoryname":"mobiles",
+            "productname":"samsung guru",
+            "photo":"https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1712052017/Croma%20Assets/Communication/Mobiles/Images/193178_0_ghmlfa.png?tr=w-600",
+            "oldprice":"1550",
+            "newprice":"1150",
+            "qty":1,
+            "added-date":"19-10-2024",
+            "descriptions":"good"
+            
+            }
+      ],
+
+      "add-country":[
+            
+            {
+            "id":1,
+            "countryname":"india"
+            }
+      ],
+
+
+      "add-state":[
+            
+            {
+            "id":1,
+            "countryname":"india",
+            "statename":"gujrat"
+            }
+      ],
+
+      "add-city":[
+            
+            {
+            "id":1,
+            "statename":"gujrat",
+            "cityname":"rajkot"
+            }
+      ]
+
+}

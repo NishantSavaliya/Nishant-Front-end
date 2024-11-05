@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: aliceblue;
+}
+.sidebar{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.sidebar li{
+  display: block;
+  padding: 12px 5px;
+}
+.sidebar a{
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+}
+.navbar li{
+  display: inline-block;
+  padding: 1px 20px;
+}
+.navbar a{
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+  color: white;
+}

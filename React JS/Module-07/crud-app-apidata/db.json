@@ -1,0 +1,14 @@
+{
+  "add-employees": [
+    {
+      "id": "102",
+      "name": "Nishant",
+      "email": "n@gmail.com",
+      "phone": "9105556560",
+      "department": "QC",
+      "designation": "Engineer",
+      "photo": "https://i.pinimg.com/736x/33/ba/df/33badf7bd7e2bd56b21e3d972fe3ed5a.jpg",
+      "address": "Rajkot"
+    }
+  ]
+}

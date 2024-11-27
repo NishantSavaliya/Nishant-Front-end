@@ -64,7 +64,11 @@ export default function ManageEmployee() {
                                   <td>{row.department}</td>
                                   <td>{row.designation}</td>
                                   <td>{row.address}</td>
-                                  <td><button type='button' onClick={()=>navigate(`/delete-employee/${row.id}`)} className='btn bg-danger text-white'><span className='bi bi-trash'></span></button> | <button type='button' className='btn  bg-primary text-white'><span className='bi bi-pencil'></span></button></td>
+                                  <td>
+                                    <button type='button' onClick={()=>navigate(`/delete-employee/${row.id}`)} className='btn bg-danger text-white'><span className='bi bi-trash'></span></button> 
+                                    | 
+                                    <button type='button' onClick={()=>navigate(`/edit-employee/${row.id}`)} className='btn  bg-primary text-white'><span className='bi bi-pencil'></span></button>
+                                  </td>
                                 </tr>
                               </>
                             )

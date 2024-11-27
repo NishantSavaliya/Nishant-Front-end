@@ -16,7 +16,7 @@ export default function AddEmployee() {
 
       // store all ref in variable
 
-      const id=useRef("");
+      const employeeid=useRef("");
       const name=useRef("");
       const email=useRef("");
       const phone=useRef("");
@@ -35,7 +35,7 @@ export default function AddEmployee() {
             // stored all data in object
 
             var insert={
-                  id:id.current.value,
+                  employeeid:employeeid.current.value,
                   name:name.current.value,
                   email:email.current.value,
                   phone:phone.current.value,
@@ -81,7 +81,7 @@ export default function AddEmployee() {
                               <form onSubmit={AddEmployeeFormHandling}>
                               <div className='card-body'>
                                     <div className='form-group mt-2'>
-                                          <input type="text" ref={id} placeholder='Employee ID*' className='form-control p-1' />
+                                          <input type="text" ref={employeeid} placeholder='Employee ID*' className='form-control p-1' />
                                     </div>
                                     <div className='form-group mt-2'>
                                           <input type="text" ref={name} placeholder='Employee Name*' className='form-control p-1' />

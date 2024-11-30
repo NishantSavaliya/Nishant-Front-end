@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect,useRef, useState } from 'react'
 import axios from 'axios'
 import Header from './Header';
 import Navbar from './Navbar';
@@ -16,7 +16,7 @@ const {id}=useParams();
 // use useEffect() hook for manage data
 
 useEffect(()=>{
-      axios.get(`http://localhost:8000/addfoods`).then((response)=>{
+      axios.get(`http://localhost:8000/addfoods/${id}`).then((response)=>{
             setData(response.data);
       })
 },[data]);
@@ -49,7 +49,7 @@ useEffect(()=>{
                                     <p className="text-secondary">{item.addeddate}</p> */}
                                     <p className="text-secondary">
                                           <b>
-                                          <button type="button" onClick={()=>navigate(`/view-food-detail/${item.id}`)} className="btn btn-sm btn-dark text-white">
+                                          <button type="button" className="btn btn-sm btn-dark text-white">
                                           View Detail
                                           </button>
                                           </b>

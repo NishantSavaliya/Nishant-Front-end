@@ -21,6 +21,7 @@ import Layout from './Layout'
 import NotFound from './components/user/NotFound'
 import Feedback from './components/user/Feedback'
 import AllProduct from './components/user/AllProduct'
+import ViewFoodDetail from './components/user/ViewFoodDetail'
 
 // admin panel components import here
 
@@ -38,6 +39,7 @@ import DeleteContact from './components/admin/DeleteContact'
 import DeleteFeedback from './components/admin/DeleteFeedback'
 import UpdateFoodCategory from './components/admin/UpdateFoodCategory'
 import UpdateFood from './components/admin/UpdateFood'
+import AddCountry from './components/admin/AddCountry'
 
 
 createRoot(document.getElementById('root')).render(
@@ -54,6 +56,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/sandwiches' element={<Sandwiches/>} />
         <Route path='/feedback' element={<Feedback/>} />
         <Route path='/all-product' element={<AllProduct/>} />
+        <Route path='/view-food-detail/:id' element={<ViewFoodDetail/>} />
         <Route path='*' element={<NotFound/>} />
 
 
@@ -73,6 +76,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/admin-login/delete-feedback/:id' element={<DeleteFeedback/>} />
         <Route path='/admin-login/update-food-category/:id' element={<UpdateFoodCategory/>} />
         <Route path='/admin-login/update-food/:id' element={<UpdateFood/>} />
+        <Route path='/admin-login/add-country' element={<AddCountry/>} />
 
 
       </Routes>

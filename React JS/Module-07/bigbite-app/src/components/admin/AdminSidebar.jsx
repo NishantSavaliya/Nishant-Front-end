@@ -58,6 +58,22 @@ const AdminSidebar=()=>{
       </ul>
     </li>
 
+       {/* add country */}
+
+    <li className="dropdown">
+      <a className="dropdown-toggle" data-bs-toggle="dropdown" href="#">Add Country</a>
+
+      <ul className="dropdown-menu bg-white text-dark p-1" style={{maxWidth:"250px !important"}}>
+        <li>
+          <a href="/admin-login/add-country" className="text-dark">Add Country</a>
+        </li>
+        <li>
+          <a href="/" className="text-dark">
+            ManageCountry <span className="bi bi-calendar" />
+          </a>
+        </li>
+      </ul>
+    </li>
 
     <li>
       <a href="addattendance.html">

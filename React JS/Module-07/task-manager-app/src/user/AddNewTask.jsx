@@ -49,7 +49,7 @@ export default function AddNewTask() {
 
   return (
     <>
-      <Container className='mx-auto w-50 p-5'>
+      <Container className='new-task mx-auto p-5'>
             <p  className='text-dark fs-1 fw-bolder'>Add New Tasks Here</p>
 
           <form onSubmit={taskHendling}>
@@ -63,7 +63,7 @@ export default function AddNewTask() {
                   <input type="text"ref={detail} className="form-control border-bottom border-2 border-dark fs-3 text-secondary fw-light rounded-0" placeholder="Detail"/>
             </div>
 
-            <input type='submit' className='btn btn-md shadow btn-warning p-2 mt-5 fs-5 text-dark' value="CREATE"/>
+            <input type='submit' className='btn btn-lg shadow btn-warning p-2 mt-5 fs-5 text-dark' value="CREATE"/>
           </form>
       </Container>
     </>

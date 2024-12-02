@@ -17,7 +17,7 @@ export default function TaskList() {
 
   return (
     <>
-      <Container className='mx-auto w-50 p-4'>
+      <Container className='task-list mx-auto p-5'>
 
             <p  className='text-dark fs-1 fw-bolder'>Tasks List</p>
 

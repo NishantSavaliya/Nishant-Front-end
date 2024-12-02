@@ -6,7 +6,7 @@ export default function DeletedTask() {
   return (
     <>
       <Header/>
-      <Container className='mx-auto w-50 p-4'>
+      <Container className='mx-auto p-5'>
 
             <p  className='text-dark fs-1 fw-bolder'>Deleted Tasks</p>
 

@@ -1,0 +1,15 @@
+.container{
+    height: auto;
+    width: 100%;
+    background-color: burlywood;
+    text-align: center;
+}
+.list{
+    list-style-type:none;
+    
+}
+.check-icon{
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,0 +1,38 @@
+{
+    "user":[
+        {
+        "id":1,
+        "name":"Jayesh",
+        "address":"Veraval",
+        "email":"jayesh@gmail.com",
+        "contact":"6353946349"
+        
+  
+    },
+    {
+        "id":2,
+        "name":"Jayesh",
+        "address":"Veraval",
+        "email":"jayesh@gmail.com",
+        "contact":"6353946349"
+  
+    },
+    {
+        "id":3,
+        "name":"Jayesh",
+        "address":"Veraval",
+        "email":"jayesh@gmail.com",
+        "contact":"6353946349"        
+  
+    },
+    {
+        "id":4,
+        "name":"Jayesh",
+        "address":"Veraval",
+        "email":"jayesh@gmail.com",
+        "contact":"6353946349"
+  
+    }
+    ]
+    
+  }
